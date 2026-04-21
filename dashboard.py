@@ -319,8 +319,15 @@ with right:
         with chart_col4:
             st.caption("🏷️ Test Case Categories")
             cat_rows = [x.get("metadata", {}).get("hard_case_category", "base") for x in dataset]
-            cat_df = pd.Series(cat_rows).value_counts()
-            st.bar_chart(cat_df, height=200)
+            cat_counts = pd.Series(cat_rows).value_counts().reset_index()
+            cat_counts.columns = ["category", "count"]
+            
+            cat_donut = alt.Chart(cat_counts).mark_arc(innerRadius=40).encode(
+                theta=alt.Theta(field="count", type="quantitative"),
+                color=alt.Color(field="category", type="nominal", scale=alt.Scale(scheme="category10")),
+                tooltip=["category", "count"]
+            ).properties(height=200)
+            st.altair_chart(cat_donut, use_container_width=True)
 
         # Bottom: Deep Dive Table
         with st.expander("🔍 Deep Dive: Worst 10 Cases by Relevancy"):
