@@ -1,13 +1,16 @@
 import re
 from typing import Dict, List
 
-class RetrievalEvaluator:
-    def __init__(self):
-        pass
+TOKEN_PATTERN = re.compile(r"[a-zA-Z0-9À-ỹà-ỹ]+")
 
+class RetrievalEvaluator:
     @staticmethod
     def _tokenize(text: str) -> set:
-        return set(re.findall(r"[a-zA-Z0-9À-ỹà-ỹ]+", text.lower()))
+        return set(TOKEN_PATTERN.findall(text.lower()))
+
+    @staticmethod
+    def _safe_average(values: List[float]) -> float:
+        return sum(values) / len(values) if values else 0.0
 
     def calculate_hit_rate(self, expected_ids: List[str], retrieved_ids: List[str], top_k: int = 3) -> float:
         if not expected_ids:
@@ -64,6 +67,6 @@ class RetrievalEvaluator:
             for case in dataset
         ]
         return {
-            "avg_hit_rate": sum(hit_rates) / len(hit_rates),
-            "avg_mrr": sum(mrrs) / len(mrrs),
+            "avg_hit_rate": self._safe_average(hit_rates),
+            "avg_mrr": self._safe_average(mrrs),
         }

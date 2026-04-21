@@ -10,7 +10,6 @@ from openai import AsyncOpenAI
 
 
 def _load_env(repo_root: Path) -> None:
-    load_dotenv(repo_root / ".evn", override=False)
     load_dotenv(repo_root / ".env", override=False)
 
 
@@ -113,10 +112,8 @@ def _chunk_text(text: str, min_chars: int = 200, max_chars: int = 1200) -> List[
     return chunks
 
 
-def load_and_chunk_real_data(repo_path: Path, fallback_file: Path) -> List[Dict]:
-    file_paths = list(repo_path.glob("*.md")) + list(repo_path.glob("*.txt"))
-    if not file_paths:
-        file_paths = [fallback_file]
+def load_and_chunk_real_data(source_file: Path) -> List[Dict]:
+    file_paths = [source_file]
 
     chunks: List[Dict] = []
     counter = 1
@@ -260,8 +257,7 @@ async def generate_qa_for_chunk(
 
 async def main():
     repo_root = Path(__file__).resolve().parents[1]
-    raw_repo_path = repo_root / "data" / "raw_repo"
-    source_path = repo_root / "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt"
+    source_path = repo_root / "data.txt"
     output_path = repo_root / "data" / "golden_set.jsonl"
 
     _load_env(repo_root)
@@ -272,15 +268,15 @@ async def main():
     if not source_path.exists():
         raise FileNotFoundError(f"Missing source file: {source_path}")
 
-    chunks = load_and_chunk_real_data(raw_repo_path, source_path)
+    chunks = load_and_chunk_real_data(source_path)
     if not chunks:
-        raise ValueError("No chunks found. Add .md/.txt files to data/raw_repo.")
+        raise ValueError("No chunks found in data.txt.")
 
     if len(chunks) < 17:
         print(
             f"Warning: only {len(chunks)} chunks. Need at least 17 chunks to reach 50+ cases."
         )
-        print("Tip: add more .md/.txt files to data/raw_repo.")
+        print("Tip: enrich data.txt content to produce more chunks.")
 
     total_cases = len(chunks) * 3
     print(f"Preparing {len(chunks)} chunks -> {total_cases} cases")

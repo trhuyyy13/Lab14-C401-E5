@@ -7,18 +7,74 @@ from agent.main_agent import MainAgent
 from engine.retrieval_eval import RetrievalEvaluator
 from engine.llm_judge import LLMJudge
 
-async def run_benchmark_with_results(agent_version: str):
-    print(f"🚀 Khởi động Benchmark cho {agent_version}...")
 
-    if not os.path.exists("data/golden_set.jsonl"):
+def _load_dataset(path: str):
+    if not os.path.exists(path):
         print("❌ Thiếu data/golden_set.jsonl. Hãy chạy 'python data/synthetic_gen.py' trước.")
-        return None, None
+        return []
 
-    with open("data/golden_set.jsonl", "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         dataset = [json.loads(line) for line in f if line.strip()]
 
     if not dataset:
         print("❌ File data/golden_set.jsonl rỗng. Hãy tạo ít nhất 1 test case.")
+    return dataset
+
+
+def _compute_summary(agent_version: str, results):
+    total = len(results)
+    pass_count = sum(1 for r in results if r["status"] == "pass")
+
+    metric_extractors = {
+        "avg_score": lambda r: r["judge"]["final_score"],
+        "hit_rate": lambda r: r["ragas"]["retrieval"]["hit_rate"],
+        "mrr": lambda r: r["ragas"]["retrieval"]["mrr"],
+        "agreement_rate": lambda r: r["judge"]["agreement_rate"],
+        "faithfulness": lambda r: r["ragas"]["faithfulness"],
+        "relevancy": lambda r: r["ragas"]["relevancy"],
+        "avg_latency_sec": lambda r: r["latency"],
+        "avg_tokens": lambda r: r["metadata"]["agent"].get("tokens_used", 0),
+    }
+
+    metric_values = {
+        name: sum(extractor(result) for result in results) / total
+        for name, extractor in metric_extractors.items()
+    }
+    metric_values["pass_rate"] = round(pass_count / total, 4)
+    metric_values["estimated_cost_usd"] = round((metric_values["avg_tokens"] * total / 1000) * 0.0003, 6)
+
+    rounded_metrics = {}
+    for key, value in metric_values.items():
+        if key == "avg_tokens":
+            rounded_metrics[key] = round(value, 2)
+        elif key == "estimated_cost_usd":
+            rounded_metrics[key] = round(value, 6)
+        else:
+            rounded_metrics[key] = round(value, 4)
+
+    return {
+        "metadata": {
+            "version": agent_version,
+            "total": total,
+            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        },
+        "metrics": rounded_metrics,
+    }
+
+
+def _is_hard_gate_pass(summary):
+    metrics = summary["metrics"]
+    return (
+        metrics["hit_rate"] >= 0.70
+        and metrics["agreement_rate"] >= 0.50
+        and metrics["avg_latency_sec"] <= 2.0
+    )
+
+async def run_benchmark_with_results(agent_version: str):
+    print(f"🚀 Khởi động Benchmark cho {agent_version}...")
+
+    dataset = _load_dataset("data/golden_set.jsonl")
+    if not dataset:
         return None, None
 
     retrieval_evaluator = RetrievalEvaluator()
@@ -27,36 +83,7 @@ async def run_benchmark_with_results(agent_version: str):
     agent_key = "v2" if "V2" in agent_version else "v1"
     runner = BenchmarkRunner(MainAgent(version=agent_key), retrieval_evaluator, judge)
     results = await runner.run_all(dataset)
-
-    total = len(results)
-    pass_count = sum(1 for r in results if r["status"] == "pass")
-
-    avg_score = sum(r["judge"]["final_score"] for r in results) / total
-    hit_rate = sum(r["ragas"]["retrieval"]["hit_rate"] for r in results) / total
-    mrr = sum(r["ragas"]["retrieval"]["mrr"] for r in results) / total
-    agreement_rate = sum(r["judge"]["agreement_rate"] for r in results) / total
-    avg_faithfulness = sum(r["ragas"]["faithfulness"] for r in results) / total
-    avg_relevancy = sum(r["ragas"]["relevancy"] for r in results) / total
-    avg_latency = sum(r["latency"] for r in results) / total
-    avg_tokens = sum(r["metadata"]["agent"].get("tokens_used", 0) for r in results) / total
-
-    total_cost_usd = round((avg_tokens * total / 1000) * 0.0003, 6)
-
-    summary = {
-        "metadata": {"version": agent_version, "total": total, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")},
-        "metrics": {
-            "pass_rate": round(pass_count / total, 4),
-            "avg_score": round(avg_score, 4),
-            "hit_rate": round(hit_rate, 4),
-            "mrr": round(mrr, 4),
-            "agreement_rate": round(agreement_rate, 4),
-            "faithfulness": round(avg_faithfulness, 4),
-            "relevancy": round(avg_relevancy, 4),
-            "avg_latency_sec": round(avg_latency, 4),
-            "avg_tokens": round(avg_tokens, 2),
-            "estimated_cost_usd": total_cost_usd,
-        },
-    }
+    summary = _compute_summary(agent_version, results)
     return results, summary
 
 async def run_benchmark(version):
@@ -84,11 +111,7 @@ async def main():
     with open("reports/benchmark_results.json", "w", encoding="utf-8") as f:
         json.dump(v2_results, f, ensure_ascii=False, indent=2)
 
-    hard_gate_pass = (
-        v2_summary["metrics"]["hit_rate"] >= 0.70
-        and v2_summary["metrics"]["agreement_rate"] >= 0.50
-        and v2_summary["metrics"]["avg_latency_sec"] <= 2.0
-    )
+    hard_gate_pass = _is_hard_gate_pass(v2_summary)
 
     if delta > 0 and hard_gate_pass:
         print("✅ QUYẾT ĐỊNH: CHẤP NHẬN BẢN CẬP NHẬT (APPROVE)")

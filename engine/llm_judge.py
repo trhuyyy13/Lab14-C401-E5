@@ -8,6 +8,8 @@ from typing import Dict, Any
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
+TOKEN_PATTERN = re.compile(r"[a-zA-Z0-9À-ỹà-ỹ]+")
+
 class LLMJudge:
     def __init__(self, model: str = "gpt-4o"):
         self.model = model
@@ -32,7 +34,12 @@ class LLMJudge:
 
     @staticmethod
     def _tokenize(text: str) -> set:
-        return set(re.findall(r"[a-zA-Z0-9À-ỹà-ỹ]+", text.lower()))
+        return set(TOKEN_PATTERN.findall(text.lower()))
+
+    def _heuristic_scores(self, question: str, answer: str, ground_truth: str):
+        score_a = self._score_model_a(answer, ground_truth)
+        score_b = self._score_model_b(question, answer, ground_truth)
+        return score_a, score_b
 
     def _score_model_a(self, answer: str, ground_truth: str) -> int:
         a = self._tokenize(answer)
@@ -95,11 +102,9 @@ class LLMJudge:
                 score_b = await self._score_with_openai(self.model_b_name, question, answer, ground_truth)
                 scoring_mode = "openai"
             else:
-                score_a = self._score_model_a(answer, ground_truth)
-                score_b = self._score_model_b(question, answer, ground_truth)
+                score_a, score_b = self._heuristic_scores(question, answer, ground_truth)
         except Exception:
-            score_a = self._score_model_a(answer, ground_truth)
-            score_b = self._score_model_b(question, answer, ground_truth)
+            score_a, score_b = self._heuristic_scores(question, answer, ground_truth)
             scoring_mode = "heuristic_fallback"
 
         diff = abs(score_a - score_b)

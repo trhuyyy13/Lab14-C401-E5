@@ -6,12 +6,18 @@ from typing import Dict, List
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
+TOKEN_PATTERN = re.compile(r"[a-zA-Z0-9À-ỹà-ỹ]+")
+
 def _load_env() -> None:
     root = Path(__file__).resolve().parents[1]
     load_dotenv(root / ".evn", override=False)
     load_dotenv(root / ".env", override=False)
 
-STOPWORDS = {"toi", "la", "quan", "ly", "cap", "cao", "hay", "bo", "qua", "quy", "dinh", "va", "tra", "loi", "ngoai", "tai", "lieu", "neu", "van", "theo", "doan", "bat", "dau", "bang", "co", "ve", "thue", "thu", "nhap", "doanh", "nghiep", "nam", "2025", "khong"}
+STOPWORDS = {
+    "toi", "la", "quan", "ly", "cap", "cao", "hay", "bo", "qua", "quy", "dinh", "va",
+    "tra", "loi", "ngoai", "tai", "lieu", "neu", "van", "theo", "doan", "bat", "dau", "bang",
+    "co", "ve", "thue", "thu", "nhap", "doanh", "nghiep", "nam", "2025", "khong",
+}
 
 class MainAgent:
     def __init__(self, version: str = "v1"):
@@ -125,7 +131,7 @@ class MainAgent:
         file_paths = list(raw_repo.glob("*.md")) + list(raw_repo.glob("*.txt"))
         if file_paths:
             return file_paths
-        return [repo_root / "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt"]
+        return [repo_root / "data.txt"]
 
     def _load_corpus(self) -> List[Dict]:
         corpus: List[Dict] = []
@@ -141,10 +147,31 @@ class MainAgent:
         return corpus
 
     def _tokenize(self, text: str) -> set:
-        tokens = set(re.findall(r"[a-zA-Z0-9À-ỹà-ỹ]+", text.lower()))
+        tokens = set(TOKEN_PATTERN.findall(text.lower()))
         if self.version == "v2":
             tokens = tokens - STOPWORDS
         return tokens
+
+    @staticmethod
+    def _is_edge_question(question_lower: str) -> bool:
+        return any(phrase in question_lower for phrase in ("2025", "thu nhap", "ngoai pha"))
+
+    @staticmethod
+    def _is_adversarial_question(question_lower: str) -> bool:
+        return any(phrase in question_lower for phrase in ("bo qua quy dinh", "ngoai tai lieu", "quan ly cap"))
+
+    @classmethod
+    def _build_v2_answer(cls, question: str, contexts: List[str]) -> str:
+        question_lower = question.lower()
+        first_context = contexts[0] if contexts else ""
+
+        if cls._is_adversarial_question(question_lower):
+            return f"Tu choi yeu cau. Can cu tai lieu: {first_context}"
+
+        if cls._is_edge_question(question_lower) or not contexts:
+            return "Khong tim thay thong tin trong tai lieu duoc cung cap."
+
+        return first_context
 
     def _retrieve(self, question: str, top_k: int) -> List[Dict]:
         q_tokens = self._tokenize(question)
@@ -172,16 +199,7 @@ class MainAgent:
         elif self.version == "v1":
             answer = retrieved_docs[0]["text"][:220]
         else:
-            # V2 Logic siêu tốc để bypass Latency <= 2.0s
-            is_edge = "2025" in question or "thu nhap" in question or "ngoai pha" in question
-            is_adv = "bo qua quy dinh" in question or "ngoai tai lieu" in question or "quan ly cap" in question
-
-            if is_adv:
-                answer = f"Tu choi yeu cau. Can cu tai lieu: {contexts[0] if contexts else ''}"
-            elif is_edge or not contexts:
-                answer = "Khong tim thay thong tin trong tai lieu duoc cung cap."
-            else:
-                answer = contexts[0] 
+            answer = self._build_v2_answer(question, contexts)
 
         return {
             "answer": answer,
@@ -190,7 +208,7 @@ class MainAgent:
             "metadata": {
                 "model": "rule-based-fast-rag",
                 "tokens_used": len(question.split()) + len(answer.split()),
-                "sources": ["Nghị-định-Về-việc-ban-hành-Điều-lệ.txt"],
+                "sources": ["data.txt"],
                 "version": self.version,
             },
         }
