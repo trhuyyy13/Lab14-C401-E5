@@ -1,0 +1,752 @@
+[
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_1",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 1,
+    "preview": "Điều 1 . Phạm_vi điều_chỉnh và đối_tượng áp_dụng Luật này quy_định về cán_bộ , công_chức ; bầu_cử , tuyển_dụng , sử_dụng"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_2",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 2,
+    "preview": "Điều 2 . Hoạt_động công_vụ của cán_bộ , công_chức Hoạt_động công_vụ của cán_bộ , công_chức là việc thực_hiện nhiệm_vụ , "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_3",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 3,
+    "preview": "Điều 3 . Các nguyên_tắc trong thi_hành công_vụ 1 . Tuân_thủ Hiến_pháp và pháp_luật . 2 . Bảo_vệ lợi_ích của Nhà_nước , q"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_4",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 4,
+    "preview": "Điều 4 . Cán_bộ , công_chức 1 . Cán_bộ là công_dân Việt_Nam , được bầu_cử , phê_chuẩn , bổ_nhiệm giữ chức_vụ , chức_danh"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_5",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 5,
+    "preview": "Điều 5 . Các nguyên_tắc quản_lý cán_bộ , công_chức 1 . Bảo_đảm sự lãnh_đạo của Đảng Cộng_sản Việt_Nam , sự quản_lý của N"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_6",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 6,
+    "preview": "Điều 6 . Chính_sách đối_với người có tài_năng Nhà_nước có chính_sách để phát_hiện , thu_hút , bồi_dưỡng , trọng_dụng và "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_7",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 7,
+    "preview": "Điều 7 . Giải_thích từ_ngữ 1 . Cơ_quan sử_dụng cán_bộ , công_chức là cơ_quan , tổ_chức , đơn_vị được giao thẩm_quyền quả"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_8",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 8,
+    "preview": "Điều 8 . Nghĩa_vụ của cán_bộ , công_chức đối_với Đảng , Nhà_nước và nhân_dân 1 . Trung_thành với Đảng Cộng_sản Việt_Nam "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_9",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 9,
+    "preview": "Điều 9 . Nghĩa_vụ của cán_bộ , công_chức trong thi_hành công_vụ 1 . Thực_hiện đúng , đầy_đủ và chịu trách_nhiệm về kết_q"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_10",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 10,
+    "preview": "Điều 10 . Nghĩa_vụ của cán_bộ , công_chức là người đứng đầu 1 . Chỉ_đạo tổ_chức thực_hiện nhiệm_vụ được giao và chịu trá"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_11",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 11,
+    "preview": "Điều 11 . Quyền của cán_bộ , công_chức được bảo_đảm các điều_kiện thi_hành công_vụ 1 . Được giao quyền tương_xứng với nh"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_12",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 12,
+    "preview": "Điều 12 . Quyền của cán_bộ , công_chức về tiền_lương và các chế_độ liên_quan đến tiền_lương 1 . Được Nhà_nước bảo_đảm ti"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_13",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 13,
+    "preview": "Điều 13 . Quyền của cán_bộ , công_chức về nghỉ_ngơi Cán_bộ , công_chức được nghỉ hàng năm , nghỉ lễ , nghỉ để giải_quyết"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_14",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 14,
+    "preview": "Điều 14 . Các quyền khác của cán_bộ , công_chức Cán_bộ , công_chức được bảo_đảm quyền học_tập , nghiên_cứu khoa_học , th"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_15",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 15,
+    "preview": "Điều 15 . Đạo_đức của cán_bộ , công_chức Cán_bộ , công_chức phải thực_hiện cần , kiệm , liêm , chính , chí công vô_tư tr"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_16",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 16,
+    "preview": "Điều 16 . Văn_hóa giao_tiếp ở công_sở 1 . Trong giao_tiếp ở công_sở , cán_bộ , công_chức phải có thái_độ lịch_sự , tôn_t"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_17",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 17,
+    "preview": "Điều 17 . Văn_hóa giao_tiếp với nhân_dân 1 . Cán_bộ , công_chức phải gần_gũi với nhân_dân ; có tác_phong , thái_độ lịch_"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_18",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 18,
+    "preview": "Điều 18 . Những việc cán_bộ , công_chức không được làm liên_quan đến đạo_đức công_vụ 1 . Trốn_tránh trách_nhiệm , thoái_"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_19",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 19,
+    "preview": "Điều 19 . Những việc cán_bộ , công_chức không được làm liên_quan đến bí_mật nhà_nước 1 . Cán_bộ , công_chức không được t"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_20",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 20,
+    "preview": "Điều 20 . Những việc khác cán_bộ , công_chức không được làm Ngoài những việc không được làm quy_định tại Điều 18 và Điều"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_21",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 21,
+    "preview": "Điều 21 . Cán_bộ 1 . Cán_bộ quy_định tại khoản 1 Điều 4 của Luật này bao_gồm cán_bộ trong cơ_quan của Đảng Cộng_sản Việt"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_22",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 22,
+    "preview": "Điều 22 . Nghĩa_vụ , quyền của cán_bộ 1 . Thực_hiện các nghĩa_vụ , quyền quy_định tại Chương II và các quy_định khác có "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_23",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 23,
+    "preview": "Điều 23 . Bầu_cử , bổ_nhiệm chức_vụ , chức_danh cán_bộ trong cơ_quan của Đảng Cộng_sản Việt_Nam , tổ_chức chính_trị-xã_h"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_24",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 24,
+    "preview": "Điều 24 . Bầu_cử , phê_chuẩn , bổ_nhiệm chức_vụ , chức_danh cán_bộ trong cơ_quan nhà_nước Việc bầu_cử , phê_chuẩn , bổ_n"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_25",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 25,
+    "preview": "Điều 25 . Đào_tạo , bồi_dưỡng đối_với cán_bộ 1 . Việc đào_tạo , bồi_dưỡng cán_bộ phải căn_cứ vào tiêu_chuẩn , chức_vụ , "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_26",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 26,
+    "preview": "Điều 26 . Điều_động , luân_chuyển cán_bộ 1 . Căn_cứ vào yêu_cầu nhiệm_vụ , quy_hoạch cán_bộ , cán_bộ được điều_động , lu"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_27",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 27,
+    "preview": "Điều 27 . Mục_đích đánh_giá cán_bộ Đánh_giá cán_bộ để làm rõ phẩm_chất chính_trị , đạo_đức , năng_lực , trình_độ chuyên_"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_28",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 28,
+    "preview": "Điều 28 . Nội_dung đánh_giá cán_bộ 1 . Cán_bộ được đánh_giá theo các nội_dung sau đây : a ) Chấp_hành đường_lối , chủ_tr"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_29",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 29,
+    "preview": "Điều 29 . Phân_loại đánh_giá cán_bộ 1 . Căn_cứ vào kết_quả đánh_giá , cán_bộ được phân_loại đánh_giá như sau : a ) Hoàn_"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_30",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 30,
+    "preview": "Điều 30 . Xin thôi làm nhiệm_vụ , từ_chức , miễn_nhiệm 1 . Cán_bộ có_thể xin thôi làm nhiệm_vụ hoặc từ_chức , miễn_nhiệm"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_31",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 31,
+    "preview": "Điều 31 . Nghỉ hưu đối_với cán_bộ 1 . Cán_bộ được nghỉ hưu theo quy_định của Bộ_luật lao_động . 2 . Trước 06 tháng , tín"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_32",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 32,
+    "preview": "Điều 32 . Công_chức 1 . Công_chức quy_định tại khoản 2 Điều 4 của Luật này bao_gồm : a ) Công_chức trong cơ_quan của Đản"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_33",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 33,
+    "preview": "Điều 33 . Nghĩa_vụ , quyền của công_chức 2 . Thực_hiện nhiệm_vụ , quyền_hạn theo quy_định của Hiến_pháp , pháp_luật . 3 "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_34",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 34,
+    "preview": "Điều 34 . Phân_loại công_chức 1 . Căn_cứ vào ngạch được bổ_nhiệm , công_chức được phân_loại như sau : a ) Loại A gồm nhữ"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_35",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 35,
+    "preview": "Điều 35 . Căn_cứ tuyển_dụng công_chức Việc tuyển_dụng công_chức phải căn_cứ vào yêu_cầu nhiệm_vụ , vị_trí việc_làm và ch"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_36",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 36,
+    "preview": "Điều 36 . Điều_kiện đăng_ký dự_tuyển công_chức 1 . Người có đủ các điều_kiện sau đây không phân_biệt dân_tộc , nam_nữ , "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_37",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 37,
+    "preview": "Điều 37 . Phương_thức tuyển_dụng công_chức 1 . Việc tuyển_dụng công_chức được thực_hiện thông_qua thi_tuyển , trừ trường"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_38",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 38,
+    "preview": "Điều 38 . Nguyên_tắc tuyển_dụng công_chức 1 . Bảo_đảm công_khai , minh_bạch , khách_quan và đúng pháp_luật . 2 . Bảo_đảm"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_39",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 39,
+    "preview": "Điều 39 . Cơ_quan thực_hiện tuyển_dụng công_chức 1 . Tòa_án nhân_dân tối_cao , Viện kiểm_sát nhân_dân tối_cao , Kiểm_toá"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_40",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 40,
+    "preview": "Điều 40 . Tập_sự đối_với công_chức Người được tuyển_dụng vào công_chức phải thực_hiện chế_độ tập_sự theo quy_định của Ch"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_41",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 41,
+    "preview": "Điều 41 . Tuyển_chọn , bổ_nhiệm Thẩm_phán , Kiểm_sát_viên Việc tuyển_chọn , bổ_nhiệm Thẩm_phán Tòa_án nhân_dân , Kiểm_sá"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_42",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 42,
+    "preview": "Điều 42 . Ngạch công_chức và việc bổ_nhiệm vào ngạch công_chức 1 . Ngạch công_chức bao_gồm : a ) Chuyên_viên cao_cấp và "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_43",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 43,
+    "preview": "Điều 43 . Chuyển_ngạch công_chức 1 . Chuyển_ngạch là việc công_chức đang giữ ngạch của ngành chuyên_môn này được bổ_nhiệ"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_44",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 44,
+    "preview": "Điều 44 . Nâng ngạch công_chức 1 . Việc nâng ngạch phải căn_cứ vào vị_trí việc_làm , phù_hợp với cơ_cấu công_chức của cơ"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_45",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 45,
+    "preview": "Điều 45 . Tiêu_chuẩn , điều_kiện đăng_ký dự thi nâng ngạch công_chức 1 . Cơ_quan , tổ_chức , đơn_vị có nhu_cầu về công_c"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_46",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 46,
+    "preview": "Điều 46 . Tổ_chức thi nâng ngạch công_chức 1 . Nội_dung và hình_thức thi nâng ngạch công_chức phải phù_hợp với chuyên_mô"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_47",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 47,
+    "preview": "Điều 47 . Chế_độ đào_tạo , bồi_dưỡng công_chức 1 . Nội_dung , chương_trình , hình_thức , thời_gian đào_tạo , bồi_dưỡng c"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_48",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 48,
+    "preview": "Điều 48 . Trách_nhiệm của cơ_quan , tổ_chức , đơn_vị trong đào_tạo , bồi_dưỡng công_chức 1 . Cơ_quan , tổ_chức , đơn_vị "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_49",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 49,
+    "preview": "Điều 49 . Trách_nhiệm và quyền_lợi của công_chức trong đào_tạo , bồi_dưỡng 1 . Công_chức tham_gia đào_tạo , bồi_dưỡng ph"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_50",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 50,
+    "preview": "Điều 50 . Điều_động công_chức 1 . Việc điều_động công_chức phải căn_cứ vào yêu_cầu nhiệm_vụ và phẩm_chất chính_trị , đạo"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_51",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 51,
+    "preview": "Điều 51 . Bổ_nhiệm công_chức giữ chức_vụ lãnh_đạo , quản_lý 1 . Việc bổ_nhiệm công_chức giữ chức_vụ lãnh_đạo , quản_lý p"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_52",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 52,
+    "preview": "Điều 52 . Luân_chuyển công_chức 1 . Căn_cứ vào yêu_cầu nhiệm_vụ , quy_hoạch , kế_hoạch sử_dụng công_chức , công_chức lãn"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_53",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 53,
+    "preview": "Điều 53 . Biệt_phái công_chức 1 . Cơ_quan , tổ_chức , đơn_vị quản_lý công_chức biệt_phái công_chức đến làm_việc ở cơ_qua"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_54",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 54,
+    "preview": "Điều 54 . Từ_chức hoặc miễn_nhiệm đối_với công_chức 1 . Công_chức lãnh_đạo , quản_lý có_thể từ_chức hoặc miễn_nhiệm tron"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_55",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 55,
+    "preview": "Điều 55 . Mục_đích đánh_giá công_chức Đánh_giá công_chức để làm rõ phẩm_chất chính_trị , đạo_đức , năng_lực , trình_độ c"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_56",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 56,
+    "preview": "Điều 56 . Nội_dung đánh_giá công_chức 1 . Công_chức được đánh_giá theo các nội_dung sau đây : a ) Chấp_hành đường_lối , "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_57",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 57,
+    "preview": "Điều 57 . Trách_nhiệm đánh_giá công_chức 1 . Người đứng đầu_cơ_quan , tổ_chức , đơn_vị sử_dụng công_chức có trách_nhiệm "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_58",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 58,
+    "preview": "Điều 58 . Phân_loại đánh_giá công_chức 1 . Căn_cứ vào kết_quả đánh_giá , công_chức được phân_loại đánh_giá theo các mức "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_59",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 59,
+    "preview": "Điều 59 . Thôi_việc đối_với công_chức 1 . Công_chức được hưởng chế_độ thôi_việc nếu thuộc một trong các trường_hợp sau đ"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_60",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 60,
+    "preview": "Điều 60 . Nghỉ hưu đối_với công_chức 1 . Công_chức được nghỉ hưu theo quy_định của Bộ_luật lao_động . 2 . Trước 06 tháng"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_61",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 61,
+    "preview": "Điều 61 . Chức_vụ , chức_danh cán_bộ , công_chức cấp xã 1 . Cán_bộ , công_chức cấp xã quy_định tại khoản 3 Điều 4 của Lu"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_62",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 62,
+    "preview": "Điều 62 . Nghĩa_vụ , quyền của cán_bộ , công_chức cấp xã 1 . Thực_hiện các nghĩa_vụ , quyền quy_định tại Luật này , quy_"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_63",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 63,
+    "preview": "Điều 63 . Bầu_cử , tuyển_dụng , đào_tạo , bồi_dưỡng cán_bộ , công_chức cấp xã 1 . Việc bầu_cử cán_bộ cấp xã được thực_hi"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_64",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 64,
+    "preview": "Điều 64 . Đánh_giá , phân_loại , xin thôi làm nhiệm_vụ , từ_chức , miễn_nhiệm , thôi_việc , nghỉ hưu đối_với cán_bộ , cô"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_65",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 65,
+    "preview": "Điều 65 . Nội_dung quản_lý cán_bộ , công_chức 1 . Nội_dung quản_lý cán_bộ , công_chức bao_gồm : a ) Ban_hành và tổ_chức "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_66",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 66,
+    "preview": "Điều 66 . Thẩm_quyền quyết_định biên_chế cán_bộ , công_chức 1 . Thẩm_quyền quyết_định biên_chế cán_bộ được thực_hiện the"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_67",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 67,
+    "preview": "Điều 67 . Thực_hiện quản_lý cán_bộ , công_chức 1 . Việc quản_lý cán_bộ , công_chức được thực_hiện theo quy_định của Luật"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_68",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 68,
+    "preview": "Điều 68 . Chế_độ báo_cáo về công_tác quản_lý cán_bộ , công_chức 1 . Hàng năm , Chính_phủ báo_cáo Quốc_hội về công_tác qu"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_69",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 69,
+    "preview": "Điều 69 . Quản_lý hồ_sơ cán_bộ , công_chức 1 . Cơ_quan , tổ_chức , đơn_vị có thẩm_quyền chịu trách_nhiệm quản_lý hồ_sơ c"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_70",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 70,
+    "preview": "Điều 70 . Công_sở 1 . Công_sở là trụ_sở làm_việc của cơ_quan của Đảng Cộng_sản Việt_Nam , Nhà_nước , tổ_chức chính_trị-x"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_71",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 71,
+    "preview": "Điều 71 . Nhà ở công_vụ 1 . Nhà ở công_vụ do Nhà_nước đầu_tư xây_dựng để cán_bộ , công_chức được điều_động , luân_chuyển"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_72",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 72,
+    "preview": "Điều 72 . Trang_thiết_bị làm_việc trong công_sở 1 . Nhà_nước bảo_đảm trang_thiết_bị làm_việc trong công_sở để phục_vụ_vi"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_73",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 73,
+    "preview": "Điều 73 . Phương_tiện đi_lại để thi_hành công_vụ Nhà_nước bố_trí phương_tiện đi_lại cho cán_bộ , công_chức để thi_hành c"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_74",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 74,
+    "preview": "Điều 74 . Phạm_vi thanh_tra công_vụ 1 . Thanh_tra việc thực_hiện nhiệm_vụ , quyền_hạn của cán_bộ , công_chức theo quy_đị"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_75",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 75,
+    "preview": "Điều 75 . Thực_hiện thanh_tra công_vụ 1 . Thanh_tra bộ , Thanh_tra sở , Thanh_tra tỉnh , Thanh_tra huyện trong phạm_vi n"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_76",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 76,
+    "preview": "Điều 76 . Khen_thưởng cán_bộ , công_chức 1 . Cán_bộ , công_chức có thành_tích trong công_vụ thì được khen_thưởng theo qu"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_77",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 77,
+    "preview": "Điều 77 . Miễn_trách_nhiệm đối_với cán_bộ , công_chức 1 . Phải chấp_hành quyết_định trái pháp_luật của cấp trên nhưng đã"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_78",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 78,
+    "preview": "Điều 78 . Các hình_thức kỷ_luật đối_với cán_bộ 1 . Cán_bộ vi_phạm_quy_định của Luật này và các quy_định khác của pháp_lu"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_79",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 79,
+    "preview": "Điều 79 . Các hình_thức kỷ_luật đối_với công_chức 1 . Công_chức vi_phạm_quy_định của Luật này và các quy_định khác của p"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_80",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 80,
+    "preview": "Điều 80 . Thời_hiệu , thời_hạn xử_lý kỷ_luật 1 . Thời_hiệu xử_lý kỷ_luật là thời_hạn do Luật này quy_định mà khi hết thờ"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_81",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 81,
+    "preview": "Điều 81 . Tạm đình_chỉ công_tác đối_với cán_bộ , công_chức 1 . Cơ_quan , tổ_chức , đơn_vị quản_lý cán_bộ , công_chức có_"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_82",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 82,
+    "preview": "Điều 82 . Các quy_định khác liên_quan đến cán_bộ , công_chức bị kỷ_luật 1 . Cán_bộ , công_chức bị khiển_trách hoặc cảnh_"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_83",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 83,
+    "preview": "Điều 83 . Quản_lý hồ_sơ khen_thưởng , kỷ_luật cán_bộ , công_chức Việc khen_thưởng , kỷ_luật cán_bộ , công_chức được lưu "
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_84",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 84,
+    "preview": "Điều 84 . Áp_dụng quy_định của Luật cán_bộ , công_chức đối_với các đối_tượng khác 1 . Cơ_quan có thẩm_quyền của Đảng Cộn"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_85",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 85,
+    "preview": "Điều 85 . Điều_khoản chuyển_tiếp đối_với những người làm_việc trong đơn_vị sự_nghiệp công_lập Các quy_định của pháp_luật"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_86",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 86,
+    "preview": "Điều 86 . Hiệu_lực thi_hành 1 . Luật này có hiệu_lực thi_hành từ ngày 01 tháng 01 năm 2010 . 2 . Pháp_lệnh cán_bộ , công"
+  },
+  {
+    "id": "luat_can_bo_cong_chuc_dieu_87",
+    "source": "luat_can_bo_cong_chuc",
+    "article_num": 87,
+    "preview": "Điều 87 . Quy_định chi_tiết và hướng_dẫn thi_hành Ủy_ban thường_vụ Quốc_hội , Chính_phủ và các cơ_quan khác có thẩm_quyề"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_1",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 1,
+    "preview": "Điều 1 . Ban_hành kèm theo Nghị_định này Điều_lệ Bảo_hiểm_y_tế ."
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_2",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 2,
+    "preview": "Điều 2 . Nghị_định này có hiệu_lực thi_hành kể từ ngày 01 tháng 7 năm 2005 và thay_thế Nghị_định số 58/1998/NĐ-CP ngày 1"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_3",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 3,
+    "preview": "Điều 3 . Bộ Y_tế chủ_trì , phối_hợp với Bộ Tài_chính và các Bộ , ngành liên_quan hướng_dẫn thi_hành Nghị_định này ."
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_4",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 4,
+    "preview": "Điều 4 . Các Bộ_trưởng , Thủ_trưởng cơ_quan ngang Bộ , Thủ_trưởng cơ_quan thuộc Chính_phủ , Chủ_tịch Ủy_ban nhân_dân các"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_2_2",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 2,
+    "preview": "Điều 2 . Giải_thích từ_ngữ Trong Điều_lệ này , các thuật_ngữ dưới đây được hiểu như sau : 1 . Bảo_hiểm_y_tế bắt_buộc là "
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_3_2",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 3,
+    "preview": "Điều 3 . Đối_tượng thực_hiện bảo_hiểm_y_tế bắt_buộc Bảo_hiểm_y_tế bắt_buộc được áp_dụng đối_với những đối_tượng sau : 1 "
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_4_2",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 4,
+    "preview": "Điều 4 . Đối_tượng thực_hiện bảo_hiểm_y_tế tự_nguyện Bảo_hiểm_y_tế tự_nguyện được áp_dụng đối_với mọi đối_tượng có nhu_c"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_5",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 5,
+    "preview": "Điều 5 . Quỹ_Bảo_hiểm_y_tế 1 . Quỹ bảo_hiểm_y_tế được hình_thành từ các nguồn sau : a ) Tiền thu phí bảo_hiểm_y_tế do ng"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_6",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 6,
+    "preview": "Điều 6 . Thẻ bảo_hiểm_y_tế 1 . Thẻ bảo_hiểm_y_tế được cấp cho người tham_gia_bảo_hiểm_y_tế . Thẻ được thiết_kế để dễ nhậ"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_7",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 7,
+    "preview": "Điều 7 . Phạm_vi quyền_lợi của người tham_gia_bảo_hiểm_y_tế bắt_buộc 1 . Khám bệnh , chẩn_đoán , điều_trị và phục_hồi ch"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_8",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 8,
+    "preview": "Điều 8 . Thanh_toán chi_phí khám , chữa bệnh của người tham_gia_bảo_hiểm_y_tế bắt_buộc 1 . Chi_phí khám , chữa bệnh của "
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_9",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 9,
+    "preview": "Điều 9 . Cơ_sở khám , chữa bệnh bảo_hiểm_y_tế 1 . Bộ Y_tế quy_định tiêu_chuẩn chuyên_môn kỹ_thuật của cơ_sở y_tế đủ điều"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_10",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 10,
+    "preview": "Điều 10 . Đăng_ký khám , chữa bệnh bảo_hiểm_y_tế 1 . Người có thẻ bảo_hiểm_y_tế được lựa_chọn cơ_sở y_tế để đăng_ký khám"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_11",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 11,
+    "preview": "Điều 11 . Thanh_toán trong các trường_hợp người có thẻ bảo_hiểm_y_tế khám , chữa bệnh theo yêu_cầu ; khám , chữa bệnh tạ"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_12",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 12,
+    "preview": "Điều 12 . Các trường_hợp không được hưởng quyền_lợi bảo_hiểm_y_tế 1 . Điều_trị bệnh phong , thuốc đặc_hiệu điều_trị các "
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_13",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 13,
+    "preview": "Điều 13 . Hình_thức thanh_toán chi_phí khám , chữa bệnh bảo_hiểm_y_tế 1 . Tổ_chức bảo_hiểm_xã_hội thanh_toán với các cơ_"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_14",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 14,
+    "preview": "Điều 14 . Thanh_toán giữa cơ_quan bảo_hiểm_xã_hội và cơ_sở khám , chữa bệnh 1 . Các hình_thức thanh_toán giữa tổ_chức bả"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_15",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 15,
+    "preview": "Điều 15 . Phí bảo_hiểm_y_tế và trách_nhiệm đóng bảo_hiểm_y_tế bắt_buộc 1 . Các đối_tượng quy_định tại các khoản 1và khoả"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_16",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 16,
+    "preview": "Điều 16 . Phương_thức đóng bảo_hiểm_y_tế 1 . Cơ_quan , doanh_nghiệp , tổ_chức , cá_nhân ( sau đây gọi là người sử_dụng l"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_17",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 17,
+    "preview": "Điều 17 . Quyền và trách_nhiệm của người tham_gia_bảo_hiểm_y_tế 1 . Người có thẻ bảo_hiểm_y_tế có quyền : a ) Được khám "
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_18",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 18,
+    "preview": "Điều 18 . Quyền và trách_nhiệm của người sử_dụng lao_động 1 . Người sử_dụng lao_động có quyền : a ) Từ_chối thực_hiện nh"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_19",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 19,
+    "preview": "Điều 19 . Quyền và trách_nhiệm của tổ_chức bảo_hiểm_xã_hội 1 . Tổ_chức bảo_hiểm_xã_hội có quyền : a ) Yêu_cầu người sử_d"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_20",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 20,
+    "preview": "Điều 20 . Quyền và trách_nhiệm của cơ_sở khám , chữa bệnh bảo_hiểm_y_tế 1 . Cơ_sở khám , chữa bệnh có quyền : a ) Yêu_cầ"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_21",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 21,
+    "preview": "Điều 21 . Quản_lý và sử_dụng Quỹ_Bảo_hiểm_y_tế 1 . Quỹ_Bảo_hiểm_y_tế là quỹ thành_phần của Quỹ_Bảo_hiểm_xã_hội , được qu"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_22",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 22,
+    "preview": "Điều 22 . Chế_độ kế_toán và báo_cáo tài_chính Tổ_chức bảo_hiểm_xã_hội phải thực_hiện chế_độ kế_toán và chế_độ báo_cáo tà"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_23",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 23,
+    "preview": "Điều 23 . Công_khai tài_chính Sau khi kết_thúc năm tài_chính , tổ_chức bảo_hiểm_xã_hội phải công_bố các báo_cáo tài_chín"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_24",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 24,
+    "preview": "Điều 24 . Mục_tiêu Bảo_hiểm_y_tế tự_nguyện quy_định tại Điều_lệ này nhằm thực_hiện chính_sách xã_hội trong khám , chữa b"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_25",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 25,
+    "preview": "Điều 25 . Đối_tượng , nguyên_tắc 1 . Bảo_hiểm_y_tế tự_nguyện được áp_dụng đối_với mọi đối_tượng có nhu_cầu_tự_nguyện tha"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_26",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 26,
+    "preview": "Điều 26 . Hình_thức , quyền_lợi và mức phí bảo_hiểm_y_tế tự_nguyện 1 . Các loại_hình bảo_hiểm_y_tế tự_nguyện bao_gồm : a"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_27",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 27,
+    "preview": "Điều 27 . Quản_lý Quỹ_Bảo_hiểm_y_tế tự_nguyện 1 . Số thu bảo_hiểm_y_tế tự_nguyện được hạch_toán , phân_bổ và sử_dụng phù"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_28",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 28,
+    "preview": "Điều 28 . Hệ_thống tổ_chức 1 . Thủ_tướng Chính_phủ quy_định hệ_thống tổ_chức thực_hiện chính_sách bảo_hiểm_y_tế theo Điề"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_29",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 29,
+    "preview": "Điều 29 . Quản_lý nhà_nước về bảo_hiểm_y_tế 1 . Chính_phủ thống_nhất quản_lý nhà_nước về bảo_hiểm_y_tế trên phạm_vi cả n"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_30",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 30,
+    "preview": "Điều 30 . Khen_thưởng Tổ_chức , cá_nhân có thành_tích trong sự_nghiệp bảo_hiểm_y_tế được khen_thưởng theo quy_định của p"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_31",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 31,
+    "preview": "Điều 31 . Giải_quyết khiếu_nại , tố_cáo 1 . Tổ_chức , cá_nhân có quyền khiếu_nại , tố_cáo hành_vi vi_phạm các quy_định c"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_32",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 32,
+    "preview": "Điều 32 . Xử_lý vi_phạm 1 . Người nào vi_phạm các quy_định của Điều_lệ Bảo_hiểm_y_tế thì tùy theo mức_độ vi_phạm sẽ bị x"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_33",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 33,
+    "preview": "Điều 33 . Kiểm_tra , thanh_tra về bảo_hiểm_y_tế 1 . Cơ_sở khám , chữa bệnh bảo_hiểm_y_tế , Quỹ_Bảo_hiểm_y_tế , tổ_chức b"
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_34",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 34,
+    "preview": "Điều 34 . Hiệu_lực thi_hành 1 . Điều_lệ này có hiệu_lực thi_hành theo hiệu_lực của Nghị_định ban_hành Điều_lệ này . 2 . "
+  },
+  {
+    "id": "nghi_dinh_bhyt_dieu_35",
+    "source": "nghi_dinh_bhyt",
+    "article_num": 35,
+    "preview": "Điều 35 . Hướng_dẫn thi_hành Bộ Y_tế chủ_trì , phối_hợp với các Bộ , ngành liên_quan hướng_dẫn việc thi_hành Điều_lệ này"
+  }
+]
