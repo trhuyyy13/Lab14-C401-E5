@@ -68,6 +68,9 @@ python main.py
 
 # 4. Kiểm tra định dạng trước khi nộp
 python check_lab.py
+
+# 5. Mở dashboard theo dõi benchmark, log, biểu đồ
+streamlit run dashboard.py
 ```
 
 ---
