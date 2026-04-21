@@ -8,6 +8,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+from text_processing import split_semantic_chunks
+
 try:
     from openai import OpenAI  # type: ignore[import-not-found]
 except Exception:
@@ -80,77 +82,21 @@ class MainAgent:
         return [padded[i:i + n] for i in range(len(padded) - n + 1)]
 
     def _chunk_text(self, text: str, source_name: str) -> List[Dict]:
-        clean_text = " ".join((text or "").split())
-        article_matches = list(re.finditer(r"(?=Điều\s+\d+\s*\.)", clean_text))
-        sections: List[str] = []
-
-        if article_matches:
-            starts = [m.start() for m in article_matches]
-            if starts[0] > 0:
-                sections.append(clean_text[:starts[0]].strip())
-            for i, start in enumerate(starts):
-                end = starts[i + 1] if i + 1 < len(starts) else len(clean_text)
-                section = clean_text[start:end].strip()
-                if section:
-                    sections.append(section)
-        else:
-            sections = [clean_text]
-
+        semantic_chunks = split_semantic_chunks(text, source_name, max_chars=self.chunk_size)
         chunks: List[Dict] = []
-        idx = 1
-        for section in sections:
-            if not section:
-                continue
-            if len(section) <= self.chunk_size:
-                chunks.append(
-                    {
-                        "chunk_index": idx - 1,
-                        "id": f"{source_name}#chunk_{idx:03d}",
-                        "source": source_name,
-                        "text": section,
-                        "tokens": self._tokenize(section),
-                        "normalized_text": self._normalize_text(section),
-                        "char_ngrams": self._char_ngrams(section),
-                    }
-                )
-                idx += 1
-                continue
-
-            sentences = re.split(r"(?<=[.!?])\s+", section)
-            buffer = ""
-            for sentence in sentences:
-                candidate = f"{buffer} {sentence}".strip(
-                ) if buffer else sentence
-                if len(candidate) <= self.chunk_size:
-                    buffer = candidate
-                else:
-                    if buffer:
-                        chunks.append(
-                            {
-                                "chunk_index": idx - 1,
-                                "id": f"{source_name}#chunk_{idx:03d}",
-                                "source": source_name,
-                                "text": buffer.strip(),
-                                "tokens": self._tokenize(buffer),
-                                "normalized_text": self._normalize_text(buffer),
-                                "char_ngrams": self._char_ngrams(buffer),
-                            }
-                        )
-                        idx += 1
-                    buffer = sentence
-            if buffer:
-                chunks.append(
-                    {
-                        "chunk_index": idx - 1,
-                        "id": f"{source_name}#chunk_{idx:03d}",
-                        "source": source_name,
-                        "text": buffer.strip(),
-                        "tokens": self._tokenize(buffer),
-                        "normalized_text": self._normalize_text(buffer),
-                        "char_ngrams": self._char_ngrams(buffer),
-                    }
-                )
-                idx += 1
+        for idx, chunk in enumerate(semantic_chunks, start=1):
+            content = chunk["text"]
+            chunks.append(
+                {
+                    "chunk_index": idx - 1,
+                    "id": chunk["id"],
+                    "source": chunk["source"],
+                    "text": content,
+                    "tokens": self._tokenize(content),
+                    "normalized_text": self._normalize_text(content),
+                    "char_ngrams": self._char_ngrams(content),
+                }
+            )
         return chunks
 
     def _embed_texts(self, texts: List[str]) -> List[List[float]]:

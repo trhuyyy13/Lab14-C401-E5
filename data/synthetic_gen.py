@@ -3,8 +3,15 @@ import json
 import os
 import random
 import re
+import sys
 from pathlib import Path
 from typing import Any, Dict, List
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from text_processing import clean_raw_text, split_semantic_chunks
 
 try:
     from openai import AsyncOpenAI  # type: ignore[import-not-found]
@@ -31,65 +38,8 @@ CASE_PLAN = [
 
 
 def _split_semantic_chunks(text: str, source_name: str, max_chars: int = 2500) -> List[Dict[str, str]]:
-    clean_text = " ".join(text.split())
-    article_matches = list(re.finditer(r"(?=Điều\s+\d+\s*\.)", clean_text))
-    sections: List[str] = []
-
-    if article_matches:
-        starts = [m.start() for m in article_matches]
-        if starts[0] > 0:
-            sections.append(clean_text[:starts[0]].strip())
-        for i, start in enumerate(starts):
-            end = starts[i + 1] if i + 1 < len(starts) else len(clean_text)
-            section = clean_text[start:end].strip()
-            if section:
-                sections.append(section)
-    else:
-        sections = [clean_text]
-
-    chunks: List[Dict[str, str]] = []
-    idx = 1
-    for section in sections:
-        if not section:
-            continue
-        if len(section) <= max_chars:
-            chunks.append(
-                {
-                    "id": f"{source_name}#chunk_{idx:03d}",
-                    "source": source_name,
-                    "text": section,
-                }
-            )
-            idx += 1
-            continue
-
-        sentences = re.split(r"(?<=[.!?])\s+", section)
-        buffer = ""
-        for sentence in sentences:
-            if len(buffer) + len(sentence) + 1 <= max_chars:
-                buffer = f"{buffer} {sentence}".strip()
-            else:
-                if buffer:
-                    chunks.append(
-                        {
-                            "id": f"{source_name}#chunk_{idx:03d}",
-                            "source": source_name,
-                            "text": buffer.strip(),
-                        }
-                    )
-                    idx += 1
-                buffer = sentence
-        if buffer:
-            chunks.append(
-                {
-                    "id": f"{source_name}#chunk_{idx:03d}",
-                    "source": source_name,
-                    "text": buffer.strip(),
-                }
-            )
-            idx += 1
-
-    print(f"Đã chia {source_name} thành {len(chunks)} chunks semantic.")
+    chunks = split_semantic_chunks(text, source_name, max_chars=max_chars)
+    print(f"Đã clean và chia {source_name} thành {len(chunks)} chunks semantic.")
     return chunks
 
 
@@ -256,8 +206,8 @@ def _fallback_case(spec: Dict[str, Any], chunks: List[Dict[str, str]]) -> Dict[s
 
     return {
         "id": spec["id"],
-        "question": question,
-        "expected_answer": expected_answer,
+        "question": clean_raw_text(question),
+        "expected_answer": clean_raw_text(expected_answer),
         "expected_retrieval_ids": expected_ids,
         "metadata": {
             "difficulty": spec["difficulty"],

@@ -2,22 +2,22 @@
   "metadata": {
     "version": "Agent_V2_Optimized",
     "total": 50,
-    "timestamp": "2026-04-21 17:19:18"
+    "timestamp": "2026-04-21 17:29:00"
   },
   "metrics": {
-    "retrieval_accuracy": 0.24,
-    "hit_rate": 0.5,
-    "average_hit_rate": 0.5,
-    "final_answer_accuracy": 0.24322,
-    "hallucination_rate": 0.21,
-    "avg_score": 3.4244,
-    "average_score": 3.4244,
-    "latency": 0.012989606000010099,
-    "avg_latency": 0.012989606000010099,
-    "cost": 0.00187425,
-    "average_cost": 3.7485e-05,
-    "user_satisfaction_score": 3.497,
-    "mrr": 0.36333333333333334,
-    "agreement_rate": 0.9495999999999999
+    "retrieval_accuracy": 0.76,
+    "hit_rate": 0.8,
+    "average_hit_rate": 0.8,
+    "final_answer_accuracy": 0.71224,
+    "hallucination_rate": 0.16,
+    "avg_score": 4.3953999999999995,
+    "average_score": 4.3953999999999995,
+    "latency": 0.018129599999992932,
+    "avg_latency": 0.018129599999992932,
+    "cost": 0.0040086,
+    "average_cost": 8.0172e-05,
+    "user_satisfaction_score": 4.5648,
+    "mrr": 0.78,
+    "agreement_rate": 0.9411999999999999
   }
 }
