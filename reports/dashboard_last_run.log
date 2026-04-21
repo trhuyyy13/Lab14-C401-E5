@@ -1,0 +1,78 @@
+
+
+=== 2026-04-21T16:54:12 ===
+luat-can-bo-cong-chuc.txt: 87 chunks
+nghi-dinh-ve-viec-ban-hanh-dieu-le.txt: 36 chunks
+Total chunks: 123
+Done! Saved 80 cases to data\golden_set.jsonl
+
+=== 2026-04-21T16:54:29 ===
+Traceback (most recent call last):
+File "C:\Users\DUNG\Desktop\15Day\Lab14-C401-E5\check_lab.py", line 63, in <module>
+validate_lab()
+File "C:\Users\DUNG\Desktop\15Day\Lab14-C401-E5\check_lab.py", line 5, in validate_lab
+print("\U0001f50d \u0110ang ki\u1ec3m tra \u0111\u1ecbnh d\u1ea1ng bài n\u1ed9p...")
+return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+=== 2026-04-21T16:55:12 ===
+Traceback (most recent call last):
+File "C:\Users\DUNG\Desktop\15Day\Lab14-C401-E5\check_lab.py", line 63, in <module>
+validate_lab()
+File "C:\Users\DUNG\Desktop\15Day\Lab14-C401-E5\check_lab.py", line 5, in validate_lab
+print("\U0001f50d \u0110ang ki\u1ec3m tra \u0111\u1ecbnh d\u1ea1ng bài n\u1ed9p...")
+return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+=== 2026-04-21T16:56:43 ===
+============================================================
+AI EVALUATION FACTORY - REGRESSION BENCHMARK
+Base Version:      Agent_V1_Base (top_k=1)
+Candidate Version: Agent_V2_Optimized (top_k=3)
+Judge Models:      gpt-4o & gpt-4o-mini (Consensus)
+============================================================
+Starting Benchmark for Agent_V1_Base...
+Starting Benchmark for Agent_V2_Optimized...
+--- COMPARISON RESULTS (REGRESSION) ---
+V1 Score: 4.0813749999999995
+V2 Score: 4.091125
+Delta: +0.01
+Latency Ratio (V2/V1): 1.21
+Cost Ratio (V2/V1): 1.00
+OK: APPROVE RELEASE
+
+=== 2026-04-21T17:02:43 ===
+luat-can-bo-cong-chuc.txt: 87 chunks
+nghi-dinh-ve-viec-ban-hanh-dieu-le.txt: 36 chunks
+Total chunks: 123
+Done! Saved 80 cases to data\golden_set.jsonl
+
+============================================================
+AI EVALUATION FACTORY - REGRESSION BENCHMARK
+Base Version:      Agent_V1_Base (top_k=1)
+Candidate Version: Agent_V2_Optimized (top_k=3)
+Judge Models:      gpt-4o & gpt-4o-mini (Consensus)
+============================================================
+Starting Benchmark for Agent_V1_Base...
+Starting Benchmark for Agent_V2_Optimized...
+--- COMPARISON RESULTS (REGRESSION) ---
+V1 Score: 4.076625
+V2 Score: 4.0825000000000005
+Delta: +0.01
+Latency Ratio (V2/V1): 1.23
+Cost Ratio (V2/V1): 1.00
+OK: APPROVE RELEASE
+
+[INFO] Validating lab submission format...
+FOUND: reports/summary.json
+FOUND: reports/benchmark_results.json
+FOUND: analysis/failure_analysis.md
+--- Quick Stats ---
+Total cases: 80
+Average score: 4.08
+OK: Found Retrieval Metrics (Hit Rate: 97.5%)
+OK: Found Multi-Judge Metrics (Agreement Rate: 93.9%)
+OK: Found Agent version info (Regression Mode)
+[SUCCESS] Lab is ready for grading!
