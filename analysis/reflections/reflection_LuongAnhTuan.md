@@ -1,27 +1,29 @@
-# Reflection - Luo Anh Tuan
+# Reflection - Lương Anh Tuấn
 
-## 1. Phan cong va dong gop ky thuat
-- Tham gia refactor cac module quan trong de code gon hon va de mo rong: tach helper cho benchmark summary, fallback payload khi test case loi, va helper cho judge heuristic.
-- Dong bo luong du lieu theo codebase moi: chuyen tat ca diem fallback ve `data.txt`, loai bo bien `raw_repo_path` khong con phu hop.
-- Cap nhat script ho tro dataset/chunk (`data/print_chunks.py`, `data/synthetic_gen.py`) de tranh mismatch signature va loi runtime.
-- Ho tro kiem tra on dinh sau thay doi bang cach chay check loi va ra soat lai cac file tham chieu ten du lieu cu.
+## 1. Phân công và đóng góp kỹ thuật
+- Tham gia refactor các module quan trọng để code gọn hơn và dễ mở rộng: tách helper cho benchmark summary, fallback payload khi test case lỗi, và helper cho judge heuristic.  
+- Đồng bộ luồng dữ liệu theo codebase mới: chuyển tất cả điểm fallback về `data.txt`, loại bỏ biến `raw_repo_path` không còn phù hợp.  
+- Cập nhật script hỗ trợ dataset/chunk (`data/print_chunks.py`, `data/synthetic_gen.py`) để tránh mismatch signature và lỗi runtime.  
+- Hỗ trợ kiểm tra ổn định sau thay đổi bằng cách chạy check lỗi và rà soát lại các file tham chiếu tên dữ liệu cũ.  
 
-## 2. Kien thuc ky thuat rut ra
-- Refactor hieu qua la refactor giam lap va tang do ro rang, khong thay doi output nghiep vu.
-- Khi doi ten file du lieu, can scan toan repo de dam bao loader, metadata, helper script va thong bao loi deu cap nhat dong bo.
-- Trong pipeline danh gia, co fallback ro rang se giup benchmark tiep tuc tao report du gap ngoai le, thay vi vo toan bo luong.
-- Tach logic tinh metric vao mot ham rieng giup de test, de review va de sua cong thuc ma khong anh huong nhieu noi.
+## 2. Kiến thức kỹ thuật rút ra
+- Refactor hiệu quả là refactor giảm lặp và tăng độ rõ ràng, không thay đổi output nghiệp vụ.  
+- Khi đổi tên file dữ liệu, cần scan toàn repo để đảm bảo loader, metadata, helper script và thông báo lỗi đều cập nhật đồng bộ.  
+- Trong pipeline đánh giá, có fallback rõ ràng sẽ giúp benchmark tiếp tục tạo report dù gặp ngoại lệ, thay vì vỡ toàn bộ luồng.  
+- Tách logic tính metric vào một hàm riêng giúp dễ test, dễ review và dễ sửa công thức mà không ảnh hưởng nhiều nơi.  
 
-## 3. Van de gap phai va cach xu ly
-- **Van de 1:** Code van con tham chieu file du lieu cu sau khi doi ten.
-  - *Xu ly:* Dung tim kiem toan workspace va cap nhat lai duong dan tai Agent, SDG va metadata source.
-- **Van de 2:** Sau khi doi signature ham load chunk, call site cu bi sai so tham so.
-  - *Xu ly:* Chuan hoa ham `load_and_chunk_real_data` va cap nhat tat ca noi goi de chi nhan mot `source_file`.
-- **Van de 3:** Reflection can phan anh dung hien trang codebase sau refactor, khong dung noi dung cu.
-  - *Xu ly:* Viet lai reflection theo thay doi moi, neu ro bai hoc ky thuat va buoc nang cap tiep theo.
+## 3. Vấn đề gặp phải và cách xử lý
+- **Vấn đề 1:** Code vẫn còn tham chiếu file dữ liệu cũ sau khi đổi tên.  
+  - *Xử lý:* Dùng tìm kiếm toàn workspace và cập nhật lại đường dẫn tại Agent, SDG và metadata source.  
 
-## 4. Ke hoach cai tien tiep theo
-- Bo sung test nho cho cac helper moi (`_compute_summary`, fallback payload, helper thong ke) de giam rui ro regression.
-- Tach cau hinh ten file du lieu va cac nguong release gate thanh constant/env de tranh hard-code phan tan.
-- Nang cap retrieval tu lexical overlap len hybrid retrieval (BM25 + embedding) de on dinh hon voi edge/adversarial.
-- Chuan hoa them logging thong nhat de de doi chieu giua benchmark result va failure analysis.
+- **Vấn đề 2:** Sau khi đổi signature hàm load chunk, call site cũ bị sai số tham số.  
+  - *Xử lý:* Chuẩn hóa hàm `load_and_chunk_real_data` và cập nhật tất cả nơi gọi để chỉ nhận một `source_file`.  
+
+- **Vấn đề 3:** Reflection cần phản ánh đúng hiện trạng codebase sau refactor, không dùng nội dung cũ.  
+  - *Xử lý:* Viết lại reflection theo thay đổi mới, nêu rõ bài học kỹ thuật và bước nâng cấp tiếp theo.  
+
+## 4. Kế hoạch cải tiến tiếp theo
+- Bổ sung test nhỏ cho các helper mới (`_compute_summary`, fallback payload, helper thống kê) để giảm rủi ro regression.  
+- Tách cấu hình tên file dữ liệu và các ngưỡng release gate thành constant/env để tránh hard-code phân tán.  
+- Nâng cấp retrieval từ lexical overlap lên hybrid retrieval (BM25 + embedding) để ổn định hơn với edge/adversarial cases.  
+- Chuẩn hóa thêm logging thống nhất để dễ đối chiếu giữa benchmark result và failure analysis.  
