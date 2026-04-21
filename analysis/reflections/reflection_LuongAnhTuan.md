@@ -22,8 +22,8 @@ Bằng chứng code:
 - `data/print_chunks.py`: gọi `load_and_chunk_real_data(repo / "data.txt")`.
 
 ### 1.3. Bằng chứng commit
-- `12cebc79c86dfffd674b3e4ab2dfe788bb5eaaaf`: commit chính sửa các module `agent`, `engine`, `main.py`, `data/*.py`, `analysis/*`.
-- `fcaddcda8b2b8e2c16291f948f02e773faeee658`: cập nhật kết quả benchmark và summary sau khi chạy lại với code mới.
+- `12cebc79c86dfffd674b3e4ab2dfe788bb5eaaaf` (branch: `tuan`, remote: `origin/tuan`): commit chính sửa các module `agent`, `engine`, `main.py`, `data/*.py`, `analysis/*`.
+- `fcaddcda8b2b8e2c16291f948f02e773faeee658` (branch: `tuan`, remote: `origin/tuan`): cập nhật kết quả benchmark và summary sau khi chạy lại với code mới.
 
 ## 2. Chiều sâu kỹ thuật đã áp dụng
 
