@@ -1,29 +1,65 @@
 # Reflection - Lương Anh Tuấn
 
-## 1. Phân công và đóng góp kỹ thuật
-- Tham gia refactor các module quan trọng để code gọn hơn và dễ mở rộng: tách helper cho benchmark summary, fallback payload khi test case lỗi, và helper cho judge heuristic.  
-- Đồng bộ luồng dữ liệu theo codebase mới: chuyển tất cả điểm fallback về `data.txt`, loại bỏ biến `raw_repo_path` không còn phù hợp.  
-- Cập nhật script hỗ trợ dataset/chunk (`data/print_chunks.py`, `data/synthetic_gen.py`) để tránh mismatch signature và lỗi runtime.  
-- Hỗ trợ kiểm tra ổn định sau thay đổi bằng cách chạy check lỗi và rà soát lại các file tham chiếu tên dữ liệu cũ.  
+## 1. Đóng góp kỹ thuật và bằng chứng
 
-## 2. Kiến thức kỹ thuật rút ra
-- Refactor hiệu quả là refactor giảm lặp và tăng độ rõ ràng, không thay đổi output nghiệp vụ.  
-- Khi đổi tên file dữ liệu, cần scan toàn repo để đảm bảo loader, metadata, helper script và thông báo lỗi đều cập nhật đồng bộ.  
-- Trong pipeline đánh giá, có fallback rõ ràng sẽ giúp benchmark tiếp tục tạo report dù gặp ngoại lệ, thay vì vỡ toàn bộ luồng.  
-- Tách logic tính metric vào một hàm riêng giúp dễ test, dễ review và dễ sửa công thức mà không ảnh hưởng nhiều nơi.  
+### 1.1. Refactor benchmark pipeline
+- Tách helper tổng hợp metric `_compute_summary` để tránh lặp logic tính toán và dễ mở rộng hệ thống metric.
+- Thêm helper fallback `_default_failure_payload` trong runner để một test case lỗi không làm vỡ toàn bộ pipeline benchmark.
+- Tách helper heuristic trong judge `_heuristic_scores` để luôn có chế độ dự phòng khi không gọi được OpenAI API.
 
-## 3. Vấn đề gặp phải và cách xử lý
-- **Vấn đề 1:** Code vẫn còn tham chiếu file dữ liệu cũ sau khi đổi tên.  
-  - *Xử lý:* Dùng tìm kiếm toàn workspace và cập nhật lại đường dẫn tại Agent, SDG và metadata source.  
+Bằng chứng code:
+- `main.py`: `_compute_summary`, `_is_hard_gate_pass`, ghi `reports/summary.json` và `reports/benchmark_results.json`.
+- `engine/runner.py`: `_default_failure_payload`, `_build_result`, trạng thái pass/fail theo điểm judge.
+- `engine/llm_judge.py`: dùng 2 judge model, có agreement và conflict resolution.
 
-- **Vấn đề 2:** Sau khi đổi signature hàm load chunk, call site cũ bị sai số tham số.  
-  - *Xử lý:* Chuẩn hóa hàm `load_and_chunk_real_data` và cập nhật tất cả nơi gọi để chỉ nhận một `source_file`.  
+### 1.2. Đồng bộ luồng dữ liệu và script SDG/chunk
+- Chuẩn hóa luồng tạo chunk trong `load_and_chunk_real_data(source_file)`.
+- Cập nhật call-site in chunk list để khớp signature mới.
+- Duy trì nguồn dữ liệu thống nhất theo `data.txt` trong script dataset/chunk.
 
-- **Vấn đề 3:** Reflection cần phản ánh đúng hiện trạng codebase sau refactor, không dùng nội dung cũ.  
-  - *Xử lý:* Viết lại reflection theo thay đổi mới, nêu rõ bài học kỹ thuật và bước nâng cấp tiếp theo.  
+Bằng chứng code:
+- `data/synthetic_gen.py`: `def load_and_chunk_real_data(source_file: Path)`.
+- `data/print_chunks.py`: gọi `load_and_chunk_real_data(repo / "data.txt")`.
 
-## 4. Kế hoạch cải tiến tiếp theo
-- Bổ sung test nhỏ cho các helper mới (`_compute_summary`, fallback payload, helper thống kê) để giảm rủi ro regression.  
-- Tách cấu hình tên file dữ liệu và các ngưỡng release gate thành constant/env để tránh hard-code phân tán.  
-- Nâng cấp retrieval từ lexical overlap lên hybrid retrieval (BM25 + embedding) để ổn định hơn với edge/adversarial cases.  
-- Chuẩn hóa thêm logging thống nhất để dễ đối chiếu giữa benchmark result và failure analysis.  
+### 1.3. Bằng chứng commit
+- `12cebc79c86dfffd674b3e4ab2dfe788bb5eaaaf`: commit chính sửa các module `agent`, `engine`, `main.py`, `data/*.py`, `analysis/*`.
+- `fcaddcda8b2b8e2c16291f948f02e773faeee658`: cập nhật kết quả benchmark và summary sau khi chạy lại với code mới.
+
+## 2. Chiều sâu kỹ thuật đã áp dụng
+
+### 2.1. Retrieval metrics
+- Hit Rate: kiểm tra expected id có nằm trong top-k retrieved hay không (`calculate_hit_rate`).
+- MRR: lấy nghịch đảo thứ hạng tài liệu đúng đầu tiên (`calculate_mrr`).
+- Công thức: MRR = 1 / rank.
+
+### 2.2. Multi-judge và độ đồng thuận
+- Dùng 2 judge model (`gpt-4o-mini`, `gpt-4.1-mini`).
+- Agreement rate được tính theo độ lệch điểm của 2 judge:
+  `agreement = 1 - (abs(score_a - score_b) / 4)`.
+- Nếu chênh lệch > 1 thì dùng `conflict_penalty` để giảm rủi ro optimistic bias.
+
+### 2.3. Position bias
+- Có kiểm tra position bias bằng `length_delta_ratio` trong `check_position_bias`.
+- Ngưỡng cảnh báo bias: `delta > 0.6`.
+
+Lưu ý học thuật:
+- Hệ thống hiện tại chưa tính Cohen's Kappa. Đây là điểm cần bổ sung nếu muốn đẩy mạnh độ tin cậy phần đánh giá đa giám khảo.
+
+## 3. Vấn đề gặp phải và cách giải quyết
+
+### Vấn đề 1: Test case lỗi làm đứt pipeline
+- Triệu chứng: một exception có thể phá vỡ luồng benchmark.
+- Cách xử lý: bổ sung `_default_failure_payload` để trả payload an toàn, benchmark vẫn ghi report đầy đủ.
+
+### Vấn đề 2: Mismatch signature hàm load chunk
+- Triệu chứng: call-site script chunk/dataset sai tham số sau khi refactor.
+- Cách xử lý: thống nhất API `load_and_chunk_real_data(source_file)` và cập nhật nơi gọi.
+
+### Vấn đề 3: Đánh giá release cần rule rõ ràng
+- Triệu chứng: khó quyết định release nếu chỉ nhìn một metric.
+- Cách xử lý: dùng hard gate trong `main.py` với ngưỡng `hit_rate`, `agreement_rate`, `avg_latency_sec`.
+
+## 4. Tác động định lượng sau thay đổi
+- Regression score: V1 = 2.2323, V2 = 4.8182, delta = +2.59.
+- Pass rate benchmark hiện tại: 94/99 = 94.95%.
+- Retrieval hit rate và agreement rate đạt mức cao, release gate ở trạng thái APPROVE.
