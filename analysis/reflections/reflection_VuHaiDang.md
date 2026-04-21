@@ -5,7 +5,7 @@
 - Chuyển chunking từ kiểu độ dài sang regex theo Điều/Khoản để phù hợp văn bản pháp lý.
 - Tích hợp Multi-Judge theo hướng OpenAI và bổ sung Fallback Heuristic khi lỗi API hoặc timeout.
 - Trực tiếp tối ưu logic Agent V2 bằng kỹ thuật "Phân loại Intent Siêu tốc (Rule-based)" kết hợp "Stopwords Filter" để giải quyết dứt điểm các missing retrieval case và vượt mốc Latency < 2.0s của Release Gate.
-
+- Minh chứng commit : https://github.com/trhuyyy13/Lab14-C401-E5/commits/feature/vuhaidang/
 ## 2. Kiến thức kỹ thuật rút ra
 - MRR phụ thuộc mạnh vào từ nhiễu (noise/stop words). Nếu không filter stopwords tiếng Việt như "tôi", "ngoại lệ", "bỏ qua", bộ retrieve dạng Lexical sẽ push các chunk sai lên đầu.
 - Trải nghiệm bài toán đánh giá RAG: Có sự mâu thuẫn khốc liệt giữa tốc độ (LLM generation sinh tốn thời gian) và yêu cầu hệ thống (Latency < 2s). Nếu bắt buộc nhanh, ta phải thiết kế Hybrid phân rã Rule cho Edge/Adversarial.
