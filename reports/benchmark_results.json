@@ -1,0 +1,2348 @@
+[
+  {
+    "id": "case_001",
+    "test_case": "Theo quy định nào, các đối tượng bảo trợ xã hội được hưởng trợ cấp hàng tháng?",
+    "agent_response": "Các đối_tượng bảo_trợ xã_hội được hưởng trợ_cấp hàng tháng . Cán_bộ cấp xã có các chức_vụ sau đây : a ) Bí_thư , Phó_Bí_thư Đảng_ủy ; b ) Chủ_tịch , Phó_Chủ_tịch Hội_đồng nhân_dân ; c ) Chủ_tịch , Phó_Chủ_tịch Ủy_ban nhân_dân ; d ) Chủ_tịch Ủy_ban Mặt_trận Tổ_quốc Việt_Nam ; đ ) Bí_thư Đoàn_Thanh_niên Cộng_sản Hồ_Chí_Minh ; e ) Chủ_tịch Hội Liên_hiệp Phụ_nữ Việt_Nam ; g ) Chủ_tịch Hội Nông_dân Việt_Nam ( áp_dụng đối_với xã , phường , thị_trấn có hoạt_động nông , lâm , ngư , diêm nghiệp và có tổ_chức Hội Nông_dân Việt_Nam ) ; h ) Chủ_tịch Hội Cựu_chiến_binh Việt_Nam .",
+    "latency": 0.004556600000796607,
+    "cost": 6.6e-05,
+    "ragas": {
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.0,
+      "hallucination_rate": 0.5
+    },
+    "judge": {
+      "final_score": 3.0,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.0,
+        "gpt-4o-mini": 3.0
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.1,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_062",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_009",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_009"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_002",
+    "test_case": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế căn cứ vào văn bản nào và ngày tháng năm nào?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Người cao_tuổi từ 90 tuổi trở lên và người cao_tuổi theo quy_định tại Điều 6 của <NĐ rel=\"DaC\"> Nghị_định số 30/2002/NĐ-CP ngày 26 tháng 3 năm 2002 </NĐ> của Chính_phủ về quy_định và hướng_dẫn thi_hành một_số điều của <PL rel=\"none\"> Pháp_lệnh Người cao_tuổi </PL> .",
+    "latency": 0.009070899999642279,
+    "cost": 5.055e-05,
+    "ragas": {
+      "faithfulness": 0.462,
+      "relevancy": 0.462,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.462,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 4.38,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.5,
+        "gpt-4o-mini": 4.25
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.78,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_014",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_009"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_003",
+    "test_case": "Theo Điều 31, những quy định nào được áp dụng cho việc nghỉ hưu đối với cán bộ?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Cán_bộ được nghỉ hưu theo quy_định của <BL rel=\"DaC\"> Bộ_luật lao_động </BL> .",
+    "latency": 0.013325399999303045,
+    "cost": 2.865e-05,
+    "ragas": {
+      "faithfulness": 0.583,
+      "relevancy": 0.583,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.583,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 4.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.3,
+        "gpt-4o-mini": 4.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.57,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_032",
+      "Luật-Cán-bộ-công-chức.txt#chunk_061",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_032"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_004",
+    "test_case": "Theo Điều 73, phương tiện đi lại được bố trí cho ai để thi hành công vụ?",
+    "agent_response": "Phương_tiện đi_lại để thi_hành công_vụ Nhà_nước bố_trí phương_tiện đi_lại cho cán_bộ , công_chức để thi_hành công_vụ theo quy_định của pháp_luật về quản_lý , sử_dụng tài_sản nhà_nước ; trường_hợp không bố_trí được thì cán_bộ , công_chức được thanh_toán chi_phí đi_lại theo quy_định của Chính_phủ . Điều 73 .",
+    "latency": 0.017431400001441943,
+    "cost": 4.755e-05,
+    "ragas": {
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.0,
+      "hallucination_rate": 0.5
+    },
+    "judge": {
+      "final_score": 2.8,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 2.8,
+        "gpt-4o-mini": 2.8
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.9,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_074",
+      "Luật-Cán-bộ-công-chức.txt#chunk_081",
+      "Luật-Cán-bộ-công-chức.txt#chunk_052"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_074"
+    ],
+    "status": "fail"
+  },
+  {
+    "id": "case_005",
+    "test_case": "Theo Điều 53 về Biệt phái công chức, công chức biệt phái cần phải thực hiện những trách nhiệm nào?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Đạo_đức của cán_bộ , công_chức Cán_bộ , công_chức phải thực_hiện cần , kiệm , liêm , chính , chí công vô_tư trong hoạt_động công_vụ .",
+    "latency": 0.02167090000148164,
+    "cost": 2.58e-05,
+    "ragas": {
+      "faithfulness": 0.238,
+      "relevancy": 0.238,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.3333333333333333
+      },
+      "final_answer_accuracy": 0.238,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.57,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Luật-Cán-bộ-công-chức.txt#chunk_054"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_054"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_006",
+    "test_case": "Theo Điều 3, ai là đối tượng thực hiện bảo hiểm y tế bắt buộc?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Công_chức quy_định tại khoản 2 Điều 4 của Luật này bao_gồm : a ) Công_chức trong cơ_quan của Đảng Cộng_sản Việt_Nam , tổ_chức chính_trị-xã_hội ; b ) Công_chức trong cơ_quan nhà_nước ; c ) Công_chức trong bộ_máy lãnh_đạo , quản_lý của đơn_vị sự_nghiệp công_lập ; d ) Công_chức trong cơ_quan , đơn_vị thuộc Quân_đội nhân_dân mà không phải là sĩ_quan , quân_nhân chuyên_nghiệp , công_nhân quốc_phòng ; công_chức trong cơ_quan , đơn_vị thuộc Công_an nhân_dân mà không phải là sĩ_quan , hạ_sĩ_quan chuyên_nghiệp .",
+    "latency": 0.0036317000012786593,
+    "cost": 3.12e-05,
+    "ragas": {
+      "faithfulness": 0.125,
+      "relevancy": 0.125,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.125,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_080",
+      "Luật-Cán-bộ-công-chức.txt#chunk_033"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_008"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_007",
+    "test_case": "Điều 41 quy định như thế nào về việc tuyển chọn, bổ nhiệm Thẩm phán Tòa án nhân dân và Kiểm sát viên Viện kiểm sát nhân dân?",
+    "agent_response": "Trong các trường_hợp người có thẻ bảo_hiểm_y_tế khám , chữa bệnh theo yêu_cầu riêng của bản_thân như : tự chọn thầy_thuốc , tự chọn buồng bệnh , tự chọn cơ_sở khám , chữa bệnh , tự chọn các dịch_vụ y_tế ; khám , chữa bệnh vượt_tuyến chuyên_môn kỹ_thuật theo quy_định của Bộ Y_tế ; khám , chữa bệnh tại các cơ_sở y_tế không có hợp_đồng với tổ_chức bảo_hiểm_xã_hội ; khám , chữa bệnh ở nước_ngoài thì Quỹ_Bảo_hiểm_y_tế chỉ thanh_toán cho người_bệnh bảo_hiểm_y_tế chi_phí khám , chữa bệnh theo giá viện_phí hiện_hành của cơ_sở y_tế nhà_nước theo tuyến chuyên_môn kỹ_thuật phù_hợp với quy_định của Bộ Y_tế và trong phạm_vi quyền_lợi quy_định tại Điều 7 của Điều_lệ này . Người có thẻ bảo_hiểm_y_tế bắt_buộc được hưởng chế_độ thanh_toán bảo_hiểm_y_tế theo quy_định tại Điều 8 của Điều_lệ này khi : a ) Khám , chữa bệnh tại cơ_sở khám , chữa bệnh bảo_hiểm_y_tế đã đăng_ký trên thẻ để quản_lý và chăm_sóc sức_khỏe ; b ) Khám , chữa bệnh tại cơ_sở khám , chữa bệnh bảo_hiểm_y_tế khác theo giới_thiệu chuyển viện phù_hợp với tuyến chuyên_môn kỹ_thuật theo quy_định của Bộ Y_tế ; c ) Khám , chữa bệnh tại các cơ_sở khám , chữa bệnh bảo_hiểm_y_tế trong trường_hợp cấp_cứu ; d ) Khám , chữa bệnh tại các cơ_sở khám , chữa bệnh bảo_hiểm_y_tế không đăng_ký ban_đầu , không theo tuyến điều_trị đối_với một_số trường_hợp đặc_biệt được quy_định cụ_thể riêng theo thỏa_thuận giữa tổ_chức bảo_hiểm_xã_hội và người sử_dụng lao_động .",
+    "latency": 0.009004700001241872,
+    "cost": 5.805e-05,
+    "ragas": {
+      "faithfulness": 0.172,
+      "relevancy": 0.172,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.172,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.57,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_017",
+      "Luật-Cán-bộ-công-chức.txt#chunk_042",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_016"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_042"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_008",
+    "test_case": "Theo Điều 58, công chức được phân loại đánh giá theo những mức nào?",
+    "agent_response": "Chi_phí khám , chữa bệnh của người tham_gia_bảo_hiểm_y_tế bắt_buộc theo quy_định tại Điều 7 của Điều_lệ này được Quỹ_Bảo_hiểm_y_tế thanh_toán toàn_bộ theo giá viện_phí hiện_hành của nhà_nước , trừ những trường_hợp sử_dụng những dịch_vụ kỹ_thuật cao có chi_phí lớn được thanh_toán theo quy_định tại khoản 2 của Điều này . Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ;",
+    "latency": 0.012935799999468145,
+    "cost": 4.395e-05,
+    "ragas": {
+      "faithfulness": 0.111,
+      "relevancy": 0.111,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.111,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_014",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_007",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_059"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_009",
+    "test_case": "Theo Điều 24, việc bầu cử, phê chuẩn, bổ nhiệm chức vụ, chức danh cán bộ trong cơ quan nhà nước được thực hiện theo những quy định nào?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Thời_hạn xử_lý kỷ_luật không quá 02 tháng ; trường_hợp vụ_việc có những tình_tiết phức_tạp cần có thời_gian thanh_tra , kiểm_tra để xác_minh làm rõ thêm thì thời_hạn xử_lý kỷ_luật có_thể kéo_dài nhưng tối_đa không quá 04 tháng .",
+    "latency": 0.018254399999932502,
+    "cost": 5.73e-05,
+    "ragas": {
+      "faithfulness": 0.158,
+      "relevancy": 0.158,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.158,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_081",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_031"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_025"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_010",
+    "test_case": "Theo Điều 21 của Luật này, ai là đối tượng cán bộ quy định tại khoản 1?",
+    "agent_response": "Cán_bộ quy_định tại khoản 1 Điều 4 của Luật này bao_gồm cán_bộ trong cơ_quan của Đảng Cộng_sản Việt_Nam , Nhà_nước , tổ_chức chính_trị-xã_hội ở trung_ương , cấp tỉnh , cấp huyện . Người_bệnh bảo_hiểm_y_tế tự thanh_toán khoản chi_phí vượt mức tối_đa quy_định tại khoản 2 Điều này , trừ các đối_tượng quy_định tại các khoản 3 , 4 , 5 , 9 , 10 và khoản 11 Điều 3 của Điều_lệ này được Quỹ_Bảo_hiểm_y_tế thanh_toán theo hạn_mức do Bộ Y_tế và Bộ Tài_chính_thống_nhất quy_định .",
+    "latency": 0.022518899999340647,
+    "cost": 4.59e-05,
+    "ragas": {
+      "faithfulness": 0.25,
+      "relevancy": 0.25,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.25,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.88,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.0,
+        "gpt-4o-mini": 3.75
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.28,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_027",
+      "Luật-Cán-bộ-công-chức.txt#chunk_022",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_014"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_022"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_011",
+    "test_case": "Điều 61 quy định về chức vụ và chức danh của cán bộ, công chức cấp xã bao gồm những ai?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Cán_bộ , công_chức cấp xã quy_định tại khoản 3 Điều 4 của Luật này bao_gồm cán_bộ cấp xã và công_chức cấp xã .",
+    "latency": 0.004254800000126124,
+    "cost": 3.66e-05,
+    "ragas": {
+      "faithfulness": 0.261,
+      "relevancy": 0.261,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.261,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.07,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_062",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_062"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_012",
+    "test_case": "Theo Điều 32 của Điều lệ Bảo hiểm y tế, người nào vi phạm các quy định sẽ bị xử lý như thế nào?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Người nào vi_phạm các quy_định của Điều_lệ Bảo_hiểm_y_tế thì tùy theo mức_độ vi_phạm sẽ bị xử_lý kỷ_luật , xử_lý vi_phạm hành_chính hoặc bị truy_cứu trách_nhiệm hình_sự ; nếu gây thiệt_hại thì phải bồi_thường theo quy_định của pháp_luật .",
+    "latency": 0.008838699999614619,
+    "cost": 3.735e-05,
+    "ragas": {
+      "faithfulness": 0.261,
+      "relevancy": 0.261,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.261,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.07,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_038",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_012"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_038"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_013",
+    "test_case": "Theo Điều 5, Quỹ bảo hiểm y tế được hình thành từ những nguồn nào?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Quỹ bảo_hiểm_y_tế được hình_thành từ các nguồn sau : a ) Tiền thu phí bảo_hiểm_y_tế do người sử_dụng lao_động và người tham_gia_bảo_hiểm_y_tế đóng ; b ) Các khoản nhà_nước đóng bảo_hiểm_y_tế cho đối_tượng theo quy_định và các khoản hỗ_trợ khác của nhà_nước ( nếu có ) ; c ) Tiền sinh lời do thực_hiện các biện_pháp hợp_pháp nhằm bảo_toàn và tăng_trưởng Quỹ_Bảo_hiểm_y_tế ; d ) Các khoản thu từ nguồn tài_trợ , viện_trợ của các tổ_chức , cá_nhân trong và ngoài nước ; đ ) Các khoản thu hợp_pháp khác .",
+    "latency": 0.012919400000100723,
+    "cost": 4.05e-05,
+    "ragas": {
+      "faithfulness": 0.593,
+      "relevancy": 0.593,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.593,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 4.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.3,
+        "gpt-4o-mini": 4.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.57,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_011",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_014"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_011"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_014",
+    "test_case": "Điều 14 quy định những quyền nào của cán bộ, công chức?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Đạo_đức của cán_bộ , công_chức Cán_bộ , công_chức phải thực_hiện cần , kiệm , liêm , chính , chí công vô_tư trong hoạt_động công_vụ .",
+    "latency": 0.016328300000168383,
+    "cost": 2.46e-05,
+    "ragas": {
+      "faithfulness": 0.15,
+      "relevancy": 0.15,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.15,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_020",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_015"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_015",
+    "test_case": "Theo điều 3 trong các nguyên tắc trong thi hành công vụ, mục tiêu chính là gì?",
+    "agent_response": "Các đối_tượng quy_định tại các khoản 1và khoản 2 Điều 3 của Điều_lệ này : mức phí bảo_hiểm_y_tế hàng tháng bằng 3 % tiền_lương , tiền công , tiền sinh hoạt_phí hàng tháng và các khoản phụ_cấp chức_vụ lãnh_đạo , phụ_cấp thâm_niên nghề , thâm_niên vượt khung , phụ_cấp khu_vực và hệ_số chênh_lệch bảo_lưu ( nếu có ) , trong đó người sử_dụng lao_động đóng 2 % , người lao_động đóng 1 % . Các đối_tượng quy_định tại khoản 10 và khoản 11 Điều 3 của Điều_lệ này : mức phí đóng tạm_thời là 50.000 đồng/người/năm .",
+    "latency": 0.02074440000069444,
+    "cost": 7.845e-05,
+    "ragas": {
+      "faithfulness": 0.2,
+      "relevancy": 0.2,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.2,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 3.38,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.5,
+        "gpt-4o-mini": 3.25
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.78,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Luật-Cán-bộ-công-chức.txt#chunk_081",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_021"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "pass"
+  },
+  {
+    "id": "case_016",
+    "test_case": "Chế độ báo cáo về công tác quản lý cán bộ, công chức quy định như thế nào theo điều 68?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ;",
+    "latency": 0.003818900000624126,
+    "cost": 1.425e-05,
+    "ragas": {
+      "faithfulness": 0.174,
+      "relevancy": 0.174,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.174,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.57,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "pass"
+  },
+  {
+    "id": "case_017",
+    "test_case": "Điều 35 trong hướng dẫn thi hành Bộ Y tế quy định nội dung gì?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Điều 35 .",
+    "latency": 0.007123199999114149,
+    "cost": 2.73e-05,
+    "ragas": {
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.0,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 2.8,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 2.8,
+        "gpt-4o-mini": 2.8
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.2,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_041",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_023"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "fail"
+  },
+  {
+    "id": "case_018",
+    "test_case": "Tổ chức bảo hiểm xã hội có trách nhiệm gì sau khi kết thúc năm tài chính?",
+    "agent_response": "Cán_bộ cấp xã có các chức_vụ sau đây : a ) Bí_thư , Phó_Bí_thư Đảng_ủy ; b ) Chủ_tịch , Phó_Chủ_tịch Hội_đồng nhân_dân ; c ) Chủ_tịch , Phó_Chủ_tịch Ủy_ban nhân_dân ; d ) Chủ_tịch Ủy_ban Mặt_trận Tổ_quốc Việt_Nam ; đ ) Bí_thư Đoàn_Thanh_niên Cộng_sản Hồ_Chí_Minh ; e ) Chủ_tịch Hội Liên_hiệp Phụ_nữ Việt_Nam ; g ) Chủ_tịch Hội Nông_dân Việt_Nam ( áp_dụng đối_với xã , phường , thị_trấn có hoạt_động nông , lâm , ngư , diêm nghiệp và có tổ_chức Hội Nông_dân Việt_Nam ) ; h ) Chủ_tịch Hội Cựu_chiến_binh Việt_Nam . Công_chức cấp xã có các chức_danh sau đây : a ) Trưởng Công_an ; b ) Chỉ_huy_trưởng Quân_sự ; c ) Văn_phòng-thống_kê ; d ) Địa_chính-xây_dựng-đô_thị và môi_trường ( đối_với phường , thị_trấn ) hoặc địa_chính-nông_nghiệp-xây_dựng và môi_trường ( đối_với xã ) ; đ ) Tài_chính-kế_toán ; e ) Tư_pháp-hộ_tịch ; g ) Văn_hóa-xã_hội .",
+    "latency": 0.011000500000591273,
+    "cost": 3.585e-05,
+    "ragas": {
+      "faithfulness": 0.067,
+      "relevancy": 0.067,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.067,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 2.8,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 2.8,
+        "gpt-4o-mini": 2.8
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.2,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_062",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "fail"
+  },
+  {
+    "id": "case_019",
+    "test_case": "Thời hạn xử lý kỷ luật đối với cán bộ, công chức là bao lâu?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Đạo_đức của cán_bộ , công_chức Cán_bộ , công_chức phải thực_hiện cần , kiệm , liêm , chính , chí công vô_tư trong hoạt_động công_vụ .",
+    "latency": 0.014144599999781349,
+    "cost": 1.35e-05,
+    "ragas": {
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.0,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 2.8,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 2.8,
+        "gpt-4o-mini": 2.8
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.2,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "fail"
+  },
+  {
+    "id": "case_020",
+    "test_case": "Điều 77 quy định như thế nào về việc miễn trách nhiệm đối với cán bộ, công chức?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Các cơ_sở y_tế tư_nhân có hợp_đồng với tổ_chức bảo_hiểm_xã_hội tham_gia khám , chữa bệnh cho người có thẻ bảo_hiểm_y_tế phải đáp_ứng đầy_đủ các tiêu_chuẩn về chuyên_môn , kỹ_thuật và chấp_hành các quy_định về chế_độ thanh_toán cho người_bệnh bảo_hiểm_y_tế như các cơ_sở y_tế nhà_nước .",
+    "latency": 0.017999700001382735,
+    "cost": 2.16e-05,
+    "ragas": {
+      "faithfulness": 0.333,
+      "relevancy": 0.333,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.333,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.07,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_015",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "pass"
+  },
+  {
+    "id": "case_021",
+    "test_case": "Theo quy định của Điều lệ Bảo hiểm y tế, hành vi nào sẽ bị xử lý kỷ luật theo Điều 32?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Người nào vi_phạm các quy_định của Điều_lệ Bảo_hiểm_y_tế thì tùy theo mức_độ vi_phạm sẽ bị xử_lý kỷ_luật , xử_lý vi_phạm hành_chính hoặc bị truy_cứu trách_nhiệm hình_sự ; nếu gây thiệt_hại thì phải bồi_thường theo quy_định của pháp_luật .",
+    "latency": 0.003873200001180521,
+    "cost": 2.565e-05,
+    "ragas": {
+      "faithfulness": 0.25,
+      "relevancy": 0.25,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.25,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.07,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_038",
+      "Luật-Cán-bộ-công-chức.txt#chunk_033"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "pass"
+  },
+  {
+    "id": "case_022",
+    "test_case": "Những điều kiện nào cần có để đăng ký dự tuyển công chức theo Điều 36?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Người có đủ điều_kiện quy_định tại khoản 1 Điều 36 của Luật này cam_kết tình_nguyện làm_việc từ 05 năm trở lên ở miền núi , biên_giới , hải_đảo , vùng_sâu , vùng_xa , vùng dân_tộc_thiểu_số , vùng có điều_kiện kinh_tế-xã_hội đặc_biệt khó_khăn thì được tuyển_dụng thông_qua xét tuyển .",
+    "latency": 0.0074296000002505025,
+    "cost": 2.34e-05,
+    "ragas": {
+      "faithfulness": 0.167,
+      "relevancy": 0.167,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.167,
+      "hallucination_rate": 1.0
+    },
+    "judge": {
+      "final_score": 3.38,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.5,
+        "gpt-4o-mini": 3.25
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.78,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_038",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016"
+    ],
+    "expected_retrieval_ids": [],
+    "status": "pass"
+  },
+  {
+    "id": "case_023",
+    "test_case": "Điều 5 quy định các nguyên tắc nào trong việc quản lý cán bộ, công chức?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Đạo_đức của cán_bộ , công_chức Cán_bộ , công_chức phải thực_hiện cần , kiệm , liêm , chính , chí công vô_tư trong hoạt_động công_vụ .",
+    "latency": 0.01073270000051707,
+    "cost": 1.965e-05,
+    "ragas": {
+      "faithfulness": 0.129,
+      "relevancy": 0.129,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.129,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_038"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_006"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_024",
+    "test_case": "Theo Điều 82, cán bộ, công chức bị kỷ luật từ khiển trách đến cách chức thì trong thời gian nào họ không được thực hiện việc nâng ngạch, quy hoạch, đào tạo, bổ nhiệm?",
+    "agent_response": "Cán_bộ , công_chức bị kỷ_luật từ khiển_trách đến cách_chức thì không thực_hiện việc nâng ngạch , quy_hoạch , đào_tạo , bổ_nhiệm trong thời_hạn 12 tháng , kể từ ngày quyết_định kỷ_luật có hiệu_lực ; hết thời_hạn này , nếu cán_bộ , công_chức không vi_phạm đến mức phải xử_lý kỷ_luật thì tiếp_tục thực_hiện nâng ngạch , quy_hoạch , đào_tạo , bổ_nhiệm theo quy_định của pháp_luật . Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ;",
+    "latency": 0.016293399999995017,
+    "cost": 4.2e-05,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 1.0,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 4.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.8,
+        "gpt-4o-mini": 4.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 5.0,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_083",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_047"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_083"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_025",
+    "test_case": "Theo Điều 22, cán bộ có nghĩa vụ gì trong việc thực hiện các quyền quy định tại Chương II của Luật này?",
+    "agent_response": "Thực_hiện các nghĩa_vụ , quyền quy_định tại Chương II và các quy_định khác có liên_quan của Luật này . Người có thẻ bảo_hiểm_y_tế có quyền : a ) Được khám , chữa bệnh theo chế_độ bảo_hiểm_y_tế như quy_định tại Chương II của Điều_lệ này ; b ) Chọn một trong các cơ_sở khám , chữa bệnh ban_đầu thuận_lợi tại nơi cư_trú hoặc nơi công_tác theo hướng_dẫn của tổ_chức bảo_hiểm_xã_hội để được quản_lý , chăm_sóc sức_khỏe và khám , chữa bệnh ; c ) Được thay_đổi nơi đăng_ký khám , chữa bệnh ban_đầu_vào cuối mỗi quý ; d ) Yêu_cầu cơ_quan bảo_hiểm_xã_hội và cơ_sở khám , chữa bệnh bảo_đảm quyền_lợi theo quy_định của Điều_lệ này ; đ ) Khiếu_nại , tố_cáo khi phát_hiện_hành_vi vi_phạm Điều_lệ Bảo_hiểm_y_tế .",
+    "latency": 0.02103490000081365,
+    "cost": 3.93e-05,
+    "ragas": {
+      "faithfulness": 0.455,
+      "relevancy": 0.455,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.455,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 4.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.3,
+        "gpt-4o-mini": 4.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.57,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_023",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_023",
+      "Luật-Cán-bộ-công-chức.txt#chunk_076"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_023"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_026",
+    "test_case": "Điều 31 quy định như thế nào về việc nghỉ hưu đối với cán bộ?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Trước 06 tháng , tính đến ngày cán_bộ nghỉ hưu , cơ_quan , tổ_chức , đơn_vị quản_lý cán_bộ phải thông_báo cho cán_bộ bằng văn_bản về thời_điểm nghỉ hưu ; trước 03 tháng , tính đến ngày cán_bộ nghỉ hưu , cơ_quan , tổ_chức , đơn_vị quản_lý cán_bộ ra quyết_định nghỉ hưu .",
+    "latency": 0.0036670999998023035,
+    "cost": 2.85e-05,
+    "ragas": {
+      "faithfulness": 0.333,
+      "relevancy": 0.333,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.333,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.07,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_032",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_061"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_032"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_027",
+    "test_case": "Theo Điều 9, cán bộ, công chức cần thực hiện thế nào đối với nhiệm vụ và quyền hạn được giao?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Thẻ được thiết_kế để dễ nhận_biết , tiện_lợi và phù_hợp trong quản_lý và sử_dụng .",
+    "latency": 0.008014700000785524,
+    "cost": 3.15e-05,
+    "ragas": {
+      "faithfulness": 0.118,
+      "relevancy": 0.118,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.118,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_012"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_010"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_028",
+    "test_case": "Theo Điều 68, việc chuẩn bị báo cáo của Chính phủ về công tác quản lý cán bộ, công chức được quy định như thế nào?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ;",
+    "latency": 0.012407600001097308,
+    "cost": 1.5e-05,
+    "ragas": {
+      "faithfulness": 0.208,
+      "relevancy": 0.208,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.208,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_069"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_029",
+    "test_case": "Theo Điều 25 của Nghị định, ai có thể tham gia bảo hiểm y tế tự nguyện?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Trong các trường_hợp người có thẻ bảo_hiểm_y_tế khám , chữa bệnh theo yêu_cầu riêng của bản_thân như : tự chọn thầy_thuốc , tự chọn buồng bệnh , tự chọn cơ_sở khám , chữa bệnh , tự chọn các dịch_vụ y_tế ; khám , chữa bệnh vượt_tuyến chuyên_môn kỹ_thuật theo quy_định của Bộ Y_tế ; khám , chữa bệnh tại các cơ_sở y_tế không có hợp_đồng với tổ_chức bảo_hiểm_xã_hội ; khám , chữa bệnh ở nước_ngoài thì Quỹ_Bảo_hiểm_y_tế chỉ thanh_toán cho người_bệnh bảo_hiểm_y_tế chi_phí khám , chữa bệnh theo giá viện_phí hiện_hành của cơ_sở y_tế nhà_nước theo tuyến chuyên_môn kỹ_thuật phù_hợp với quy_định của Bộ Y_tế và trong phạm_vi quyền_lợi quy_định tại Điều 7 của Điều_lệ này .",
+    "latency": 0.016649799999868264,
+    "cost": 5.4e-05,
+    "ragas": {
+      "faithfulness": 0.333,
+      "relevancy": 0.333,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.333,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.67,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_017",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_012"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_031"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_030",
+    "test_case": "Theo Điều 79, công chức vi phạm quy định của Luật này có thể bị xử lý bằng những hình thức kỷ luật nào?",
+    "agent_response": "Công_chức vi_phạm_quy_định của Luật này và các quy_định khác của pháp_luật có liên_quan thì tùy theo tính_chất , mức_độ vi_phạm phải chịu một trong những hình_thức kỷ_luật sau đây : c ) Hạ_bậc lương ; d ) Giáng_chức ; đ ) Cách_chức ; e ) Buộc thôi_việc . Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ;",
+    "latency": 0.02141699999992852,
+    "cost": 4.095e-05,
+    "ragas": {
+      "faithfulness": 0.267,
+      "relevancy": 0.267,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.267,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.88,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.0,
+        "gpt-4o-mini": 3.75
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.28,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_080",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_007"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_080"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_031",
+    "test_case": "Theo Điều 83, việc khen thưởng cán bộ công chức được lưu vào đâu?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Quản_lý hồ_sơ khen_thưởng , kỷ_luật cán_bộ , công_chức Việc khen_thưởng , kỷ_luật cán_bộ , công_chức được lưu vào hồ_sơ cán_bộ , công_chức .",
+    "latency": 0.0033137999998871237,
+    "cost": 1.305e-05,
+    "ragas": {
+      "faithfulness": 0.5,
+      "relevancy": 0.5,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.5,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 4.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 4.3,
+        "gpt-4o-mini": 4.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.57,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_084",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_084",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_036"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_032",
+    "test_case": "Theo Điều 84 của Luật cán bộ, công chức, ai có thẩm quyền quy định cụ thể việc áp dụng luật này đối với những người được bầu cử nhưng không thuộc đối tượng quy định tại khoản 1 Điều 4?",
+    "agent_response": "Cơ_quan có thẩm_quyền của Đảng Cộng_sản Việt_Nam , Ủy_ban thường_vụ Quốc_hội , Chính_phủ quy_định cụ_thể việc áp_dụng Luật này đối_với những người được bầu_cử nhưng không thuộc đối_tượng quy_định tại khoản 1 Điều 4 của Luật này ; chế_độ phụ_cấp đối_với những người đã nghỉ hưu nhưng được bầu_cử giữ chức_vụ , chức_danh cán_bộ . Chính_phủ quy_định cụ_thể việc áp_dụng <L rel=\"DaC\"> Luật cán_bộ , công_chức </L> đối_với Chủ_tịch Hội_đồng quản_trị , thành_viên Hội_đồng quản_trị , Tổng_giám_đốc , Phó_tổng_giám_đốc , Giám_đốc , Phó_giám_đốc , Kế_toán_trưởng và những người giữ các chức_vụ lãnh_đạo , quản_lý khác trong các doanh_nghiệp nhà_nước ; những người được Nhà_nước cử làm đại_diện chủ sở_hữu phần vốn của Nhà_nước tại doanh_nghiệp có vốn góp của Nhà_nước .",
+    "latency": 0.010148800000024494,
+    "cost": 5.745e-05,
+    "ragas": {
+      "faithfulness": 0.158,
+      "relevancy": 0.158,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.158,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 2.98,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.1,
+        "gpt-4o-mini": 2.85
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.38,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_085",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_014"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_085",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_034"
+    ],
+    "status": "fail"
+  },
+  {
+    "id": "case_033",
+    "test_case": "Theo Điều 24, việc bầu cử, phê chuẩn, bổ nhiệm chức vụ, chức danh cán bộ trong cơ quan nhà nước được thực hiện theo quy định nào?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Nhà_nước khuyến_khích việc đa_dạng_hóa các loại_hình bảo_hiểm_y_tế tự_nguyện , trên cơ_sở tuân_thủ mục_tiêu quy_định tại Điều 24 của Điều_lệ này .",
+    "latency": 0.01537829999870155,
+    "cost": 5.715e-05,
+    "ragas": {
+      "faithfulness": 0.364,
+      "relevancy": 0.364,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.364,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.67,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_081",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_031"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_025",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_030"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_034",
+    "test_case": "Theo Điều 68, việc chuẩn bị báo cáo của Chính phủ về công tác quản lý cán bộ, công chức được quy định như thế nào?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ;",
+    "latency": 0.019821500000034575,
+    "cost": 1.5e-05,
+    "ragas": {
+      "faithfulness": 0.281,
+      "relevancy": 0.281,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.281,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.67,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_069",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_007"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_035",
+    "test_case": "Theo Điều 84, ai có thẩm quyền quy định việc áp dụng Luật cán bộ, công chức đối với những người được bầu cử nhưng không thuộc đối tượng quy định tại khoản 1 Điều 4?",
+    "agent_response": "Cơ_quan có thẩm_quyền của Đảng Cộng_sản Việt_Nam , Ủy_ban thường_vụ Quốc_hội , Chính_phủ quy_định cụ_thể việc áp_dụng Luật này đối_với những người được bầu_cử nhưng không thuộc đối_tượng quy_định tại khoản 1 Điều 4 của Luật này ; chế_độ phụ_cấp đối_với những người đã nghỉ hưu nhưng được bầu_cử giữ chức_vụ , chức_danh cán_bộ . Chính_phủ quy_định cụ_thể việc áp_dụng <L rel=\"DaC\"> Luật cán_bộ , công_chức </L> đối_với Chủ_tịch Hội_đồng quản_trị , thành_viên Hội_đồng quản_trị , Tổng_giám_đốc , Phó_tổng_giám_đốc , Giám_đốc , Phó_giám_đốc , Kế_toán_trưởng và những người giữ các chức_vụ lãnh_đạo , quản_lý khác trong các doanh_nghiệp nhà_nước ; những người được Nhà_nước cử làm đại_diện chủ sở_hữu phần vốn của Nhà_nước tại doanh_nghiệp có vốn góp của Nhà_nước .",
+    "latency": 0.026245600000038394,
+    "cost": 5.67e-05,
+    "ragas": {
+      "faithfulness": 0.158,
+      "relevancy": 0.158,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.158,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 2.98,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.1,
+        "gpt-4o-mini": 2.85
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.38,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_085",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_014"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_085",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_003"
+    ],
+    "status": "fail"
+  },
+  {
+    "id": "case_036",
+    "test_case": "Theo Điều 16 về văn hóa giao tiếp ở công sở, cán bộ, công chức cần tuân thủ những quy định gì để đảm bảo thái độ lịch sự và tôn trọng đồng nghiệp?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Người sử_dụng lao_động có trách_nhiệm : a ) Đóng phí bảo_hiểm_y_tế đầy_đủ , đúng thời_hạn theo quy_định của Điều_lệ Bảo_hiểm_y_tế ; b ) Cung_cấp các tài_liệu về lao_động , tiền_lương , tiền công , phụ_cấp của người tham_gia đóng bảo_hiểm_y_tế khi tổ_chức bảo_hiểm_y_tế yêu_cầu và thực_hiện chế_độ đóng bảo_hiểm_y_tế theo quy_định ; c ) Chấp_hành sự kiểm_tra , thanh_tra về việc thực_hiện chế_độ đóng , thanh_toán bảo_hiểm_y_tế cho người lao_động của các cơ_quan nhà_nước có thẩm_quyền .",
+    "latency": 0.005457199999000295,
+    "cost": 4.26e-05,
+    "ragas": {
+      "faithfulness": 0.208,
+      "relevancy": 0.208,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.208,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_024",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_022"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_017",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_013"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_037",
+    "test_case": "Theo Điều 38 về nguyên tắc tuyển dụng công chức, điều nào sau đây không phải là một nguyên tắc tuyển dụng?",
+    "agent_response": "Công_chức là công_dân Việt_Nam , được tuyển_dụng , bổ_nhiệm vào ngạch , chức_vụ , chức_danh trong cơ_quan của Đảng Cộng_sản Việt_Nam , Nhà_nước , tổ_chức chính_trị-xã_hội ở trung_ương , cấp tỉnh , cấp huyện ; trong cơ_quan , đơn_vị thuộc Quân_đội nhân_dân mà không phải là sĩ_quan , quân_nhân chuyên_nghiệp , công_nhân quốc_phòng ; trong cơ_quan , đơn_vị thuộc Công_an nhân_dân mà không phải là sĩ_quan , hạ_sĩ_quan chuyên_nghiệp và trong bộ_máy lãnh_đạo , quản_lý của đơn_vị sự_nghiệp công_lập của Đảng Cộng_sản Việt_Nam , Nhà_nước , tổ_chức chính_trị-xã_hội ( sau đây gọi chung là đơn_vị sự_nghiệp công_lập ) , trong biên_chế và hưởng lương từ ngân_sách nhà_nước ; đối_với công_chức trong bộ_máy lãnh_đạo , quản_lý của đơn_vị sự_nghiệp công_lập thì lương được bảo_đảm từ quỹ lương của đơn_vị sự_nghiệp công_lập theo quy_định của pháp_luật . Người có đủ các điều_kiện sau đây không phân_biệt dân_tộc , nam_nữ , thành_phần xã_hội , tín_ngưỡng , tôn_giáo được đăng_ký dự_tuyển công_chức : a ) Có một quốc_tịch là quốc_tịch Việt_Nam ; b ) Đủ 18 tuổi trở lên ; c ) Có đơn dự_tuyển ; có_lý_lịch rõ_ràng ; d ) Có văn_bằng , chứng_chỉ phù_hợp ; đ ) Có phẩm_chất chính_trị , đạo_đức tốt ; e ) Đủ sức_khỏe để thực_hiện nhiệm_vụ ; g ) Các điều_kiện khác theo yêu_cầu của vị_trí dự_tuyển .",
+    "latency": 0.010406400000647409,
+    "cost": 5.805e-05,
+    "ragas": {
+      "faithfulness": 0.1,
+      "relevancy": 0.1,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.1,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.57,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_005",
+      "Luật-Cán-bộ-công-chức.txt#chunk_039",
+      "Luật-Cán-bộ-công-chức.txt#chunk_037"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_039",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_002"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_038",
+    "test_case": "Theo Điều 70 của Luật, ai có trách nhiệm quy định quy mô, vị trí xây dựng, tiêu chí thiết kế công sở?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Sau mỗi năm hoạt_động , nếu Quỹ_Bảo_hiểm_y_tế tự_nguyện có kết_dư thì chuyển toàn_bộ số kết_dư sang năm sau để sử_dụng cho công_tác khám , chữa bệnh của đối_tượng tham_gia_bảo_hiểm_y_tế tự_nguyện .",
+    "latency": 0.014913299999534502,
+    "cost": 3.465e-05,
+    "ragas": {
+      "faithfulness": 0.2,
+      "relevancy": 0.2,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.2,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_033",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_071",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_016"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_039",
+    "test_case": "Điều 73 quy định như thế nào về phương tiện đi lại cho cán bộ, công chức để thi hành công vụ?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ;",
+    "latency": 0.018884899998738547,
+    "cost": 1.74e-05,
+    "ragas": {
+      "faithfulness": 0.28,
+      "relevancy": 0.28,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.3333333333333333
+      },
+      "final_answer_accuracy": 0.28,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.07,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_074"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_074"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_040",
+    "test_case": "Điều 26 của Nghị định quy định về những hình thức và quyền lợi nào trong bảo hiểm y tế tự nguyện?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Quỹ bảo_hiểm_y_tế được hình_thành từ các nguồn sau : a ) Tiền thu phí bảo_hiểm_y_tế do người sử_dụng lao_động và người tham_gia_bảo_hiểm_y_tế đóng ; b ) Các khoản nhà_nước đóng bảo_hiểm_y_tế cho đối_tượng theo quy_định và các khoản hỗ_trợ khác của nhà_nước ( nếu có ) ; c ) Tiền sinh lời do thực_hiện các biện_pháp hợp_pháp nhằm bảo_toàn và tăng_trưởng Quỹ_Bảo_hiểm_y_tế ; d ) Các khoản thu từ nguồn tài_trợ , viện_trợ của các tổ_chức , cá_nhân trong và ngoài nước ; đ ) Các khoản thu hợp_pháp khác .",
+    "latency": 0.023002800000540446,
+    "cost": 2.94e-05,
+    "ragas": {
+      "faithfulness": 0.31,
+      "relevancy": 0.31,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.31,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.67,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_011",
+      "Luật-Cán-bộ-công-chức.txt#chunk_014"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_032"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_041",
+    "test_case": "Theo Điều 16 về văn hóa giao tiếp ở công sở, cán bộ, công chức cần có thái độ như thế nào trong giao tiếp?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Các cơ_sở y_tế tư_nhân có hợp_đồng với tổ_chức bảo_hiểm_xã_hội tham_gia khám , chữa bệnh cho người có thẻ bảo_hiểm_y_tế phải đáp_ứng đầy_đủ các tiêu_chuẩn về chuyên_môn , kỹ_thuật và chấp_hành các quy_định về chế_độ thanh_toán cho người_bệnh bảo_hiểm_y_tế như các cơ_sở y_tế nhà_nước .",
+    "latency": 0.004263599999831058,
+    "cost": 2.22e-05,
+    "ragas": {
+      "faithfulness": 0.429,
+      "relevancy": 0.429,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.429,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.67,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_015"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_017"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_042",
+    "test_case": "Theo Điều 20, cơ sở khám, chữa bệnh bảo hiểm y tế có những quyền gì?",
+    "agent_response": "Cơ_sở khám , chữa bệnh có quyền : a ) Yêu_cầu tổ_chức bảo_hiểm_xã_hội tạm_ứng kinh_phí và thanh_toán chi_phí khám , chữa bệnh theo quy_định của Điều_lệ Bảo_hiểm_y_tế và theo hợp_đồng khám , chữa bệnh đã ký ; b ) Khám , chữa bệnh và cung_cấp các dịch_vụ y_tế cho người_bệnh bảo_hiểm_y_tế theo đúng quy_định chuyên_môn ; c ) Yêu_cầu tổ_chức bảo_hiểm_xã_hội cung_cấp số_liệu về số người đăng_ký tại cơ_sở khám , chữa bệnh bảo_hiểm_y_tế ; d ) Từ_chối thực_hiện các yêu_cầu ngoài quy_định của Điều_lệ Bảo_hiểm_y_tế và hợp_đồng đã ký với tổ_chức bảo_hiểm_xã_hội hoặc những yêu_cầu không phù_hợp với quy_chế chuyên_môn bệnh_viện do Bộ Y_tế ban_hành ; đ ) Sử_dụng nguồn kinh_phí do tổ_chức bảo_hiểm_xã_hội thanh_toán theo quy_định ; e ) Khiếu_nại với các cơ_quan có thẩm_quyền khi phát_hiện_hành_vi vi_phạm Điều_lệ Bảo_hiểm_y_tế hoặc khởi_kiện ra tòa khi phát_hiện tổ_chức bảo_hiểm_xã_hội vi_phạm hợp_đồng khám , chữa bệnh bảo_hiểm_y_tế . Cơ_sở khám , chữa bệnh có trách_nhiệm : a ) Thực_hiện đúng hợp_đồng khám , chữa bệnh bảo_hiểm_y_tế ; b ) Thực_hiện việc ghi_chép , lập chứng_từ và cung_cấp các tài_liệu liên_quan đến khám , chữa bệnh của người_bệnh bảo_hiểm_y_tế , làm cơ_sở thanh_toán và giải_quyết các tranh_chấp về bảo_hiểm_y_tế ; c ) Chỉ_định sử_dụng thuốc , vật_phẩm sinh_học , thủ_thuật , phẫu_thuật , xét_nghiệm , chuyển viện và các dịch_vụ y_tế khác một_cách an_toàn , hợp_lý cho người_bệnh bảo_hiểm_y_tế theo quy_định về chuyên_môn kỹ_thuật của Bộ Y_tế ; d ) Tạo điều_kiện thuận_lợi cho cán_bộ tổ_chức bảo_hiểm_xã_hội thường_trực tại cơ_sở thực_hiện công_tác tuyên_truyền , giải_thích về bảo_hiểm_y_tế , hướng_dẫn người tham_gia_bảo_hiểm_y_tế về quyền_lợi , trách_nhiệm và giải_quyết những khiếu_nại liên_quan đến việc khám , chữa bệnh của người có thẻ bảo_hiểm_y_tế ; đ ) Kiểm_tra thẻ bảo_hiểm_y_tế , phát_hiện và thông_báo cho tổ_chức bảo_hiểm_xã_hội những trường_hợp vi_phạm_quy_định về sử_dụng thẻ bảo_hiểm_y_tế và lạm_dụng chế_độ bảo_hiểm_y_tế ; e ) Quản_lý và sử_dụng nguồn kinh_phí do tổ_chức bảo_hiểm_xã_hội thanh_toán theo đúng quy_định ; g ) Thực_hiện các quy_định của pháp_luật về chế_độ thống_kê , báo_cáo hoạt_động chuyên_môn , báo_cáo tài_chính và thanh_tra , kiểm_tra liên_quan đến bảo_hiểm_y_tế .",
+    "latency": 0.009029399998325971,
+    "cost": 6.66e-05,
+    "ragas": {
+      "faithfulness": 0.314,
+      "relevancy": 0.314,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.314,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.07,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_026",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_023"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_026"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_043",
+    "test_case": "Theo Điều 39, ai là cơ quan thực hiện tuyển dụng công chức trong quyền quản lý?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Điều 39 .",
+    "latency": 0.013391099999353173,
+    "cost": 5.325e-05,
+    "ragas": {
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.0,
+      "hallucination_rate": 0.5
+    },
+    "judge": {
+      "final_score": 2.8,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 2.8,
+        "gpt-4o-mini": 2.8
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.9,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_040",
+      "Luật-Cán-bộ-công-chức.txt#chunk_005"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_040"
+    ],
+    "status": "fail"
+  },
+  {
+    "id": "case_044",
+    "test_case": "Điều 30 quy định về việc khen thưởng cho tổ chức và cá nhân có thành tích trong sự nghiệp bảo hiểm y tế như thế nào?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Chủ_tịch Ủy_ban nhân_dân tỉnh , thành_phố trực_thuộc Trung_ương có trách_nhiệm quản_lý nhà_nước về bảo_hiểm_y_tế trên địa_bàn tỉnh , thành_phố với các nội_dung : a ) Chỉ_đạo , tổ_chức triển_khai chính_sách về bảo_hiểm_y_tế , bao_gồm cả bảo_hiểm_y_tế bắt_buộc và bảo_hiểm_y_tế tự_nguyện trên địa_bàn tỉnh , thành_phố ; b ) Kiểm_tra , thanh_tra việc thực_hiện các quy_định của pháp_luật về bảo_hiểm_y_tế và giải_quyết các vướng_mắc liên_quan đến việc khám , chữa bệnh cho người có thẻ bảo_hiểm_y_tế trên địa_bàn tỉnh , thành_phố .",
+    "latency": 0.018630999999004416,
+    "cost": 5.205e-05,
+    "ragas": {
+      "faithfulness": 0.333,
+      "relevancy": 0.333,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.333,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.67,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_035",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_007"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_036"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_045",
+    "test_case": "Theo Điều 48, trách nhiệm của cơ quan, tổ chức, đơn vị trong đào tạo, bồi dưỡng công chức là gì?",
+    "agent_response": "Cơ_quan , tổ_chức , đơn_vị quản_lý công_chức có trách_nhiệm xây_dựng và công_khai quy_hoạch , kế_hoạch đào_tạo , bồi_dưỡng để tạo nguồn và nâng cao năng_lực , trình_độ chuyên_môn , nghiệp_vụ của công_chức . Cơ_quan , tổ_chức , đơn_vị sử_dụng công_chức có trách_nhiệm tạo điều_kiện để công_chức tham_gia đào_tạo , bồi_dưỡng nâng cao năng_lực , trình_độ chuyên_môn , nghiệp_vụ của công_chức .",
+    "latency": 0.023735599999781698,
+    "cost": 3.96e-05,
+    "ragas": {
+      "faithfulness": 0.087,
+      "relevancy": 0.087,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.087,
+      "hallucination_rate": 0.5
+    },
+    "judge": {
+      "final_score": 2.8,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 2.8,
+        "gpt-4o-mini": 2.8
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.9,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_049",
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_012"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_049"
+    ],
+    "status": "fail"
+  },
+  {
+    "id": "case_046",
+    "test_case": "Theo Điều 3 của Luật Cán bộ công chức, các nguyên tắc trong thi hành công vụ bao gồm những gì?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ;",
+    "latency": 0.004075999999258784,
+    "cost": 3.585e-05,
+    "ragas": {
+      "faithfulness": 0.083,
+      "relevancy": 0.083,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.083,
+      "hallucination_rate": 0.5
+    },
+    "judge": {
+      "final_score": 2.8,
+      "agreement_rate": 1.0,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 2.8,
+        "gpt-4o-mini": 2.8
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 2.5,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_081"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_004"
+    ],
+    "status": "fail"
+  },
+  {
+    "id": "case_047",
+    "test_case": "Theo Điều 53, công_chức biệt_phái phải thực hiện những yêu cầu gì khi đến làm việc tại cơ_quan khác?",
+    "agent_response": "Những việc khác cán_bộ , công_chức không được làm Ngoài những việc không được làm quy_định tại Điều 18 và Điều 19 của Luật này , cán_bộ , công_chức còn không được làm những việc liên_quan đến sản_xuất , kinh_doanh , công_tác_nhân_sự quy_định tại <L rel=\"DaC\"> Luật_phòng , chống tham_nhũng </L> , <L rel=\"DaC\"> Luật thực_hành tiết_kiệm , chống lãng_phí </L> và những việc khác theo quy_định của pháp_luật và của cơ_quan có thẩm_quyền . Chính_phủ quy_định cụ_thể danh_mục ngành , nghề , công_việc , thời_hạn mà cán_bộ , công_chức không được làm và chính_sách đối_với những người phải áp_dụng quy_định tại Điều này .",
+    "latency": 0.008556699998734985,
+    "cost": 4.32e-05,
+    "ragas": {
+      "faithfulness": 0.333,
+      "relevancy": 0.333,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.333,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.48,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.6,
+        "gpt-4o-mini": 3.35
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.88,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_054",
+      "Luật-Cán-bộ-công-chức.txt#chunk_021",
+      "Luật-Cán-bộ-công-chức.txt#chunk_020"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_054",
+      "Luật-Cán-bộ-công-chức.txt#chunk_046",
+      "Luật-Cán-bộ-công-chức.txt#chunk_070"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_048",
+    "test_case": "Theo Điều 25 của Nghị định, đối tượng nào được áp dụng bảo hiểm y tế tự nguyện?",
+    "agent_response": "Nghị định Về việc ban hành Điều lệ Bảo hiểm y tế Căn_cứ <L rel=\"CC\"> Luật Tổ_chức Chính_phủ ngày 25 tháng 12 năm 2001 </L> ; Cán_bộ được nghỉ hưu theo quy_định của <BL rel=\"DaC\"> Bộ_luật lao_động </BL> .",
+    "latency": 0.012488399999710964,
+    "cost": 3.585e-05,
+    "ragas": {
+      "faithfulness": 0.208,
+      "relevancy": 0.208,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 0.0,
+        "average_hit_rate": 0.0,
+        "mrr": 0.0
+      },
+      "final_answer_accuracy": 0.208,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.17,
+    "retrieved_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_001",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_007",
+      "Luật-Cán-bộ-công-chức.txt#chunk_032"
+    ],
+    "expected_retrieval_ids": [
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_031",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_026",
+      "Luật-Cán-bộ-công-chức.txt#chunk_017"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_049",
+    "test_case": "Theo Điều 75 của Luật về thanh tra công vụ, ai có quyền thanh tra việc thực hiện nhiệm vụ của cán bộ, công chức?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Thanh_tra Bộ Nội_vụ , Thanh_tra Sở Nội_vụ thực_hiện chức_năng thanh_tra chuyên_ngành trong phạm_vi quy_định tại khoản 2 Điều 74 của Luật này .",
+    "latency": 0.01678399999946123,
+    "cost": 1.995e-05,
+    "ragas": {
+      "faithfulness": 0.167,
+      "relevancy": 0.167,
+      "retrieval": {
+        "retrieval_accuracy": 0.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 0.5
+      },
+      "final_answer_accuracy": 0.167,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.17,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.3,
+        "gpt-4o-mini": 3.05
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 3.57,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_076",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_076"
+    ],
+    "status": "pass"
+  },
+  {
+    "id": "case_050",
+    "test_case": "Luật Cán bộ, công chức đã được sửa đổi theo nghị quyết nào?",
+    "agent_response": "Luật Cán bộ, công chức Căn_cứ <HP rel=\"CC\"> Hiến_pháp nước Cộng_hòa xã_hội chủ_nghĩa Việt_Nam năm 1992 </HP> đã được sửa_đổi , bổ_sung một_số điều theo <NQ rel=\"none\"> Nghị_quyết số 51/2001/QH10 </NQ> ; Đạo_đức của cán_bộ , công_chức Cán_bộ , công_chức phải thực_hiện cần , kiệm , liêm , chính , chí công vô_tư trong hoạt_động công_vụ .",
+    "latency": 0.019858699999531382,
+    "cost": 1.935e-05,
+    "ragas": {
+      "faithfulness": 0.25,
+      "relevancy": 0.25,
+      "retrieval": {
+        "retrieval_accuracy": 1.0,
+        "hit_rate": 1.0,
+        "average_hit_rate": 1.0,
+        "mrr": 1.0
+      },
+      "final_answer_accuracy": 0.25,
+      "hallucination_rate": 0.0
+    },
+    "judge": {
+      "final_score": 3.67,
+      "agreement_rate": 0.94,
+      "conflict_policy": "average",
+      "judge_models": [
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "judge_count": 2,
+      "individual_scores": {
+        "gpt-4o": 3.8,
+        "gpt-4o-mini": 3.55
+      },
+      "judge_reasoning": {
+        "gpt-4o": "fallback_heuristic_primary",
+        "gpt-4o-mini": "fallback_heuristic_secondary"
+      }
+    },
+    "user_satisfaction_score": 4.07,
+    "retrieved_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001",
+      "Luật-Cán-bộ-công-chức.txt#chunk_016",
+      "Nghị-định-Về-việc-ban-hành-Điều-lệ.txt#chunk_038"
+    ],
+    "expected_retrieval_ids": [
+      "Luật-Cán-bộ-công-chức.txt#chunk_001"
+    ],
+    "status": "pass"
+  }
+]
