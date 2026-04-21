@@ -283,39 +283,69 @@ with right:
     # Charts
     # =========================
     if results:
-        st.subheader("Charts")
+        st.write("---")
+        st.markdown("### 📊 Metrics Visualization")
         dfr = build_results_dataframe(results)
 
-        st.write("Score distribution")
-        st.bar_chart(dfr["score"].value_counts().sort_index())
+        # Row 1: Distribution and Status
+        chart_col1, chart_col2 = st.columns(2)
+        
+        with chart_col1:
+            st.caption("🏆 Score Distribution (1-5)")
+            st.bar_chart(dfr["score"].value_counts().sort_index(), height=200)
 
-        st.write("Pass vs Fail")
-        st.bar_chart(dfr["status"].value_counts())
+        with chart_col2:
+            st.caption("✅ Pass vs Fail Status")
+            status_counts = dfr["status"].value_counts().reset_index()
+            status_counts.columns = ["status", "count"]
+            
+            import altair as alt
+            donut = alt.Chart(status_counts).mark_arc(innerRadius=40).encode(
+                theta=alt.Theta(field="count", type="quantitative"),
+                color=alt.Color(field="status", type="nominal", scale=alt.Scale(domain=["pass", "fail"], range=["#2ecc71", "#e74c3c"])),
+                tooltip=["status", "count"]
+            ).properties(height=200)
+            st.altair_chart(donut, use_container_width=True)
 
-        st.write("Latency by case index")
-        latency_df = dfr[["latency"]].copy()
-        latency_df.index = range(1, len(latency_df) + 1)
-        st.line_chart(latency_df)
+        # Row 2: Latency and Categories
+        chart_col3, chart_col4 = st.columns(2)
+        
+        with chart_col3:
+            st.caption("⏱️ Latency (s) by Case")
+            latency_df = dfr[["latency"]].copy()
+            latency_df.index = range(1, len(latency_df) + 1)
+            st.line_chart(latency_df, height=200)
 
-        st.write("Worst 10 cases by relevancy")
-        worst = dfr.sort_values("relevancy").head(10)
-        st.dataframe(
-            worst[["test_case", "status", "relevancy", "faithfulness", "score", "agreement"]],
-            width="stretch",
-        )
+        with chart_col4:
+            st.caption("🏷️ Test Case Categories")
+            cat_rows = [x.get("metadata", {}).get("hard_case_category", "base") for x in dataset]
+            cat_df = pd.Series(cat_rows).value_counts()
+            st.bar_chart(cat_df, height=200)
 
-        st.write("Hard-case category coverage")
-        cat_rows = [x.get("metadata", {}).get("hard_case_category", "base") for x in dataset]
-        cat_df = pd.Series(cat_rows).value_counts()
-        st.bar_chart(cat_df)
+        # Bottom: Deep Dive Table
+        with st.expander("🔍 Deep Dive: Worst 10 Cases by Relevancy"):
+            worst = dfr.sort_values("relevancy").head(10)
+            st.dataframe(
+                worst[["test_case", "status", "relevancy", "faithfulness", "score", "agreement"]],
+                use_container_width=True,
+                hide_index=True
+            )
 
     # =========================
-    # Files
+    # Files & Footer
     # =========================
-    st.subheader("Report Files")
-    st.write(f"summary.json: {'OK' if SUMMARY_FILE.exists() else 'Missing'}")
-    st.write(f"benchmark_results.json: {'OK' if RESULTS_FILE.exists() else 'Missing'}")
-    st.write(f"failure_analysis.md: {'OK' if FAILURE_FILE.exists() else 'Missing'}")
-    st.write(
-        f"reflections count: {len(list(REFLECTIONS_DIR.glob('reflection_*.md')) if REFLECTIONS_DIR.exists() else [])}"
-    )
+    st.write("---")
+    file_col1, file_col2 = st.columns(2)
+    with file_col1:
+        st.caption("📄 Artifact Registry")
+        st.markdown(f"""
+        - `summary.json`: {'✅' if SUMMARY_FILE.exists() else '❌'}
+        - `benchmark_results.json`: {'✅' if RESULTS_FILE.exists() else '❌'}
+        """)
+    with file_col2:
+        refl_count = len(list(REFLECTIONS_DIR.glob('reflection_*.md')) if REFLECTIONS_DIR.exists() else [])
+        st.caption("📁 Reports & Reflections")
+        st.markdown(f"""
+        - `failure_analysis.md`: {'✅' if FAILURE_FILE.exists() else '❌'}
+        - Reflections: `{refl_count} / 6`
+        """)
