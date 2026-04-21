@@ -1,0 +1,2284 @@
+[
+  {
+    "test_case": "Bảo hiểm y tế có phải là một chính sách xã hội do Nhà nước tổ chức thực hiện không?",
+    "agent_response": "Có, bảo hiểm y tế là một chính sách xã hội do Nhà nước tổ chức thực hiện. Tuy nhiên, trong các đoạn context đã cung cấp không có thông tin cụ thể nào nêu rõ điều này. Do đó, không đủ thông tin để chỉ ra điều khoản cụ thể liên quan đến việc bảo hiểm y tế là chính sách xã hội.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1322,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_10_part_3",
+        "art_02",
+        "art_06",
+        "art_12"
+      ]
+    },
+    "latency": 1.7103662090084981,
+    "ragas": {
+      "faithfulness": 0.7,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 3.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời xác nhận rằng bảo hiểm y tế là một chính sách xã hội do Nhà nước tổ chức thực hiện, điều này đúng với Ground Truth. Tuy nhiên, câu trả lời cũng chỉ ra rằng không có thông tin cụ thể nào trong các đoạn context, điều này làm giảm độ rõ ràng và đầy đủ của câu trả lời. Do đó, điểm số không thể cao hơn. | JudgeB: Câu trả lời đã xác nhận rằng bảo hiểm y tế là một chính sách xã hội do Nhà nước tổ chức thực hiện, phù hợp với Ground Truth. Tuy nhiên, câu trả lời cũng chỉ ra rằng không có thông tin cụ thể trong đoạn context để chỉ ra điều khoản cụ thể, điều này có thể gây nhầm lẫn cho người đọc. Mặc dù vậy, câu trả lời vẫn đúng và đủ rõ ràng về mặt nội dung chính."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Bảo hiểm y tế tự nguyện được thực hiện trên cơ sở nào theo Điều 2?",
+    "agent_response": "Bảo hiểm y tế tự nguyện được thực hiện trên cơ sở tự nguyện của người tham gia, theo quy định tại Điều 2, khoản 2.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 983,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_1",
+        "art_02_clause_10_part_3"
+      ]
+    },
+    "latency": 1.4451039170089643,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã chính xác nêu rõ cơ sở thực hiện bảo hiểm y tế tự nguyện là sự tự nguyện của người tham gia, và còn trích dẫn cụ thể từ Điều 2, khoản 2, làm cho câu trả lời đầy đủ và rõ ràng. | JudgeB: The answer provided is accurate, complete, and clearly states that voluntary health insurance is based on the voluntary participation of individuals, as specified in Article 2, Clause 2. This aligns perfectly with the Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Phạm vi quyền lợi bảo hiểm y tế được quy định như thế nào trong Điều 2, khoản 9?",
+    "agent_response": "Phạm vi quyền lợi bảo hiểm y tế được quy định tại Điều 2, khoản 9 bao gồm các quyền lợi về khám, chữa bệnh, chăm sóc, phục hồi sức khỏe hoặc bằng tiền mặt mà người tham gia bảo hiểm y tế được hưởng theo quy định của cơ quan có thẩm quyền.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1007,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_1",
+        "art_02_clause_6_part_2"
+      ]
+    },
+    "latency": 1.848529624985531,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ phạm vi quyền lợi bảo hiểm y tế giống như trong Ground Truth, bao gồm các quyền lợi về khám, chữa bệnh, chăm sóc, phục hồi sức khỏe hoặc bằng tiền mặt. Nội dung được trình bày đầy đủ và rõ ràng, không thiếu thông tin nào so với yêu cầu. | JudgeB: Câu trả lời hoàn toàn khớp với Ground Truth, bao gồm đầy đủ các quyền lợi về khám, chữa bệnh, chăm sóc, phục hồi sức khỏe hoặc bằng tiền mặt mà người tham gia bảo hiểm y tế được hưởng. Câu trả lời cũng nêu rõ rằng các quyền lợi này được quy định bởi cơ quan có thẩm quyền, đảm bảo tính chính xác và đầy đủ của thông tin."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Dịch vụ kỹ thuật cao trong y học yêu cầu những gì từ người thực hiện?",
+    "agent_response": "Dịch vụ kỹ thuật cao trong y học yêu cầu người thực hiện phải có trình độ, kỹ năng tay nghề cao hoặc phải sử dụng các trang thiết bị y tế hiện đại, vật tư y tế đắt tiền có chi phí lớn. (Xem Điều 2, khoản 10).",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1172,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_06",
+        "art_02_clause_6_part_2",
+        "art_02",
+        "art_02_clause_10_part_3"
+      ]
+    },
+    "latency": 1.242860375001328,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ yêu cầu về trình độ và kỹ năng tay nghề cao, cũng như việc sử dụng trang thiết bị y tế hiện đại và vật tư y tế đắt tiền. Tuy nhiên, phần 'có chi phí lớn' có thể được coi là thừa, vì 'đắt tiền' đã đủ để diễn đạt ý này. Do đó, câu trả lời gần đúng nhưng không hoàn toàn chính xác và rõ ràng như Ground Truth. | JudgeB: The answer accurately reflects the requirements for high-tech medical services as stated in the Ground Truth. It mentions the need for high-level skills and the use of modern medical equipment and expensive medical supplies, which aligns with the provided reference to the legal text."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Thanh toán theo định suất có phải là hình thức thanh toán dựa trên mức khoán cố định cho mỗi đầu thẻ đăng ký tại cơ sở khám, chữa bệnh không?",
+    "agent_response": "Có, thanh toán theo định suất là hình thức thanh toán dựa trên mức khoán cố định cho mỗi đầu thẻ đăng ký tại cơ sở khám, chữa bệnh. Điều này được nêu rõ trong Context 1, Điều 2, giải thích từ ngữ số 14.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1029,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_10_part_3",
+        "art_08"
+      ]
+    },
+    "latency": 1.6722293329949025,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đúng hoàn toàn với Ground Truth, cung cấp thông tin chính xác về thanh toán theo định suất và nhấn mạnh rằng đây là hình thức thanh toán dựa trên mức khoán cố định cho mỗi đầu thẻ đăng ký tại cơ sở khám, chữa bệnh. Câu trả lời cũng đề cập đến nguồn thông tin cụ thể, làm tăng tính rõ ràng và độ tin cậy. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó xác nhận rằng thanh toán theo định suất là hình thức thanh toán dựa trên mức khoán cố định cho mỗi đầu thẻ đăng ký tại cơ sở khám, chữa bệnh, và còn cung cấp thêm thông tin về nguồn gốc của định nghĩa này."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Ai là đối tượng thực hiện bảo hiểm y tế bắt buộc theo Điều 3, khoản 1?",
+    "agent_response": "Đối tượng thực hiện bảo hiểm y tế bắt buộc theo Điều 3, khoản 1 là người lao động Việt Nam làm việc theo hợp đồng lao động có thời hạn từ đủ 3 tháng trở lên và hợp đồng lao động không xác định thời hạn trong các doanh nghiệp thuộc mọi thành phần kinh tế, các cơ quan, đơn vị sự nghiệp, đơn vị thuộc lực lượng vũ trang.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1303,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1",
+        "art_03",
+        "art_03_clause_1_part_2",
+        "art_03_clause_6_part_3"
+      ]
+    },
+    "latency": 1.9332880410074722,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.95,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu đúng đối tượng thực hiện bảo hiểm y tế bắt buộc là người lao động Việt Nam làm việc theo hợp đồng lao động từ đủ 3 tháng trở lên và hợp đồng lao động không xác định thời hạn. Tuy nhiên, câu trả lời bổ sung thêm thông tin về các doanh nghiệp thuộc mọi thành phần kinh tế và các cơ quan, đơn vị sự nghiệp, đơn vị thuộc lực lượng vũ trang, điều này làm cho câu trả lời trở nên đầy đủ hơn nhưng không hoàn toàn chính xác theo Ground Truth. Do đó, điểm số là 4. | JudgeB: Câu trả lời đã nêu đúng đối tượng thực hiện bảo hiểm y tế bắt buộc là người lao động Việt Nam làm việc theo hợp đồng lao động có thời hạn từ đủ 3 tháng trở lên và hợp đồng lao động không xác định thời hạn. Tuy nhiên, câu trả lời còn bổ sung thêm thông tin về các doanh nghiệp thuộc mọi thành phần kinh tế, các cơ quan, đơn vị sự nghiệp, đơn vị thuộc lực lượng vũ trang, điều này không có trong Ground Truth. Mặc dù thông tin bổ sung này có thể đúng, nhưng nó không cần thiết cho câu hỏi cụ thể này, do đó điểm số là 4."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 3 quy định những đối tượng nào được thực hiện bảo hiểm y tế bắt buộc?",
+    "agent_response": "Điều 3 quy định các đối tượng thực hiện bảo hiểm y tế bắt buộc bao gồm:\n\n1. Người lao động Việt Nam làm việc theo hợp đồng lao động từ đủ 3 tháng trở lên.\n2. Cán bộ, công chức, viên chức.\n3. Người đang hưởng chế độ hưu trí, trợ cấp bảo hiểm xã hội hàng tháng.\n4. Người có công với cách mạng.\n5. Người tham gia kháng chiến và con đẻ của họ bị nhiễm chất độc hóa học.\n6. Đại biểu Quốc hội và Hội đồng nhân dân đương nhiệm không thuộc biên chế nhà nước.\n7. Cán bộ xã, phường, thị trấn đã nghỉ việc hưởng trợ cấp bảo hiểm xã hội hàng tháng.\n8. Thân nhân sĩ quan Quân đội nhân dân và Công an nhân dân.\n9. Các đối tượng bảo trợ xã hội được hưởng trợ cấp hàng tháng. \n\n(Thông tin chi tiết có thể tham khảo trong các phần của Điều 3 trong các context đã cung cấp.)",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1432,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1",
+        "art_03",
+        "art_03_clause_1_part_2",
+        "art_03_clause_6_part_3"
+      ]
+    },
+    "latency": 4.700911625026492,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 3.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 3.0
+      },
+      "reasoning": "JudgeA: Câu trả lời liệt kê nhiều đối tượng được thực hiện bảo hiểm y tế bắt buộc, nhưng không hoàn toàn khớp với Ground Truth. Ground Truth đề cập đến các tổ chức và cơ quan cụ thể, trong khi câu trả lời chủ yếu tập trung vào cá nhân. Do đó, mặc dù thông tin có giá trị, nhưng không đầy đủ và chính xác như yêu cầu trong Ground Truth. | JudgeB: Câu trả lời đã liệt kê một số đối tượng được thực hiện bảo hiểm y tế bắt buộc, nhưng không hoàn toàn khớp với Ground Truth. Ground Truth tập trung vào các tổ chức và cơ quan, trong khi câu trả lời liệt kê các nhóm cá nhân cụ thể. Mặc dù có sự liên quan, nhưng câu trả lời không hoàn toàn đúng và đủ so với Ground Truth đã cung cấp."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Đại biểu Quốc hội đương nhiệm có thuộc đối tượng thực hiện bảo hiểm y tế bắt buộc không?",
+    "agent_response": "Đại biểu Quốc hội đương nhiệm không thuộc đối tượng thực hiện bảo hiểm y tế bắt buộc, theo Điều 3, khoản 6 của văn bản.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1063,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1",
+        "art_03",
+        "art_03_clause_6_part_3",
+        "art_01"
+      ]
+    },
+    "latency": 1.541791750001721,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đúng hoàn toàn với thông tin trong Ground Truth, nêu rõ lý do tại sao đại biểu Quốc hội đương nhiệm không thuộc đối tượng thực hiện bảo hiểm y tế bắt buộc. Thông tin được trình bày rõ ràng và đầy đủ. | JudgeB: Câu trả lời đã đúng khi khẳng định rằng đại biểu Quốc hội đương nhiệm không thuộc đối tượng thực hiện bảo hiểm y tế bắt buộc. Tuy nhiên, câu trả lời thiếu phần giải thích rằng đại biểu Quốc hội đương nhiệm không thuộc biên chế nhà nước, điều này giúp làm rõ hơn lý do tại sao họ không thuộc đối tượng bảo hiểm y tế bắt buộc. Ngoài ra, việc trích dẫn Điều 3, khoản 6 của văn bản mà không nêu rõ văn bản nào có thể gây nhầm lẫn cho người đọc."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Người cao tuổi từ 90 tuổi trở lên có phải tham gia bảo hiểm y tế bắt buộc không?",
+    "agent_response": "Người cao tuổi từ 90 tuổi trở lên không phải tham gia bảo hiểm y tế bắt buộc. Điều này được quy định tại Điều 3, mục 10 của Nghị định số 30/2002/NĐ-CP.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1345,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_10_part_4",
+        "art_03",
+        "art_03_clause_1",
+        "art_02_clause_1",
+        "art_02"
+      ]
+    },
+    "latency": 1.6544032500241883,
+    "ragas": {
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 1.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 1.0,
+        "gpt-4o": 1.0
+      },
+      "reasoning": "JudgeA: Câu trả lời sai hoàn toàn so với thông tin đúng trong Ground Truth. Người cao tuổi từ 90 tuổi trở lên phải tham gia bảo hiểm y tế bắt buộc, nhưng câu trả lời lại khẳng định ngược lại. Hơn nữa, việc trích dẫn Nghị định số 30/2002/NĐ-CP không liên quan đến quy định hiện hành về bảo hiểm y tế cho người cao tuổi, làm cho câu trả lời thiếu chính xác và không rõ ràng. | JudgeB: Câu trả lời không chính xác so với Ground Truth. Theo Ground Truth, người cao tuổi từ 90 tuổi trở lên phải tham gia bảo hiểm y tế bắt buộc, trong khi câu trả lời lại khẳng định ngược lại. Ngoài ra, việc trích dẫn Điều 3, mục 10 của Nghị định số 30/2002/NĐ-CP không phù hợp với thông tin hiện tại, gây ra sự nhầm lẫn và thiếu chính xác."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Ai là đối tượng có thể tham gia bảo hiểm y tế tự nguyện theo Điều 4?",
+    "agent_response": "Đối tượng có thể tham gia bảo hiểm y tế tự nguyện theo Điều 4 là mọi đối tượng có nhu cầu tự nguyện tham gia bảo hiểm y tế, kể cả những người đã tham gia bảo hiểm y tế bắt buộc nhưng muốn tham gia bảo hiểm y tế tự nguyện để hưởng mức dịch vụ bảo hiểm y tế cao hơn.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1177,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_04",
+        "art_08",
+        "art_11"
+      ]
+    },
+    "latency": 2.607618750014808,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ đối tượng có thể tham gia bảo hiểm y tế tự nguyện, bao gồm cả những người đã tham gia bảo hiểm y tế bắt buộc. Ngoài ra, câu trả lời còn bổ sung thông tin về lý do tham gia bảo hiểm y tế tự nguyện để hưởng mức dịch vụ cao hơn, làm cho câu trả lời trở nên đầy đủ và rõ ràng hơn so với Ground Truth. | JudgeB: The answer accurately reflects the information provided in the Ground Truth. It clearly states that all individuals who wish to voluntarily participate in health insurance, including those already enrolled in mandatory health insurance, are eligible to participate in voluntary health insurance. The answer also adds a detail about the potential benefit of accessing higher service levels, which enhances the clarity and completeness of the response."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Quỹ bảo hiểm y tế được hình thành từ những nguồn nào theo Điều 5?",
+    "agent_response": "Quỹ bảo hiểm y tế được hình thành từ các nguồn sau theo Điều 5:\n\na) Tiền thu phí bảo hiểm y tế do người sử dụng lao động và người tham gia bảo hiểm y tế đóng;  \nb) Các khoản nhà nước đóng bảo hiểm y tế cho đối tượng theo quy định và các khoản hỗ trợ khác của nhà nước (nếu có);  \nc) Tiền sinh lời do thực hiện các biện pháp hợp pháp nhằm bảo toàn và tăng trưởng Quỹ Bảo hiểm y tế;  \nd) Các khoản thu từ nguồn tài trợ, viện trợ của các tổ chức, cá nhân trong và ngoài nước;  \nđ) Các khoản thu hợp pháp khác.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1193,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_05",
+        "art_02_clause_6_part_2",
+        "art_02",
+        "art_15_clause_6_part_3",
+        "art_15"
+      ]
+    },
+    "latency": 3.6737838750123046,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã liệt kê đầy đủ và chính xác các nguồn hình thành Quỹ bảo hiểm y tế theo Điều 5, bao gồm tiền thu phí bảo hiểm, các khoản nhà nước đóng, tiền sinh lời từ biện pháp hợp pháp, tài trợ từ tổ chức, cá nhân và các khoản thu hợp pháp khác. Cách trình bày rõ ràng và có cấu trúc, giúp người đọc dễ dàng hiểu được thông tin. | JudgeB: The answer provided is comprehensive and aligns well with the Ground Truth. It lists all the sources of the health insurance fund as specified in Điều 5, including contributions from employers and participants, state contributions, lawful income-generating activities, donations, and other lawful sources. The answer is clear, detailed, and covers all necessary points, matching the Ground Truth accurately."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Thẻ bảo hiểm y tế có giá trị sử dụng ngay khi nào?",
+    "agent_response": "Thẻ bảo hiểm y tế có giá trị sử dụng ngay khi được cấp cho người tham gia bảo hiểm y tế và khi đóng bảo hiểm y tế đúng quy định, theo Điều 6, khoản 3. Đối với bảo hiểm y tế tự nguyện, thẻ có giá trị sử dụng sau 30 ngày kể từ ngày đóng bảo hiểm trong một số trường hợp nhất định (Điều 6, khoản 4).",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1159,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_06",
+        "art_11"
+      ]
+    },
+    "latency": 1.8317712080024648,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời cung cấp thông tin chính xác về thời điểm thẻ bảo hiểm y tế có giá trị sử dụng, bao gồm cả trường hợp bảo hiểm y tế tự nguyện. Tuy nhiên, nó có thể được cải thiện bằng cách nhấn mạnh rõ ràng hơn rằng thẻ có giá trị ngay khi được cấp và khi đóng đúng quy định, như đã nêu trong Ground Truth. | JudgeB: The answer correctly states that the health insurance card is valid immediately when issued to participants and when the insurance is paid according to regulations, which aligns with the Ground Truth. However, it adds additional information about voluntary health insurance, which is not mentioned in the Ground Truth. This additional detail, while accurate, slightly deviates from the focus of the Ground Truth, which is why the score is not a perfect 5."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Người tham gia bảo hiểm y tế bắt buộc có quyền lợi gì liên quan đến chi phí khám thai và sinh con?",
+    "agent_response": "Người tham gia bảo hiểm y tế bắt buộc có quyền lợi liên quan đến chi phí khám thai và sinh con theo quy định tại Điều 7, khoản 1, mục 7, cụ thể là được chi trả chi phí khám thai và sinh con.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1255,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_07",
+        "art_17",
+        "art_27"
+      ]
+    },
+    "latency": 1.3234630420047324,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.95,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời cung cấp thông tin đầy đủ và chính xác về quyền lợi của người tham gia bảo hiểm y tế bắt buộc liên quan đến chi phí khám thai và sinh con, đồng thời trích dẫn cụ thể điều luật liên quan, làm rõ ràng hơn quyền lợi này. | JudgeB: Câu trả lời đã nêu rõ ràng và đầy đủ quyền lợi của người tham gia bảo hiểm y tế bắt buộc liên quan đến chi phí khám thai và sinh con. Nó cũng chỉ ra điều luật cụ thể, phù hợp với thông tin trong Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Theo Điều 8, ai là người tự thanh toán khoản chi phí vượt mức tối đa khi sử dụng dịch vụ kỹ thuật cao?",
+    "agent_response": "Theo Điều 8, người bệnh bảo hiểm y tế là người tự thanh toán khoản chi phí vượt mức tối đa khi sử dụng dịch vụ kỹ thuật cao.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1083,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_08",
+        "art_02_clause_10_part_3",
+        "art_02",
+        "art_15_clause_1",
+        "art_15"
+      ]
+    },
+    "latency": 1.577750708005624,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ ràng rằng người bệnh bảo hiểm y tế là người tự thanh toán khoản chi phí vượt mức tối đa khi sử dụng dịch vụ kỹ thuật cao, phù hợp hoàn toàn với thông tin trong Ground Truth. Không có thiếu sót hay sai sót nào trong câu trả lời. | JudgeB: Câu trả lời đã nêu đúng đối tượng là người bệnh bảo hiểm y tế phải tự thanh toán khoản chi phí vượt mức tối đa khi sử dụng dịch vụ kỹ thuật cao. Tuy nhiên, câu trả lời thiếu thông tin về các đối tượng được miễn trừ theo các khoản 3, 4, 5, 9, 10 và khoản 11 Điều 3, như đã nêu trong Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 9 quy định những tiêu chuẩn nào cho cơ sở khám, chữa bệnh bảo hiểm y tế?",
+    "agent_response": "Điều 9 quy định rằng Bộ Y tế sẽ quy định tiêu chuẩn chuyên môn kỹ thuật của cơ sở y tế đủ điều kiện khám, chữa bệnh bảo hiểm y tế. Các cơ sở y tế tư nhân có hợp đồng với tổ chức bảo hiểm xã hội tham gia khám, chữa bệnh cho người có thẻ bảo hiểm y tế phải đáp ứng đầy đủ các tiêu chuẩn về chuyên môn, kỹ thuật và chấp hành các quy định về chế độ thanh toán cho người bệnh bảo hiểm y tế như các cơ sở y tế nhà nước.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 890,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_09",
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_6_part_2"
+      ]
+    },
+    "latency": 3.1954070840147324,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ rằng Bộ Y tế quy định tiêu chuẩn chuyên môn kỹ thuật cho cơ sở y tế, và cũng đề cập đến việc các cơ sở y tế tư nhân phải đáp ứng các tiêu chuẩn tương tự như cơ sở nhà nước. Tuy nhiên, câu trả lời có thể cụ thể hơn về các tiêu chuẩn cụ thể mà Điều 9 quy định, do đó không đạt điểm tối đa. | JudgeB: The answer correctly identifies that Điều 9 involves the regulation of technical and professional standards for healthcare facilities to be eligible for health insurance contracts. It also mentions the role of the Ministry of Health in setting these standards and the requirement for private healthcare facilities to comply with these standards and payment regulations. However, it could be more precise by explicitly stating that these standards are necessary for signing contracts with social insurance organizations, as mentioned in the Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Người có thẻ bảo hiểm y tế có thể khám, chữa bệnh tại cơ sở nào mà không cần đăng ký ban đầu?",
+    "agent_response": "Không đủ thông tin. Context không đề cập đến các cơ sở khám, chữa bệnh mà người có thẻ bảo hiểm y tế có thể khám, chữa bệnh mà không cần đăng ký ban đầu.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 883,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_19_clause_1",
+        "art_19",
+        "art_01"
+      ]
+    },
+    "latency": 1.2936412499984726,
+    "ragas": {
+      "faithfulness": 0.2,
+      "relevancy": 0.3,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 2.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 2.0
+      },
+      "reasoning": "JudgeA: Câu trả lời chỉ ra rằng không đủ thông tin mà không đề cập đến các trường hợp cụ thể như cấp cứu hoặc thỏa thuận giữa tổ chức bảo hiểm xã hội và người sử dụng lao động. Mặc dù có một phần thông tin đúng, nhưng không đủ rõ ràng và đầy đủ so với Ground Truth. | JudgeB: Câu trả lời không đầy đủ và không rõ ràng so với Ground Truth. Ground Truth nêu rõ rằng người có thẻ bảo hiểm y tế có thể khám, chữa bệnh tại các cơ sở bảo hiểm y tế trong trường hợp cấp cứu hoặc theo thỏa thuận, trong khi câu trả lời chỉ nói rằng không đủ thông tin mà không giải thích thêm về các trường hợp cụ thể hoặc điều kiện áp dụng. Điều này làm cho câu trả lời thiếu thông tin cần thiết để người đọc hiểu rõ vấn đề."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Quỹ Bảo hiểm y tế có thanh toán chi phí khám chữa bệnh tại cơ sở y tế tư nhân không?",
+    "agent_response": "Có, Quỹ Bảo hiểm y tế có thể thanh toán chi phí khám chữa bệnh tại cơ sở y tế tư nhân nếu cơ sở đó có hợp đồng với cơ quan bảo hiểm xã hội để khám chữa bệnh cho người có thẻ bảo hiểm y tế. Điều này được quy định tại Điều 2, mục 8 trong Context.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1071,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_6_part_2",
+        "art_02",
+        "art_02_clause_10_part_3",
+        "art_05"
+      ]
+    },
+    "latency": 1.592462083994178,
+    "ragas": {
+      "faithfulness": 0.8,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đúng về việc Quỹ Bảo hiểm y tế có thể thanh toán chi phí khám chữa bệnh tại cơ sở y tế tư nhân, nhưng chưa nhấn mạnh rõ ràng điều kiện là người có thẻ bảo hiểm y tế phải khám chữa bệnh theo đúng tuyến đã đăng ký. Điều này làm cho câu trả lời chưa hoàn toàn đầy đủ so với Ground Truth. | JudgeB: Câu trả lời đúng khi nói rằng Quỹ Bảo hiểm y tế có thể thanh toán chi phí khám chữa bệnh tại cơ sở y tế tư nhân nếu cơ sở đó có hợp đồng với cơ quan bảo hiểm xã hội. Tuy nhiên, câu trả lời thiếu thông tin về việc thanh toán chỉ áp dụng khi người có thẻ bảo hiểm y tế khám chữa bệnh theo đúng tuyến đã đăng ký, điều này là một phần quan trọng trong Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Theo Điều 12, những trường hợp nào không được hưởng quyền lợi bảo hiểm y tế liên quan đến điều trị bệnh phong?",
+    "agent_response": "Theo Điều 12, những trường hợp không được hưởng quyền lợi bảo hiểm y tế liên quan đến điều trị bệnh phong là: \"Điều_trị bệnh phong, thuốc đặc_hiệu điều_trị các bệnh: lao, sốt_rét, tâm_thần phân_liệt, động_kinh và các bệnh khác nếu đã được ngân_sách nhà_nước chi_trả.\"",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1320,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_12",
+        "art_02_clause_10_part_3",
+        "art_02",
+        "art_17"
+      ]
+    },
+    "latency": 1.6187001249927562,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 0.5,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ các trường hợp không được hưởng quyền lợi bảo hiểm y tế liên quan đến điều trị bệnh phong, nhưng có thêm thông tin về các bệnh khác và thuốc đặc hiệu mà không được đề cập trong Ground Truth. Điều này làm cho câu trả lời trở nên dài dòng và không hoàn toàn chính xác theo nội dung của Ground Truth, vì nó không chỉ tập trung vào điều trị bệnh phong mà còn mở rộng ra các bệnh khác. Do đó, điểm số là 3. | JudgeB: Câu trả lời đã nêu rõ ràng và đầy đủ các trường hợp không được hưởng quyền lợi bảo hiểm y tế liên quan đến điều trị bệnh phong theo Điều 12, bao gồm cả việc điều trị các bệnh khác nếu đã được ngân sách nhà nước chi trả. Điều này hoàn toàn phù hợp với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 13 quy định về hình thức thanh toán chi phí khám, chữa bệnh bảo hiểm y tế như thế nào?",
+    "agent_response": "Điều 13 quy định về hình thức thanh toán chi phí khám, chữa bệnh bảo hiểm y tế như sau:\n\n1. Tổ chức bảo hiểm xã hội thanh toán với các cơ sở khám, chữa bệnh bảo hiểm y tế theo hợp đồng giữa hai bên.\n2. Tổ chức bảo hiểm xã hội thanh toán trực tiếp với người bệnh bảo hiểm y tế chi phí khám, chữa bệnh trong các trường hợp quy định tại khoản 1 Điều 11 của Điều lệ này.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 806,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_13",
+        "art_02_clause_10_part_3",
+        "art_02",
+        "art_02_clause_14_part_4"
+      ]
+    },
+    "latency": 2.3289030830201227,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ hai hình thức thanh toán chi phí khám, chữa bệnh bảo hiểm y tế theo đúng nội dung của Ground Truth. Nó không chỉ đúng về nội dung mà còn đầy đủ và rõ ràng, bao gồm cả việc thanh toán theo hợp đồng và thanh toán trực tiếp với người bệnh trong các trường hợp quy định. Do đó, câu trả lời hoàn toàn chính xác và đầy đủ. | JudgeB: The answer accurately and clearly reflects the provisions outlined in the Ground Truth. It specifies both methods of payment: through contracts with healthcare facilities and directly with patients under certain conditions, as mentioned in the relevant legal provisions. The answer is complete and aligns well with the Ground Truth, covering all necessary aspects of the regulation."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Có những hình thức thanh toán nào giữa tổ chức bảo hiểm xã hội và cơ sở khám, chữa bệnh bảo hiểm y tế?",
+    "agent_response": "Có các hình thức thanh toán giữa tổ chức bảo hiểm xã hội và cơ sở khám, chữa bệnh bảo hiểm y tế như sau:\n\n1. **Thanh toán trực tiếp**: Do cơ quan quản lý Quỹ Bảo hiểm y tế thực hiện trực tiếp bằng tiền mặt cho người tham gia bảo hiểm y tế, không qua cơ sở khám, chữa bệnh (Điều 2, khoản 12).\n\n2. **Thanh toán theo phí dịch vụ**: Dựa trên quy định về mức phí của các loại dịch vụ y tế mà người bệnh bảo hiểm y tế sử dụng (Điều 2, khoản 13).\n\n3. **Thanh toán theo định suất**: Dựa trên mức khoán cố định cho mỗi đầu thẻ đăng ký tại cơ sở khám, chữa bệnh bảo hiểm y tế trong một khoảng thời gian nhất định (Điều 2, khoản 14).\n\n4. **Thanh toán theo nhóm bệnh**: Dựa trên chi phí của mỗi loại bệnh hay nhóm bệnh cụ thể đã được chẩn đoán xác định (Điều 2, khoản 15).",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1118,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_6_part_2",
+        "art_02",
+        "art_02_clause_10_part_3",
+        "art_02_clause_14_part_4"
+      ]
+    },
+    "latency": 3.7333578749967273,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ các hình thức thanh toán giữa tổ chức bảo hiểm xã hội và cơ sở khám, chữa bệnh bảo hiểm y tế, bao gồm thanh toán theo phí dịch vụ, thanh toán theo định suất, và thanh toán theo nhóm bệnh. Tuy nhiên, câu trả lời cũng bổ sung thêm hình thức thanh toán trực tiếp, điều này có thể không hoàn toàn chính xác theo Ground Truth, vì Ground Truth không đề cập đến hình thức này. Do đó, câu trả lời thiếu một chút chính xác so với Ground Truth nhưng vẫn đầy đủ và rõ ràng. | JudgeB: The answer provided is comprehensive and aligns well with the ground truth. It accurately lists the forms of payment between social insurance organizations and healthcare facilities, including direct payment, payment by service fees, capitation, and payment by diagnosis-related groups. The answer also provides additional context by referencing specific legal clauses, enhancing its clarity and completeness."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Mức phí bảo hiểm y tế hàng tháng của người lao động là bao nhiêu phần trăm tiền lương?",
+    "agent_response": "Mức phí bảo hiểm y tế hàng tháng của người lao động là 3% tiền lương, trong đó người lao động đóng 1% và người sử dụng lao động đóng 2% (Điều 15, khoản 1).",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 984,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_15_clause_1",
+        "art_15",
+        "art_15_clause_3_part_2",
+        "art_16"
+      ]
+    },
+    "latency": 1.450941958988551,
+    "ragas": {
+      "faithfulness": 0.5,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 3.0,
+      "agreement_rate": 0.5,
+      "individual_scores": {
+        "gpt-4o-mini": 2.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời không chính xác vì mức phí bảo hiểm y tế hàng tháng của người lao động chỉ là 1% tiền lương, trong khi câu trả lời lại nêu là 3% và phân chia giữa người lao động và người sử dụng lao động. Mặc dù có thông tin về tỷ lệ đóng góp của cả hai bên, nhưng thông tin chính về mức phí của người lao động không đúng với Ground Truth. | JudgeB: The answer provides a comprehensive breakdown of the health insurance premium, specifying both the employee's and employer's contributions. However, the question specifically asks for the employee's contribution, which is correctly stated as 1%. The additional information about the employer's contribution is accurate but not directly requested, which slightly deviates from the focus of the question."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Mức phí đóng bảo hiểm y tế hàng tháng của công nhân cao su nghỉ việc hưởng trợ cấp hàng tháng là bao nhiêu?",
+    "agent_response": "Mức phí đóng bảo hiểm y tế hàng tháng của công nhân cao su nghỉ việc hưởng trợ cấp hàng tháng là 3% mức tiền lương tối thiểu hiện hành, theo quy định tại Điều 15, khoản 3.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 985,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_15_clause_1",
+        "art_15",
+        "art_15_clause_3_part_2",
+        "art_16"
+      ]
+    },
+    "latency": 1.3545469590171706,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời cung cấp thông tin chính xác về mức phí đóng bảo hiểm y tế hàng tháng của công nhân cao su nghỉ việc hưởng trợ cấp, đúng với thông tin trong Ground Truth. Ngoài ra, câu trả lời còn bổ sung thông tin về quy định pháp lý liên quan, làm cho câu trả lời trở nên rõ ràng và đầy đủ hơn. | JudgeB: Câu trả lời đã cung cấp thông tin chính xác và đầy đủ về mức phí đóng bảo hiểm y tế hàng tháng của công nhân cao su nghỉ việc hưởng trợ cấp hàng tháng. Nó nêu rõ rằng mức phí là 3% mức tiền lương tối thiểu hiện hành, phù hợp với thông tin trong Ground Truth. Ngoài ra, câu trả lời còn chỉ rõ quy định tại Điều 15, khoản 3, giúp tăng tính rõ ràng và đáng tin cậy."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 15, khoản 6 quy định về trách nhiệm đóng bảo hiểm y tế cho đối tượng nào?",
+    "agent_response": "Điều 15, khoản 6 quy định rằng ngân sách nhà nước bảo đảm nguồn đóng bảo hiểm y tế cho đối tượng hưởng bảo hiểm xã hội trước ngày 01 tháng 10 năm 1995 và các đối tượng quy định tại các khoản 4, 5, 6, 7, 8, 9, 10, 11 và khoản 12 Điều 3 của Điều lệ này.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1134,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_15_clause_6_part_3",
+        "art_15",
+        "art_15_clause_1",
+        "art_15_clause_3_part_2"
+      ]
+    },
+    "latency": 1.7145478329912294,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác và đầy đủ, phản ánh đúng nội dung của Ground Truth. Nó nêu rõ đối tượng được ngân sách nhà nước đảm bảo nguồn đóng bảo hiểm y tế, bao gồm cả những người hưởng bảo hiểm xã hội trước ngày 01 tháng 10 năm 1995 và các đối tượng cụ thể theo các khoản đã nêu. Không có thông tin nào bị thiếu hoặc sai lệch. | JudgeB: The answer provided is accurate, complete, and clearly states the responsibility of the state budget in ensuring health insurance contributions for the specified groups, as outlined in Điều 15, khoản 6. It matches the Ground Truth perfectly."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Người sử dụng lao động phải nộp tiền đóng bảo hiểm y tế cho cơ quan nào theo quy định của Điều 16?",
+    "agent_response": "Người sử dụng lao động phải nộp tiền đóng bảo hiểm y tế cho cơ quan bảo hiểm xã hội theo quy định tại Điều 16, khoản 1.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1066,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_16",
+        "art_02_clause_6_part_2",
+        "art_02",
+        "art_18"
+      ]
+    },
+    "latency": 1.3483664589875843,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ cơ quan mà người sử dụng lao động phải nộp tiền đóng bảo hiểm y tế là 'cơ quan bảo hiểm xã hội', đồng thời cũng trích dẫn đúng quy định tại Điều 16, khoản 1. Thông tin đầy đủ và rõ ràng, phù hợp với Ground Truth. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó chỉ rõ rằng người sử dụng lao động phải nộp tiền đóng bảo hiểm y tế cho cơ quan bảo hiểm xã hội, đồng thời cũng đề cập đến Điều 16, khoản 1, là căn cứ pháp lý cụ thể."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Người có thẻ bảo hiểm y tế có quyền yêu cầu cơ quan bảo hiểm xã hội đảm bảo quyền lợi theo quy định của Điều lệ này không?",
+    "agent_response": "Có, người có thẻ bảo hiểm y tế có quyền yêu cầu cơ quan bảo hiểm xã hội đảm bảo quyền lợi theo quy định tại khoản d, Điều 17 của Điều lệ bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1100,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_17",
+        "art_19_clause_1",
+        "art_19",
+        "art_01"
+      ]
+    },
+    "latency": 1.6062439590168651,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đúng và đầy đủ, nêu rõ quyền của người có thẻ bảo hiểm y tế và trích dẫn cụ thể điều khoản liên quan, phù hợp với Ground Truth. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó không chỉ khẳng định quyền của người có thẻ bảo hiểm y tế mà còn chỉ rõ điều khoản cụ thể trong Điều lệ bảo hiểm y tế, giúp tăng tính rõ ràng và chính xác của câu trả lời."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Người sử dụng lao động có trách nhiệm gì theo khoản 2 Điều 18?",
+    "agent_response": "Theo khoản 2 Điều 18, người sử dụng lao động có trách nhiệm:\n\na) Đóng phí bảo hiểm y tế đầy đủ, đúng thời hạn theo quy định của Điều lệ Bảo hiểm y tế;\n\nb) Cung cấp các tài liệu về lao động, tiền lương, tiền công, phụ cấp của người tham gia đóng bảo hiểm y tế khi tổ chức bảo hiểm y tế yêu cầu và thực hiện chế độ đóng bảo hiểm y tế theo quy định;\n\nc) Chấp hành sự kiểm tra, thanh tra về việc thực hiện chế độ đóng, thanh toán bảo hiểm y tế cho người lao động của các cơ quan nhà nước có thẩm quyền.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1190,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_18",
+        "art_19_clause_2_part_3",
+        "art_19",
+        "art_19_clause_2_part_4"
+      ]
+    },
+    "latency": 2.435384124983102,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ các trách nhiệm của người sử dụng lao động theo khoản 2 Điều 18, bao gồm việc đóng phí bảo hiểm y tế đầy đủ và đúng thời hạn, cung cấp tài liệu về lao động và chấp hành kiểm tra, thanh tra. Nội dung được trình bày rõ ràng và đầy đủ, phù hợp với thông tin trong Ground Truth. | JudgeB: The answer provided is accurate, complete, and clearly outlines the responsibilities of the employer as specified in the ground truth. It includes all the key points: paying health insurance premiums fully and on time, providing necessary documents, and complying with inspections and audits. The answer is well-structured and matches the ground truth in terms of content and clarity."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 19, khoản 1 quy định quyền của tổ chức bảo hiểm xã hội liên quan đến việc yêu cầu người sử dụng lao động thực hiện chế độ bảo hiểm y tế như thế nào?",
+    "agent_response": "Theo Điều 19, khoản 1, tổ chức bảo hiểm xã hội có quyền yêu cầu người sử dụng lao động đóng và thực hiện chế độ bảo hiểm y tế, cũng như cung cấp các tài liệu liên quan đến việc này.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1031,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_19_clause_1",
+        "art_19",
+        "art_19_clause_1_part_2",
+        "art_19_clause_2_part_3"
+      ]
+    },
+    "latency": 1.414831707981648,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó nêu rõ quyền của tổ chức bảo hiểm xã hội trong việc yêu cầu người sử dụng lao động thực hiện chế độ bảo hiểm y tế và cung cấp tài liệu liên quan, không thiếu thông tin nào. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó nêu rõ quyền của tổ chức bảo hiểm xã hội trong việc yêu cầu người sử dụng lao động đóng và thực hiện chế độ bảo hiểm y tế, cũng như cung cấp các tài liệu liên quan. Câu trả lời không thiếu thông tin và diễn đạt rõ ràng."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tổ chức bảo hiểm xã hội có quyền xử lý người lao động vi phạm Điều lệ Bảo hiểm y tế không?",
+    "agent_response": "Không đủ thông tin để xác định quyền xử lý của tổ chức bảo hiểm xã hội đối với người lao động vi phạm Điều lệ Bảo hiểm y tế. Các điều trong context chỉ đề cập đến quyền và trách nhiệm của người tham gia bảo hiểm y tế và người sử dụng lao động mà không nêu rõ quyền xử lý vi phạm.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1337,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_12",
+        "art_17",
+        "art_18"
+      ]
+    },
+    "latency": 1.6249557500123046,
+    "ragas": {
+      "faithfulness": 0.3,
+      "relevancy": 0.5,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 2.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 2.0,
+        "gpt-4o": 2.0
+      },
+      "reasoning": "JudgeA: Câu trả lời không chính xác vì đã phủ nhận quyền xử lý của tổ chức bảo hiểm xã hội, trong khi Ground Truth khẳng định rằng họ có quyền này. Mặc dù câu trả lời chỉ ra rằng không đủ thông tin, nhưng thực tế là có thông tin rõ ràng trong Ground Truth. Do đó, câu trả lời thiếu chính xác và không đầy đủ. | JudgeB: Câu trả lời không đủ thông tin và không rõ ràng so với Ground Truth. Ground Truth khẳng định rằng tổ chức bảo hiểm xã hội có quyền xử lý người lao động vi phạm Điều lệ Bảo hiểm y tế, trong khi câu trả lời lại cho rằng không đủ thông tin để xác định điều này. Điều này cho thấy sự thiếu sót trong việc nắm bắt thông tin cần thiết để đưa ra câu trả lời chính xác."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Tổ chức bảo hiểm xã hội có trách nhiệm gì trong việc quản lý quỹ bảo hiểm y tế?",
+    "agent_response": "Tổ chức bảo hiểm xã hội có trách nhiệm quản lý quỹ bảo hiểm y tế theo Điều 19, bao gồm các nhiệm vụ như:\n\n- Tổ chức triển khai và thực hiện các chương trình bảo hiểm y tế.\n- Thu tiền đóng phí bảo hiểm y tế, cấp thẻ và hướng dẫn quản lý, sử dụng thẻ bảo hiểm y tế.\n- Quản lý quỹ, thanh toán chi phí bảo hiểm y tế đúng quy định và kịp thời.\n- Kiểm tra, giám định việc thực hiện chế độ khám, chữa bệnh và thanh toán chi phí bảo hiểm y tế. \n\nCác trách nhiệm này được quy định tại Điều 19, khoản 2.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1346,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_06",
+        "art_19_clause_2_part_3",
+        "art_19",
+        "art_02_clause_6_part_2",
+        "art_02"
+      ]
+    },
+    "latency": 3.518320083996514,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.95,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ các trách nhiệm của tổ chức bảo hiểm xã hội trong việc quản lý quỹ bảo hiểm y tế, bao gồm cả việc thanh toán chi phí bảo hiểm y tế đúng quy định và kịp thời, như đã được đề cập trong Ground Truth. Ngoài ra, câu trả lời còn bổ sung thêm các nhiệm vụ cụ thể khác, làm cho thông tin trở nên đầy đủ và rõ ràng hơn. | JudgeB: Câu trả lời cung cấp đầy đủ và chính xác các trách nhiệm của tổ chức bảo hiểm xã hội trong việc quản lý quỹ bảo hiểm y tế. Nó không chỉ nhắc đến việc quản lý quỹ và thanh toán chi phí bảo hiểm y tế đúng quy định và kịp thời, mà còn bổ sung thêm các nhiệm vụ khác như tổ chức triển khai chương trình, thu tiền đóng phí, cấp thẻ, và kiểm tra giám định. Điều này cho thấy sự hiểu biết sâu sắc và chi tiết về trách nhiệm của tổ chức bảo hiểm xã hội, phù hợp với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Theo Điều 19, khoản 2, tổ chức bảo hiểm xã hội có trách nhiệm gì trong việc nâng cao quyền lợi của người tham gia bảo hiểm y tế?",
+    "agent_response": "Theo Điều 19, khoản 2, tổ chức bảo hiểm xã hội có trách nhiệm nghiên cứu, đề xuất và trình cơ quan có thẩm quyền các biện pháp nhằm nâng cao quyền lợi của người tham gia bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1158,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_19_clause_2_part_4",
+        "art_19",
+        "art_19_clause_2_part_3",
+        "art_19_clause_1"
+      ]
+    },
+    "latency": 1.5769202910014428,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác và đầy đủ, trích dẫn đúng nội dung từ Ground Truth mà không thiếu thông tin nào. Nó rõ ràng và dễ hiểu, phản ánh đúng trách nhiệm của tổ chức bảo hiểm xã hội theo quy định. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó nêu rõ trách nhiệm của tổ chức bảo hiểm xã hội trong việc nghiên cứu, đề xuất và trình cơ quan có thẩm quyền các biện pháp nhằm nâng cao quyền lợi của người tham gia bảo hiểm y tế, đúng theo quy định tại Điều 19, khoản 2."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Cơ sở khám, chữa bệnh bảo hiểm y tế có quyền gì theo Điều 20, khoản 1?",
+    "agent_response": "Theo Điều 20, khoản 1, cơ sở khám, chữa bệnh bảo hiểm y tế có quyền:\n\na) Yêu cầu tổ chức bảo hiểm xã hội tạm ứng kinh phí và thanh toán chi phí khám, chữa bệnh theo quy định của Điều lệ Bảo hiểm y tế và theo hợp đồng khám, chữa bệnh đã ký;\n\nb) Khám, chữa bệnh và cung cấp các dịch vụ y tế cho người bệnh bảo hiểm y tế theo đúng quy định chuyên môn;\n\nc) Yêu cầu tổ chức bảo hiểm xã hội cung cấp số liệu về số người đăng ký tại cơ sở khám, chữa bệnh bảo hiểm y tế;\n\nd) Từ chối thực hiện các yêu cầu ngoài quy định của Điều lệ Bảo hiểm y tế và hợp đồng đã ký với tổ chức bảo hiểm xã hội hoặc những yêu cầu không phù hợp với quy chế chuyên môn bệnh viện do Bộ Y tế ban hành;\n\nđ) Sử dụng nguồn kinh phí do tổ chức bảo hiểm xã hội thanh toán theo quy định;\n\ne) Khiếu nại với các cơ quan có thẩm quyền khi phát hiện hành vi vi phạm Điều lệ Bảo hiểm y tế hoặc khởi kiện ra tòa khi phát hiện tổ chức bảo hiểm xã hội vi phạm hợp đồng khám, chữa bệnh bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1304,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_20_clause_1",
+        "art_20",
+        "art_20_clause_2_part_2",
+        "art_20_clause_2_part_3"
+      ]
+    },
+    "latency": 3.551017709018197,
+    "ragas": {
+      "faithfulness": 0.95,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu đầy đủ và rõ ràng các quyền của cơ sở khám, chữa bệnh bảo hiểm y tế theo Điều 20, khoản 1, bao gồm yêu cầu tạm ứng kinh phí, khám chữa bệnh, yêu cầu cung cấp số liệu, từ chối yêu cầu không phù hợp, sử dụng kinh phí và quyền khiếu nại. Tất cả các quyền này đều phù hợp với nội dung của Ground Truth. | JudgeB: Câu trả lời đã liệt kê đầy đủ và chính xác các quyền của cơ sở khám, chữa bệnh bảo hiểm y tế theo Điều 20, khoản 1. Các quyền này bao gồm yêu cầu tạm ứng kinh phí, cung cấp dịch vụ y tế, yêu cầu thông tin từ tổ chức bảo hiểm xã hội, từ chối yêu cầu không phù hợp, sử dụng kinh phí, và khiếu nại hoặc khởi kiện khi cần thiết. Câu trả lời rõ ràng và chi tiết, hoàn toàn phù hợp với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Cơ sở khám, chữa bệnh có trách nhiệm gì trong việc thực hiện hợp đồng bảo hiểm y tế?",
+    "agent_response": "Cơ sở khám, chữa bệnh có trách nhiệm thực hiện hợp đồng bảo hiểm y tế theo các hình thức thanh toán được quy định tại Điều 14, bao gồm: thanh toán theo phí dịch vụ, thanh toán theo định suất, thanh toán theo nhóm bệnh, và các hình thức thanh toán thích hợp khác. Cơ sở cũng phải đảm bảo quyền lợi của người tham gia bảo hiểm y tế và sự an toàn của Quỹ Bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1276,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_10_part_4",
+        "art_03",
+        "art_14",
+        "art_18"
+      ]
+    },
+    "latency": 2.025689208006952,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã cung cấp thông tin đầy đủ và rõ ràng về trách nhiệm của cơ sở khám, chữa bệnh trong việc thực hiện hợp đồng bảo hiểm y tế. Nó không chỉ nhắc đến việc thực hiện đúng hợp đồng mà còn liệt kê các hình thức thanh toán cụ thể và nhấn mạnh quyền lợi của người tham gia bảo hiểm y tế, điều này làm cho câu trả lời trở nên toàn diện và chính xác hơn so với Ground Truth. | JudgeB: Câu trả lời đã nêu rõ trách nhiệm của cơ sở khám, chữa bệnh trong việc thực hiện hợp đồng bảo hiểm y tế, bao gồm các hình thức thanh toán và đảm bảo quyền lợi của người tham gia bảo hiểm y tế. Tuy nhiên, câu trả lời có thể được cải thiện bằng cách nhấn mạnh hơn vào việc thực hiện đúng hợp đồng khám, chữa bệnh bảo hiểm y tế như đã nêu trong Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Cơ sở khám, chữa bệnh có trách nhiệm báo cho tổ chức bảo hiểm xã hội về những trường hợp vi phạm quy định sử dụng thẻ bảo hiểm y tế không?",
+    "agent_response": "Có, cơ sở khám, chữa bệnh bảo hiểm y tế có trách nhiệm báo cho tổ chức bảo hiểm xã hội về những trường hợp vi phạm quy định sử dụng thẻ bảo hiểm y tế. Điều này được quy định tại Điều 20.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 694,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_20_clause_2_part_3",
+        "art_20",
+        "art_01"
+      ]
+    },
+    "latency": 1.5241983749729116,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.3333333333333333,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã đúng và đầy đủ thông tin so với Ground Truth. Nó xác nhận trách nhiệm của cơ sở khám, chữa bệnh trong việc báo cáo vi phạm quy định sử dụng thẻ bảo hiểm y tế và nhắc đến điều luật liên quan, thể hiện sự rõ ràng và chính xác. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó xác nhận rằng cơ sở khám, chữa bệnh có trách nhiệm báo cho tổ chức bảo hiểm xã hội về những trường hợp vi phạm quy định sử dụng thẻ bảo hiểm y tế, và còn cung cấp thêm thông tin về điều luật liên quan (Điều 20)."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Quỹ Bảo hiểm y tế được quản lý theo quy chế nào?",
+    "agent_response": "Quỹ Bảo hiểm y tế được quản lý theo quy định tại Điều 5, trong đó nêu rõ nguồn hình thành và cách sử dụng quỹ.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 860,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_6_part_2",
+        "art_02",
+        "art_02_clause_14_part_4",
+        "art_05"
+      ]
+    },
+    "latency": 2.355304791999515,
+    "ragas": {
+      "faithfulness": 0.7,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 3.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 3.0
+      },
+      "reasoning": "JudgeA: Câu trả lời cung cấp thông tin về quy định quản lý quỹ Bảo hiểm y tế, nhưng không nêu rõ rằng nó được quản lý theo quy chế quản lý tài chính đối với Bảo hiểm Xã hội Việt Nam như trong Ground Truth. Tuy nhiên, nó vẫn đề cập đến nguồn hình thành và cách sử dụng quỹ, cho thấy sự liên quan đến quy chế quản lý, nên được chấm 4. | JudgeB: The answer partially addresses the question by mentioning the management of the Health Insurance Fund according to a specific regulation (Điều 5). However, it lacks the specific mention of the 'financial management regulations for Vietnam Social Insurance' as stated in the Ground Truth. The answer could be improved by explicitly stating the connection to the financial management regulations for Vietnam Social Insurance to fully align with the Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 22 quy định về chế độ kế toán và báo cáo tài chính của tổ chức nào?",
+    "agent_response": "Điều 22 quy định về chế độ kế toán và báo cáo tài chính của Tổ chức bảo hiểm xã hội.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 675,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_22",
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_14"
+      ]
+    },
+    "latency": 1.1973824999877252,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác và đầy đủ, trùng khớp với thông tin trong Ground Truth. Nó nêu rõ tổ chức liên quan đến chế độ kế toán và báo cáo tài chính là Tổ chức bảo hiểm xã hội. | JudgeB: The answer provided is completely accurate and matches the ground truth. It correctly identifies that Article 22 pertains to the accounting and financial reporting regime of the Social Insurance Organization. The response is clear, concise, and directly addresses the question."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tổ chức bảo hiểm xã hội có nghĩa vụ công khai báo cáo tài chính về Quỹ Bảo hiểm y tế vào thời điểm nào?",
+    "agent_response": "Không đủ thông tin. Context không đề cập đến thời điểm công khai báo cáo tài chính về Quỹ Bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1211,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1_part_2",
+        "art_03",
+        "art_15_clause_6_part_3",
+        "art_15",
+        "art_02_clause_6_part_2",
+        "art_02"
+      ]
+    },
+    "latency": 1.5472333329962566,
+    "ragas": {
+      "faithfulness": 0.0,
+      "relevancy": 0.0,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 2.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 2.0,
+        "gpt-4o": 2.0
+      },
+      "reasoning": "JudgeA: Câu trả lời không đủ thông tin và không chính xác so với Ground Truth. Ground Truth rõ ràng nêu rằng tổ chức bảo hiểm xã hội phải công bố báo cáo tài chính sau khi kết thúc năm tài chính, nhưng câu trả lời lại cho rằng không có đủ thông tin, dẫn đến sự thiếu chính xác và rõ ràng. | JudgeB: The answer provided is not accurate as it states 'Không đủ thông tin' which implies a lack of information, whereas the Ground Truth clearly states that the financial reports should be disclosed after the end of the fiscal year. The answer lacks the necessary detail and clarity to match the Ground Truth."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Mục tiêu của Bảo hiểm y tế tự nguyện theo Điều 24 có phải là vì mục đích kinh doanh không?",
+    "agent_response": "Mục tiêu của Bảo hiểm y tế tự nguyện theo Điều 24 không phải là vì mục đích kinh doanh, mà nhằm thực hiện chính sách xã hội trong khám, chữa bệnh.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 798,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_24",
+        "art_06",
+        "art_01"
+      ]
+    },
+    "latency": 1.4140622920240276,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đúng với nội dung của Ground Truth, khẳng định rằng mục tiêu của Bảo hiểm y tế tự nguyện không phải vì mục đích kinh doanh và bổ sung thông tin về việc thực hiện chính sách xã hội trong khám, chữa bệnh, làm cho câu trả lời đầy đủ và rõ ràng. | JudgeB: Câu trả lời đã nêu rõ rằng mục tiêu của Bảo hiểm y tế tự nguyện theo Điều 24 không phải là vì mục đích kinh doanh, mà nhằm thực hiện chính sách xã hội trong khám, chữa bệnh. Điều này hoàn toàn phù hợp và đầy đủ so với Ground Truth được cung cấp."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Ai là đối tượng có thể tham gia bảo hiểm y tế tự nguyện theo Điều 25, khoản 1?",
+    "agent_response": "Theo Điều 25, khoản 1, đối tượng có thể tham gia bảo hiểm y tế tự nguyện bao gồm mọi đối tượng có nhu cầu tự nguyện tham gia bảo hiểm y tế, kể cả những người đã tham gia bảo hiểm y tế bắt buộc nhưng muốn tham gia bảo hiểm y tế tự nguyện để hưởng mức dịch vụ bảo hiểm y tế cao hơn, và người nước ngoài đến làm việc, học tập, du lịch tại Việt Nam.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1074,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_25_clause_1",
+        "art_25",
+        "art_25_clause_5_part_2",
+        "art_02_clause_1",
+        "art_02"
+      ]
+    },
+    "latency": 1.875261875014985,
+    "ragas": {
+      "faithfulness": 0.95,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ các đối tượng có thể tham gia bảo hiểm y tế tự nguyện theo Điều 25, khoản 1, bao gồm cả người đã tham gia bảo hiểm y tế bắt buộc và người nước ngoài. Thông tin được trình bày đầy đủ và rõ ràng, phù hợp với Ground Truth. | JudgeB: The answer accurately reflects the information provided in the Ground Truth. It clearly states that all individuals who wish to voluntarily participate in health insurance, including those already under mandatory health insurance and foreigners in Vietnam for work, study, or tourism, are eligible. The answer is complete, precise, and aligns well with the Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 25, khoản 5 quy định về việc hỗ trợ mức đóng bảo hiểm y tế tự nguyện cho đối tượng nào?",
+    "agent_response": "Điều 25, khoản 5 quy định việc hỗ trợ mức đóng bảo hiểm y tế tự nguyện cho đối tượng cận nghèo.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 959,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_25_clause_5_part_2",
+        "art_25",
+        "art_25_clause_1",
+        "art_14"
+      ]
+    },
+    "latency": 1.4404215840040706,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ đối tượng được hỗ trợ mức đóng bảo hiểm y tế tự nguyện là 'đối tượng cận nghèo', tuy nhiên không đề cập đến 'nhân dân địa phương' như trong Ground Truth. Do đó, câu trả lời thiếu một phần thông tin, nhưng vẫn đúng về đối tượng chính. | JudgeB: Câu trả lời đã nêu rõ ràng và chính xác đối tượng được hỗ trợ mức đóng bảo hiểm y tế tự nguyện theo Điều 25, khoản 5, đó là đối tượng cận nghèo. Điều này hoàn toàn phù hợp với thông tin trong Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Các loại hình bảo hiểm y tế tự nguyện bao gồm những gì theo Điều 26?",
+    "agent_response": "Các loại hình bảo hiểm y tế tự nguyện theo Điều 26 bao gồm: \na) Bảo hiểm khám, chữa bệnh nội trú, ngoại trú; \nb) Bảo hiểm bổ sung ngoài bảo hiểm y tế bắt buộc; \nc) Bảo hiểm y tế cộng đồng; \nd) Bảo hiểm y tế hộ gia đình và các loại hình bảo hiểm y tế khác.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1258,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_26",
+        "art_08",
+        "art_02_clause_10_part_3",
+        "art_02"
+      ]
+    },
+    "latency": 2.4720324160007294,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã liệt kê đầy đủ và chính xác các loại hình bảo hiểm y tế tự nguyện theo Điều 26, bao gồm cả các loại hình cụ thể và được trình bày rõ ràng. Không có thông tin nào bị thiếu sót hoặc sai lệch so với Ground Truth. | JudgeB: The answer provided is accurate, complete, and clearly lists all the types of voluntary health insurance as specified in Điều 26. It matches the ground truth perfectly by including all the necessary categories: inpatient and outpatient treatment insurance, supplementary insurance beyond mandatory health insurance, community health insurance, family health insurance, and other types of health insurance."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Quỹ Bảo hiểm y tế tự nguyện có thể sử dụng kết dư để chi trả cho các chế độ nào?",
+    "agent_response": "Không đủ thông tin để xác định các chế độ mà Quỹ Bảo hiểm y tế tự nguyện có thể sử dụng kết dư để chi trả.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1203,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_08",
+        "art_15_clause_6_part_3",
+        "art_15",
+        "art_02_clause_6_part_2",
+        "art_02"
+      ]
+    },
+    "latency": 1.3250069170026109,
+    "ragas": {
+      "faithfulness": 0.3,
+      "relevancy": 0.4,
+      "retrieval": {
+        "hit_rate": 0.0,
+        "mrr": 0.0,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 2.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 2.0,
+        "gpt-4o": 2.0
+      },
+      "reasoning": "JudgeA: Câu trả lời không đủ thông tin và không chính xác so với Ground Truth. Ground Truth nêu rõ rằng kết dư có thể được sử dụng để chi trả cho các chế độ khám, chữa bệnh cho đối tượng tham gia bảo hiểm y tế tự nguyện, trong khi câu trả lời chỉ nói rằng không đủ thông tin mà không đề cập đến thông tin cụ thể nào. | JudgeB: The answer provided is vague and does not specify the specific uses of the surplus funds from the Voluntary Health Insurance Fund. The Ground Truth clearly states that the surplus can be used for medical examination and treatment for participants of voluntary health insurance, which is missing in the answer. Therefore, the answer lacks completeness and clarity."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Theo Điều 28, ai là cơ quan tổ chức thực hiện chính sách bảo hiểm y tế?",
+    "agent_response": "Theo Điều 28, Bảo hiểm Xã hội Việt Nam là cơ quan tổ chức thực hiện chính sách bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 231,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_28"
+      ]
+    },
+    "latency": 1.103607875003945,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác, đầy đủ và rõ ràng, đúng với nội dung của Ground Truth. Nó nêu rõ cơ quan thực hiện chính sách bảo hiểm y tế theo quy định tại Điều 28. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó nêu rõ rằng Bảo hiểm Xã hội Việt Nam là cơ quan tổ chức thực hiện chính sách bảo hiểm y tế theo Điều 28, đúng với thông tin được cung cấp trong Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 29 khoản 1 quy định về phạm vi quản lý nhà nước về bảo hiểm y tế như thế nào?",
+    "agent_response": "Điều 29 khoản 1 quy định rằng Chính phủ thống nhất quản lý nhà nước về bảo hiểm y tế trên phạm vi cả nước.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1120,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_29_clause_1",
+        "art_29",
+        "art_29_clause_4_part_2",
+        "art_02_clause_1",
+        "art_02"
+      ]
+    },
+    "latency": 1.2685177920211572,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác và đầy đủ, trùng khớp với nội dung của Ground Truth. Nó nêu rõ rằng Chính phủ thống nhất quản lý nhà nước về bảo hiểm y tế trên phạm vi cả nước, không thiếu thông tin nào. | JudgeB: The answer provided is completely accurate, clear, and matches the ground truth. It correctly states that the government has unified state management of health insurance across the entire country, as specified in Article 29, Clause 1."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Chủ tịch Ủy ban nhân dân tỉnh có trách nhiệm gì trong việc quản lý bảo hiểm y tế trên địa bàn?",
+    "agent_response": "Chủ tịch Ủy ban nhân dân tỉnh có trách nhiệm quản lý nhà nước về bảo hiểm y tế trên địa bàn tỉnh, thành phố với các nội dung sau (theo Điều 29):\n\na) Chỉ đạo, tổ chức triển khai chính sách về bảo hiểm y tế, bao gồm cả bảo hiểm y tế bắt buộc và bảo hiểm y tế tự nguyện.\n\nb) Kiểm tra, thanh tra việc thực hiện các quy định của pháp luật về bảo hiểm y tế và giải quyết các vướng mắc liên quan đến việc khám, chữa bệnh cho người có thẻ bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1281,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_29_clause_4_part_2",
+        "art_29",
+        "art_03_clause_10_part_4",
+        "art_03",
+        "art_06"
+      ]
+    },
+    "latency": 2.962318250007229,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ trách nhiệm của Chủ tịch Ủy ban nhân dân tỉnh trong việc quản lý bảo hiểm y tế, bao gồm cả việc chỉ đạo, tổ chức triển khai chính sách và kiểm tra, thanh tra việc thực hiện các quy định pháp luật. Nội dung được trình bày đầy đủ và rõ ràng, phù hợp với Ground Truth. | JudgeB: The answer provided is accurate, comprehensive, and clearly outlines the responsibilities of the Chủ tịch Ủy ban nhân dân tỉnh in managing health insurance on the provincial level. It includes both the directive and organizational roles as well as the oversight functions, which align perfectly with the ground truth. The answer also specifies the inclusion of both mandatory and voluntary health insurance, which adds to its completeness."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Theo Điều 30, tổ chức và cá nhân có thành tích trong sự nghiệp bảo hiểm y tế có được khen thưởng không?",
+    "agent_response": "Theo Điều 30, tổ chức và cá nhân có thành tích trong sự nghiệp bảo hiểm y tế được khen thưởng theo quy định của pháp luật về thi đua, khen thưởng.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 807,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_30",
+        "art_01",
+        "art_03_clause_1",
+        "art_03"
+      ]
+    },
+    "latency": 1.3520460419822484,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác và đầy đủ, phản ánh đúng nội dung của Ground Truth. Nó nêu rõ rằng tổ chức và cá nhân có thành tích trong sự nghiệp bảo hiểm y tế được khen thưởng theo quy định của pháp luật về thi đua, khen thưởng, mà không thiếu thông tin nào. | JudgeB: The answer provided is accurate, complete, and clearly states that organizations and individuals with achievements in the health insurance sector are rewarded according to the laws on emulation and commendation, which aligns perfectly with the Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Theo Điều 31, ai là cơ quan chịu trách nhiệm giải quyết khiếu nại, tố cáo trong lĩnh vực khám, chữa bệnh bảo hiểm y tế?",
+    "agent_response": "Theo Điều 31, Bộ Y tế là cơ quan chịu trách nhiệm giải quyết khiếu nại, tố cáo trong lĩnh vực khám, chữa bệnh bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1196,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_31",
+        "art_11",
+        "art_33"
+      ]
+    },
+    "latency": 1.2237820419832133,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác, đúng với nội dung của Ground Truth. Nó nêu rõ cơ quan chịu trách nhiệm là Bộ Y tế và không thiếu thông tin nào. | JudgeB: Câu trả lời hoàn toàn chính xác và đầy đủ so với Ground Truth. Nó nêu rõ rằng Bộ Y tế là cơ quan chịu trách nhiệm giải quyết khiếu nại, tố cáo trong lĩnh vực khám, chữa bệnh bảo hiểm y tế, đúng theo quy định tại Điều 31."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 32 quy định về xử lý vi phạm trong lĩnh vực nào?",
+    "agent_response": "Điều 32 quy định về xử lý vi phạm trong lĩnh vực bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 770,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_32",
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_14"
+      ]
+    },
+    "latency": 1.2173558330105152,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đúng và đầy đủ, nêu rõ lĩnh vực bảo hiểm y tế mà Điều 32 quy định về xử lý vi phạm. Nó khớp hoàn toàn với thông tin trong Ground Truth. | JudgeB: The answer correctly identifies that Article 32 pertains to the handling of violations in the field of health insurance, which aligns with the Ground Truth. The response is accurate, complete, and clearly stated."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Ai là những tổ chức chịu sự kiểm tra, thanh tra về bảo hiểm y tế theo Điều 33?",
+    "agent_response": "Theo Điều 33, những tổ chức chịu sự kiểm tra, thanh tra về bảo hiểm y tế bao gồm: \n\n1. Cơ sở khám, chữa bệnh bảo hiểm y tế\n2. Quỹ Bảo hiểm y tế\n3. Tổ chức bảo hiểm xã hội\n\nCác tổ chức này chịu sự kiểm tra, thanh tra của các cơ quan quản lý nhà nước có thẩm quyền và cơ quan thanh tra chuyên ngành về những vấn đề liên quan đến bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 942,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_33",
+        "art_18",
+        "art_01"
+      ]
+    },
+    "latency": 2.25059362500906,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu đầy đủ và chính xác các tổ chức chịu sự kiểm tra, thanh tra về bảo hiểm y tế theo Điều 33, bao gồm Cơ sở khám, chữa bệnh bảo hiểm y tế, Quỹ Bảo hiểm y tế và tổ chức bảo hiểm xã hội. Ngoài ra, câu trả lời cũng cung cấp thông tin bổ sung về cơ quan quản lý nhà nước có thẩm quyền và cơ quan thanh tra chuyên ngành, làm cho câu trả lời trở nên rõ ràng và đầy đủ hơn. | JudgeB: The answer accurately lists all the organizations subject to inspection and examination under Article 33, as stated in the Ground Truth. It includes the healthcare facilities, the Health Insurance Fund, and the social insurance organizations. Additionally, it mentions the role of state management agencies and specialized inspection agencies, providing a comprehensive and clear response."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 34 quy định rằng các quy định trước đây về bảo hiểm y tế trái với Điều lệ này sẽ bị bãi bỏ, đúng hay sai?",
+    "agent_response": "Đúng. Điều 34 quy định rằng các quy định trước đây về bảo hiểm y tế trái với quy định tại Điều lệ này đều bị bãi bỏ.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 787,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_34",
+        "art_06",
+        "art_32"
+      ]
+    },
+    "latency": 1.4158420829917304,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đúng hoàn toàn với Ground Truth, nêu rõ nội dung của Điều 34 và khẳng định rằng các quy định trước đây trái với Điều lệ sẽ bị bãi bỏ. Thông tin được trình bày rõ ràng và đầy đủ. | JudgeB: Câu trả lời hoàn toàn đúng, đủ và rõ ràng so với Ground Truth. Cả hai đều khẳng định rằng Điều 34 quy định việc bãi bỏ các quy định trước đây về bảo hiểm y tế nếu chúng trái với Điều lệ hiện hành."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Ai là cơ quan chủ trì trong việc hướng dẫn thi hành Điều lệ theo Điều 35?",
+    "agent_response": "Cơ quan chủ trì trong việc hướng dẫn thi hành Điều lệ theo Điều 35 là Bộ Y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 770,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_35",
+        "art_01",
+        "art_03_clause_10_part_4",
+        "art_03"
+      ]
+    },
+    "latency": 1.3243410419963766,
+    "ragas": {
+      "faithfulness": 1.0,
+      "relevancy": 1.0,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời hoàn toàn chính xác và đầy đủ, nêu rõ cơ quan chủ trì là Bộ Y tế, đúng với thông tin trong Ground Truth. | JudgeB: Câu trả lời đã xác định chính xác cơ quan chủ trì là Bộ Y tế, phù hợp hoàn toàn với thông tin trong Ground Truth. Câu trả lời ngắn gọn, rõ ràng và đầy đủ."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 1 quy định nội dung gì?",
+    "agent_response": "Điều 1 quy định về mục tiêu và tính chất của bảo hiểm y tế, nêu rõ rằng bảo hiểm y tế là một chính sách xã hội do Nhà nước tổ chức thực hiện, nhằm huy động sự đóng góp của người sử dụng lao động, người lao động, các tổ chức và cá nhân để thanh toán chi phí khám, chữa bệnh cho người có thẻ bảo hiểm y tế khi ốm đau. Bảo hiểm y tế mang tính xã hội, không vì mục tiêu lợi nhuận, hướng tới công bằng và hiệu quả trong khám, chữa bệnh với sự tham gia của toàn dân.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 942,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_01",
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_06"
+      ]
+    },
+    "latency": 3.426338165998459,
+    "ragas": {
+      "faithfulness": 0.95,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 5.0,
+        "gpt-4o": 5.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung của Điều 1, bao gồm mục tiêu và tính chất của bảo hiểm y tế, cũng như các đối tượng tham gia và mục đích của chính sách này. Thông tin được trình bày đầy đủ, rõ ràng và chính xác so với Ground Truth. | JudgeB: Câu trả lời đã nêu đầy đủ và chính xác nội dung của Điều 1, bao gồm mục tiêu và tính chất của bảo hiểm y tế. Nó giải thích rằng bảo hiểm y tế là một chính sách xã hội do Nhà nước tổ chức, nhằm huy động sự đóng góp từ nhiều nguồn để thanh toán chi phí khám, chữa bệnh. Câu trả lời cũng nhấn mạnh tính xã hội, không vì lợi nhuận và hướng tới công bằng, hiệu quả, phù hợp với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 2 quy định nội dung gì?",
+    "agent_response": "Điều 2 quy định về việc giải thích các từ ngữ liên quan đến bảo hiểm y tế, bao gồm các khái niệm như bảo hiểm y tế bắt buộc, bảo hiểm y tế tự nguyện, người bệnh bảo hiểm y tế, thân nhân, thẻ bảo hiểm y tế, phí bảo hiểm y tế, quỹ bảo hiểm y tế, cơ sở khám chữa bệnh bảo hiểm y tế, và phạm vi quyền lợi bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1025,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_1",
+        "art_02_clause_6_part_2"
+      ]
+    },
+    "latency": 2.0553442089876626,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.95,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung chính của Điều 2, bao gồm việc giải thích các khái niệm liên quan đến bảo hiểm y tế. Tuy nhiên, nó không liệt kê đầy đủ tất cả các khái niệm như trong Ground Truth, mà chỉ đề cập đến một số khái niệm chính. Do đó, câu trả lời chưa hoàn toàn đầy đủ. | JudgeB: Câu trả lời đã nêu đúng nội dung chính của Điều 2 là giải thích các từ ngữ liên quan đến bảo hiểm y tế. Tuy nhiên, câu trả lời đã mở rộng thêm một số khái niệm không có trong Ground Truth như thân nhân, thẻ bảo hiểm y tế, phí bảo hiểm y tế, quỹ bảo hiểm y tế, cơ sở khám chữa bệnh bảo hiểm y tế, và phạm vi quyền lợi bảo hiểm y tế. Do đó, mặc dù câu trả lời khá đầy đủ và rõ ràng, nhưng có một số thông tin không được đề cập trong Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 2 quy định nội dung gì?",
+    "agent_response": "Điều 2 quy định về việc giải thích các từ ngữ liên quan đến bảo hiểm y tế, bao gồm các khái niệm như bảo hiểm y tế bắt buộc, bảo hiểm y tế tự nguyện, người bệnh bảo hiểm y tế, thân nhân, thẻ bảo hiểm y tế, phí bảo hiểm y tế, quỹ bảo hiểm y tế, cơ sở khám chữa bệnh bảo hiểm y tế, và phạm vi quyền lợi bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1025,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_1",
+        "art_02_clause_6_part_2"
+      ]
+    },
+    "latency": 1.8772932499996386,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung của Điều 2 liên quan đến việc giải thích các từ ngữ trong lĩnh vực bảo hiểm y tế. Tuy nhiên, nó không hoàn toàn chính xác và đầy đủ như Ground Truth, vì không đề cập đến một số khái niệm cụ thể như 'người tham gia bảo hiểm y tế', 'người sử dụng lao động', và 'ngân sách nhà nước' mà Ground Truth đã nêu. Do đó, câu trả lời cần cải thiện để đạt được độ chính xác và đầy đủ hơn. | JudgeB: Câu trả lời đã nêu đúng nội dung chính của Điều 2 là giải thích các từ ngữ liên quan đến bảo hiểm y tế. Tuy nhiên, câu trả lời không liệt kê đầy đủ tất cả các khái niệm được giải thích trong Điều 2 như trong Ground Truth, mà chỉ nêu một số khái niệm tiêu biểu. Do đó, câu trả lời chưa hoàn toàn đầy đủ so với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 2 quy định nội dung gì?",
+    "agent_response": "Điều 2 quy định về việc giải thích các từ ngữ liên quan đến bảo hiểm y tế, bao gồm các khái niệm như bảo hiểm y tế bắt buộc, bảo hiểm y tế tự nguyện, người bệnh bảo hiểm y tế, thân nhân, thẻ bảo hiểm y tế, phí bảo hiểm y tế, quỹ bảo hiểm y tế, cơ sở khám chữa bệnh bảo hiểm y tế, và phạm vi quyền lợi bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1025,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_1",
+        "art_02_clause_6_part_2"
+      ]
+    },
+    "latency": 1.9866379580053035,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.8,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 2.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 2.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung của Điều 2 liên quan đến việc giải thích các từ ngữ trong lĩnh vực bảo hiểm y tế, nhưng không hoàn toàn chính xác và đầy đủ so với Ground Truth. Ground Truth đề cập đến dịch vụ kỹ thuật cao và yêu cầu về trình độ, kỹ năng, trong khi câu trả lời lại tập trung vào các khái niệm bảo hiểm y tế mà không đề cập đến dịch vụ kỹ thuật cao. Do đó, câu trả lời cần cải thiện để phản ánh đúng nội dung của Điều 2. | JudgeB: Câu trả lời chỉ đúng một phần khi đề cập đến việc giải thích từ ngữ, nhưng không chính xác và không đầy đủ so với Ground Truth. Ground Truth cụ thể hóa nội dung của Điều 2 liên quan đến dịch vụ kỹ thuật cao trong y tế, trong khi câu trả lời lại đề cập đến các khái niệm bảo hiểm y tế mà không có trong Ground Truth."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Điều 2 quy định nội dung gì?",
+    "agent_response": "Điều 2 quy định về việc giải thích các từ ngữ liên quan đến bảo hiểm y tế, bao gồm các khái niệm như bảo hiểm y tế bắt buộc, bảo hiểm y tế tự nguyện, người bệnh bảo hiểm y tế, thân nhân, thẻ bảo hiểm y tế, phí bảo hiểm y tế, quỹ bảo hiểm y tế, cơ sở khám chữa bệnh bảo hiểm y tế, và phạm vi quyền lợi bảo hiểm y tế.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1025,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_02_clause_1",
+        "art_02_clause_6_part_2"
+      ]
+    },
+    "latency": 2.2929808750050142,
+    "ragas": {
+      "faithfulness": 0.8,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 3.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 3.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung của Điều 2 liên quan đến việc giải thích các từ ngữ trong lĩnh vực bảo hiểm y tế, tuy nhiên, không đề cập đến khái niệm 'thanh toán theo định suất' mà Ground Truth đã nêu. Điều này làm cho câu trả lời thiếu một phần quan trọng của nội dung quy định trong Điều 2. | JudgeB: Câu trả lời đã đề cập đến việc Điều 2 quy định về giải thích các từ ngữ liên quan đến bảo hiểm y tế, nhưng không nêu rõ nội dung cụ thể của 'thanh toán theo định suất' như trong Ground Truth. Ngoài ra, câu trả lời liệt kê nhiều khái niệm khác không có trong Ground Truth, dẫn đến sự không chính xác và không đầy đủ so với nội dung thực tế của Điều 2."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 3 quy định nội dung gì?",
+    "agent_response": "Điều 3 quy định về đối tượng thực hiện bảo hiểm y tế bắt buộc, bao gồm nhiều nhóm đối tượng như người lao động, cán bộ, công chức, viên chức, người hưởng chế độ hưu trí, người có công với cách mạng, đại biểu Quốc hội, và các đối tượng khác có liên quan.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1276,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1",
+        "art_03",
+        "art_03_clause_1_part_2",
+        "art_03_clause_6_part_3"
+      ]
+    },
+    "latency": 2.761727624980267,
+    "ragas": {
+      "faithfulness": 0.8,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 3.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đề cập đến đối tượng thực hiện bảo hiểm y tế bắt buộc nhưng không chính xác và đầy đủ như trong Ground Truth. Ground Truth chỉ rõ rằng đối tượng là người lao động Việt Nam làm việc theo hợp đồng lao động từ 3 tháng trở lên, trong khi câu trả lời mở rộng ra nhiều nhóm đối tượng khác mà không có căn cứ từ Điều 3. Do đó, câu trả lời thiếu chính xác và không hoàn toàn phù hợp với nội dung quy định. | JudgeB: Câu trả lời đã nêu đúng nội dung chính của Điều 3 về đối tượng thực hiện bảo hiểm y tế bắt buộc, bao gồm người lao động và các nhóm đối tượng khác. Tuy nhiên, câu trả lời không đề cập chi tiết về điều kiện hợp đồng lao động từ đủ 3 tháng trở lên và hợp đồng lao động không xác định thời hạn, như được nêu trong Ground Truth. Do đó, câu trả lời thiếu một số chi tiết cụ thể về đối tượng người lao động."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 3 quy định nội dung gì?",
+    "agent_response": "Điều 3 quy định về đối tượng thực hiện bảo hiểm y tế bắt buộc, bao gồm nhiều nhóm đối tượng như người lao động, cán bộ, công chức, viên chức, người hưởng chế độ hưu trí, người có công với cách mạng, đại biểu Quốc hội, và các đối tượng khác có liên quan.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1276,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1",
+        "art_03",
+        "art_03_clause_1_part_2",
+        "art_03_clause_6_part_3"
+      ]
+    },
+    "latency": 2.643142834014725,
+    "ragas": {
+      "faithfulness": 0.8,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 3.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 3.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung chính của Điều 3 liên quan đến đối tượng thực hiện bảo hiểm y tế bắt buộc, tuy nhiên không liệt kê đầy đủ các nhóm đối tượng như trong Ground Truth. Câu trả lời cũng có thể được cải thiện về độ rõ ràng và chi tiết hơn. | JudgeB: Câu trả lời đã đề cập đến một số đối tượng thực hiện bảo hiểm y tế bắt buộc như người lao động, cán bộ, công chức, viên chức, người hưởng chế độ hưu trí, người có công với cách mạng, và đại biểu Quốc hội. Tuy nhiên, nó thiếu một số chi tiết và nhóm đối tượng khác được liệt kê trong Ground Truth như tổ chức chính trị-xã hội, tổ chức xã hội nghề nghiệp, đơn vị lực lượng vũ trang, trạm y tế xã, phường, thị trấn, và các trường giáo dục mầm non. Do đó, câu trả lời chưa đầy đủ và rõ ràng so với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 3 quy định nội dung gì?",
+    "agent_response": "Điều 3 quy định về đối tượng thực hiện bảo hiểm y tế bắt buộc, bao gồm nhiều nhóm đối tượng như người lao động, cán bộ, công chức, viên chức, người hưởng chế độ hưu trí, người có công với cách mạng, đại biểu Quốc hội, và các đối tượng khác theo quy định.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1276,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1",
+        "art_03",
+        "art_03_clause_1_part_2",
+        "art_03_clause_6_part_3"
+      ]
+    },
+    "latency": 3.1804953329847194,
+    "ragas": {
+      "faithfulness": 0.8,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 3.5,
+      "agreement_rate": 0.75,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời không hoàn toàn chính xác và thiếu một số thông tin quan trọng từ Ground Truth. Mặc dù đã đề cập đến đối tượng thực hiện bảo hiểm y tế bắt buộc, nhưng không nêu rõ rằng đại biểu Quốc hội đương nhiệm không thuộc biên chế nhà nước và các tổ chức chính trị - xã hội, cũng như không đề cập đến đại biểu Hội đồng nhân dân đương nhiệm các cấp. Do đó, câu trả lời cần được cải thiện để đầy đủ và chính xác hơn. | JudgeB: Câu trả lời đã nêu đúng nội dung chính của Điều 3 về đối tượng thực hiện bảo hiểm y tế bắt buộc và liệt kê một số nhóm đối tượng cụ thể. Tuy nhiên, câu trả lời có thể chi tiết hơn về các nhóm đối tượng khác để hoàn toàn đầy đủ so với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 3 quy định nội dung gì?",
+    "agent_response": "Điều 3 quy định về đối tượng thực hiện bảo hiểm y tế bắt buộc, bao gồm nhiều nhóm đối tượng như người lao động, cán bộ, công chức, viên chức, người hưởng chế độ hưu trí, người có công với cách mạng, và các đối tượng khác có liên quan.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 1271,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_03_clause_1",
+        "art_03",
+        "art_03_clause_1_part_2",
+        "art_03_clause_6_part_3"
+      ]
+    },
+    "latency": 2.7539939169946592,
+    "ragas": {
+      "faithfulness": 0.8,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 0.5,
+        "top1_accuracy": 0.0
+      }
+    },
+    "judge": {
+      "final_score": 3.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 3.0,
+        "gpt-4o": 3.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung của Điều 3 liên quan đến đối tượng thực hiện bảo hiểm y tế bắt buộc, nhưng không hoàn toàn chính xác và thiếu thông tin cụ thể về người cao tuổi từ 90 tuổi trở lên và các quy định liên quan đến Điều 6 của Nghị định số 30/2002/NĐ-CP. Do đó, câu trả lời cần cải thiện để đầy đủ và chính xác hơn. | JudgeB: Câu trả lời đã đề cập đến nội dung chính của Điều 3 là quy định về đối tượng thực hiện bảo hiểm y tế bắt buộc. Tuy nhiên, câu trả lời không đề cập cụ thể đến người cao tuổi từ 90 tuổi trở lên và người cao tuổi theo quy định tại Điều 6 của Nghị định số 30/2002/NĐ-CP, như được nêu trong Ground Truth. Do đó, câu trả lời thiếu một số chi tiết cụ thể và không hoàn toàn đầy đủ so với Ground Truth."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Điều 4 quy định nội dung gì?",
+    "agent_response": "Điều 4 quy định về đối tượng thực hiện bảo hiểm y tế tự nguyện, áp dụng cho mọi đối tượng có nhu cầu tự nguyện tham gia bảo hiểm y tế, bao gồm cả những người đã tham gia bảo hiểm y tế bắt buộc nhưng muốn nâng cao mức dịch vụ. Mục tiêu, nguyên tắc, các hình thức tổ chức và quản lý bảo hiểm y tế tự nguyện được quy định tại các Điều 24, 25, 26 và 27 của Điều lệ này.",
+    "agent_metadata": {
+      "model": "gpt-4o-mini",
+      "tokens_used": 918,
+      "sources": [
+        "data/data_legal.txt"
+      ],
+      "retrieval_mode": "optimized",
+      "retrieved_ids": [
+        "art_04",
+        "art_02_clause_14_part_4",
+        "art_02",
+        "art_06"
+      ]
+    },
+    "latency": 3.703852333012037,
+    "ragas": {
+      "faithfulness": 0.9,
+      "relevancy": 0.95,
+      "retrieval": {
+        "hit_rate": 1.0,
+        "mrr": 1.0,
+        "top1_accuracy": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 4.0,
+      "agreement_rate": 1.0,
+      "individual_scores": {
+        "gpt-4o-mini": 4.0,
+        "gpt-4o": 4.0
+      },
+      "reasoning": "JudgeA: Câu trả lời đã nêu rõ nội dung của Điều 4 liên quan đến đối tượng thực hiện bảo hiểm y tế tự nguyện, bao gồm cả những người đã tham gia bảo hiểm y tế bắt buộc. Tuy nhiên, câu trả lời không đề cập đến các điều khoản liên quan đến mục tiêu, nguyên tắc và hình thức tổ chức, mà chỉ nêu rằng chúng được quy định tại các Điều 24, 25, 26 và 27 mà không giải thích thêm. Do đó, câu trả lời chưa hoàn toàn đầy đủ và rõ ràng như Ground Truth. | JudgeB: The answer accurately captures the essence of Article 4, which pertains to the subjects eligible for voluntary health insurance. It correctly mentions that it applies to all individuals who wish to voluntarily participate, including those already under mandatory health insurance seeking enhanced services. However, the answer could be improved by explicitly stating that the details of objectives, principles, and organizational forms are covered in subsequent articles, as mentioned in the ground truth."
+    },
+    "status": "pass"
+  }
+]

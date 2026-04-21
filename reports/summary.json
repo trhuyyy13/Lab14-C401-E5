@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "version": "Agent_V2_Optimized",
+    "total": 60,
+    "timestamp": "2026-04-21 16:57:47"
+  },
+  "metrics": {
+    "retrieval_accuracy": 0.6,
+    "hit_rate": 0.85,
+    "average_hit_rate": 0.85,
+    "mrr": 0.7166666666666667,
+    "final_answer_accuracy": 0.75,
+    "hallucination_rate": 0.1,
+    "average_score": 4.266666666666667,
+    "avg_score": 4.266666666666667,
+    "latency": 2.0349870736851394,
+    "cost": 0.019265099999999997,
+    "avg_cost_per_case": 0.0003210849999999999,
+    "user_satisfaction_score": 85.33333333333333,
+    "agreement_rate": 0.925
+  }
+}
