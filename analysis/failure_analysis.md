@@ -2,14 +2,17 @@
 
 ## 1. Tổng quan Benchmark
 - **Tổng số cases:** 80
-- **Tỉ lệ Pass/Fail:** 78/2
+- **Tỉ lệ Pass/Fail:** 78/2 (97.5% Pass)
 - **Điểm RAGAS trung bình:**
     - Faithfulness: 0.883
     - Relevancy: 0.803
-- **Điểm LLM-Judge trung bình:** 4.08 / 5.0
-- **Retrieval:** Hit Rate = 0.975, MRR = 0.975
-- **Multi-Judge Agreement:** 0.931
-- **Hiệu năng:** Avg latency = 0.074s/case, Total tokens = 15,051, Cost/eval = 0.0001129 USD
+- **Điểm LLM-Judge trung bình:** 4.10 / 5.0
+- **Final Answer Accuracy:** 77.6% (Độ chính xác nội dung)
+- **Hallucination Rate:** 11.7% (Tỉ lệ bịa đặt/không bám context)
+- **Retrieval:** Accuracy = 97.5%, Hit Rate = 0.975, MRR = 0.975
+- **Multi-Judge Agreement:** 0.930
+- **Hiệu năng:** Avg latency = 0.073s/case, Cost/eval = 0.000113 USD
+- **User Satisfaction Score:** 85.6% (Điểm hài lòng người dùng)
 - **Trạng thái AI Judge:** OpenAI Judge đang hoạt động (`using_openai = true`).
 
 ## 2. Phân nhóm lỗi (Failure Clustering)

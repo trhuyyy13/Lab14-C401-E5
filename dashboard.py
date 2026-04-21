@@ -49,22 +49,54 @@ def read_jsonl(path: Path) -> List[Dict]:
     return rows
 
 
-def run_shell_command(command: str) -> str:
-    proc = subprocess.run(
+def run_shell_command_stream(command: str, placeholder):
+    """Runs a command and streams output to a streamlit placeholder."""
+    process = subprocess.Popen(
         command,
-        cwd=str(ROOT),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
         shell=True,
         text=True,
-        capture_output=True,
+        cwd=str(ROOT),
+        bufsize=1,
+        universal_newlines=True,
     )
-    output = []
-    output.append(f"$ {command}")
-    output.append(proc.stdout.strip())
-    if proc.stderr.strip():
-        output.append("[stderr]")
-        output.append(proc.stderr.strip())
-    output.append(f"[exit_code] {proc.returncode}")
-    return "\n".join(x for x in output if x)
+
+    full_output = []
+    log_area = placeholder.empty()
+    
+    with log_area.container():
+        st.info(f"🚀 Executing: {command.split('/')[-1] if '/' in command else command}")
+        progress_text = st.empty()
+        code_output = st.empty()
+
+    for line in iter(process.stdout.readline, ""):
+        clean_line = line.strip()
+        if not clean_line:
+            continue
+            
+        # Clean noisy logs for better UX
+        if any(x in clean_line for x in ["Using context", "Loaded corpus", "Tokens used"]):
+            # These are technical but useful, keep them clean
+            pass
+        elif "Python" in clean_line and "Lib" in clean_line:
+            continue # Skip traceback paths if possible or internal noise
+
+        full_output.append(clean_line)
+        # Show only last 10 lines to keep it clean
+        display_text = "\n".join(full_output[-10:])
+        code_output.code(display_text, language="text")
+        
+    process.stdout.close()
+    return_code = process.wait()
+    
+    final_text = "\n".join(full_output)
+    if return_code == 0:
+        st.success("✅ Task completed successfully!")
+    else:
+        st.error(f"❌ Task failed with exit code {return_code}")
+        
+    return final_text
 
 
 def save_run_log(content: str) -> None:
@@ -138,47 +170,53 @@ left, right = st.columns([1, 2])
 # LEFT PANEL
 # =========================
 with left:
-    st.subheader("Run Commands")
+    st.markdown("### 🛠️ Operations")
+    
+    log_placeholder = st.empty()
 
-    if st.button("Run: synthetic_gen"):
-        with st.spinner("Running synthetic_gen..."):
-            out = run_shell_command(f'"{sys.executable}" data/synthetic_gen.py')
-            save_run_log(out)
-            st.session_state["last_cmd"] = out
+    if st.button("✨ Generate Synthetic Data", use_container_width=True):
+        out = run_shell_command_stream(f'"{sys.executable}" data/synthetic_gen.py', log_placeholder)
+        save_run_log(out)
+        st.session_state["last_cmd"] = out
 
-    if st.button("Run: benchmark main"):
-        with st.spinner("Running main benchmark..."):
-            out = run_shell_command(f'"{sys.executable}" main.py')
-            save_run_log(out)
-            st.session_state["last_cmd"] = out
+    if st.button("🚀 Run Main Benchmark", use_container_width=True):
+        out = run_shell_command_stream(f'"{sys.executable}" main.py', log_placeholder)
+        save_run_log(out)
+        st.session_state["last_cmd"] = out
 
-    if st.button("Run: check_lab"):
-        with st.spinner("Running check_lab..."):
-            out = run_shell_command(f'"{sys.executable}" check_lab.py')
-            save_run_log(out)
-            st.session_state["last_cmd"] = out
+    if st.button("🧪 Run Lab Validation", use_container_width=True):
+        out = run_shell_command_stream(f'"{sys.executable}" check_lab.py', log_placeholder)
+        save_run_log(out)
+        st.session_state["last_cmd"] = out
 
-    if st.button("Run Full Pipeline"):
+    if st.button("🔥 Run Full Pipeline", type="primary", use_container_width=True):
         full_log = []
-        for cmd in [
-            f'"{sys.executable}" data/synthetic_gen.py',
-            f'"{sys.executable}" main.py',
-            f'"{sys.executable}" check_lab.py',
-        ]:
-            with st.spinner(f"Running {cmd}..."):
-                step_log = run_shell_command(cmd)
-                full_log.append(step_log)
+        commands = [
+            (f'"{sys.executable}" data/synthetic_gen.py', "1/3: Generating Data..."),
+            (f'"{sys.executable}" main.py', "2/3: Benchmarking Agent..."),
+            (f'"{sys.executable}" check_lab.py', "3/3: Final Validation..."),
+        ]
+        
+        for cmd, label in commands:
+            st.write(f"**Current Step: {label}**")
+            out = run_shell_command_stream(cmd, log_placeholder)
+            full_log.append(out)
 
         merged = "\n\n".join(full_log)
         save_run_log(merged)
         st.session_state["last_cmd"] = merged
 
-    st.subheader("Latest Log")
-    st.code(st.session_state.get("last_cmd", "No command run yet."), language="text")
+    st.divider()
+    st.subheader("Latest Output Log")
+    if "last_cmd" in st.session_state:
+        with st.expander("Show detailed logs", expanded=False):
+            st.code(st.session_state["last_cmd"], language="text")
+    else:
+        st.info("No logs available yet. Run a command above.")
 
     if RUN_LOG.exists():
-        with st.expander("Run History Log"):
-            st.code(RUN_LOG.read_text(encoding="utf-8"), language="text")
+        with st.expander("📄 Full Execution History"):
+            st.text(RUN_LOG.read_text(encoding="utf-8")[-5000:]) # Show last 5000 chars
 
 
 # =========================
@@ -190,34 +228,56 @@ with right:
     results = read_json(RESULTS_FILE)
 
     df_check = checklist_progress(dataset, summary, results)
-
     done_count = int(df_check["done"].sum())
     total_count = len(df_check)
     pct = int((done_count / total_count) * 100) if total_count else 0
 
-    st.subheader("Completion")
-    st.progress(pct / 100)
-    st.write(f"{pct}% complete ({done_count}/{total_count} tasks)")
-    st.dataframe(df_check, width="stretch")
+    st.subheader("📊 Completion Status")
+    
+    col_pct, col_details = st.columns([1, 3])
+    with col_pct:
+        st.metric("Overall Progress", f"{pct}%")
+        st.progress(pct / 100)
+    with col_details:
+        st.write(f"Done: {done_count} / {total_count} checklist items")
+        if pct == 100:
+            st.success("🎯 Project Ready for Submission!")
+    
+    with st.expander("Inspection Checklist"):
+        st.dataframe(df_check, use_container_width=True, hide_index=True)
 
     # =========================
     # Metrics
     # =========================
     metrics = summary.get("metrics", {}) if summary else {}
     meta = summary.get("metadata", {}) if summary else {}
+    regression = summary.get("regression", {}) if summary else {}
 
-    st.subheader("Key Metrics")
+    st.success(f"🔍 **Comparison:** `{regression.get('base_version', 'V1_Base')}` vs `{regression.get('candidate_version', 'V2_Optimized')}`")
+    st.info("⚖️ **Judges:** `gpt-4o` & `gpt-4o-mini` (Multi-judge consensus)")
+
+    st.markdown("### 📈 Key Performance Indicators")
+    if meta.get("timestamp"):
+        st.caption(f"Last updated: {meta.get('timestamp')}")
+
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total cases", int(meta.get("total", 0)))
-    c2.metric("Avg score", f"{metrics.get('avg_score', 0):.3f}")
-    c3.metric("Hit Rate", f"{metrics.get('hit_rate', 0)*100:.1f}%")
-    c4.metric("Agreement", f"{metrics.get('agreement_rate', 0)*100:.1f}%")
+    c1.metric("Total Test Cases", int(meta.get("total", 0)))
+    c2.metric("Avg Quality Score", f"{metrics.get('avg_score', 0):.2f}/5")
+    c3.metric("Retrieval Hit Rate", f"{metrics.get('hit_rate', 0)*100:.1f}%")
+    c4.metric("Judge Agreement", f"{metrics.get('agreement_rate', 0)*100:.1f}%")
 
     c5, c6, c7, c8 = st.columns(4)
     c5.metric("Pass Rate", f"{metrics.get('pass_rate', 0)*100:.1f}%")
     c6.metric("Avg MRR", f"{metrics.get('avg_mrr', 0):.3f}")
     c7.metric("Avg latency (s)", f"{metrics.get('avg_latency_sec', 0):.3f}")
     c8.metric("Cost/eval (USD)", f"{metrics.get('cost_per_eval_usd', 0):.6f}")
+
+    st.write("---")
+    c9, c10, c11, c12 = st.columns(4)
+    c9.metric("Retrieval Accuracy", f"{metrics.get('retrieval_accuracy', 0)*100:.1f}%")
+    c10.metric("Hallucination Rate", f"{metrics.get('hallucination_rate', 0)*100:.1f}%")
+    c11.metric("Final Answer Acc", f"{metrics.get('final_answer_accuracy', 0)*100:.1f}%")
+    c12.metric("User Satisfaction", f"{metrics.get('user_satisfaction_score', 0)*100:.1f}%")
 
     # =========================
     # Charts

@@ -68,6 +68,18 @@ def _build_summary(results, agent_version):
             "avg_tokens": total_tokens / total,
             "total_cost_usd": total_cost,
             "cost_per_eval_usd": total_cost / total,
+            # New metrics based on user checklist
+            "retrieval_accuracy": sum(r["ragas"]["retrieval"]["hit_rate"] for r in results) / total,
+            "hallucination_rate": 1.0 - (sum(r["ragas"]["faithfulness"] for r in results) / total),
+            "final_answer_accuracy": sum(
+                (r["judge"]["individual_scores"]["gpt-4o"]["accuracy"] + 
+                 r["judge"]["individual_scores"]["gpt-4o-mini"]["accuracy"]) / 2 
+                for r in results
+            ) / 5.0 / total, # Normalized to 0-1
+            "user_satisfaction_score": max(0, min(1, 
+                (sum(r["judge"]["final_score"] for r in results) / total / 5.0) * 0.8 + 
+                (1.0 if avg_latency < 0.5 else 0.5 if avg_latency < 2.0 else 0) * 0.2
+            )),
         },
     }
 
@@ -96,7 +108,7 @@ def _release_gate(v1_summary, v2_summary):
     }
 
 async def run_benchmark_with_results(agent_version: str, top_k: int):
-    print(f"🚀 Khởi động Benchmark cho {agent_version}...")
+    print(f"Starting Benchmark for {agent_version}...")
 
     if not os.path.exists("data/golden_set.jsonl"):
         print("❌ Thiếu data/golden_set.jsonl. Hãy chạy 'python data/synthetic_gen.py' trước.")
@@ -119,6 +131,13 @@ async def run_benchmark(version):
     return summary
 
 async def main():
+    print("="*60)
+    print("AI EVALUATION FACTORY - REGRESSION BENCHMARK")
+    print(f"Base Version:      Agent_V1_Base (top_k=1)")
+    print(f"Candidate Version: Agent_V2_Optimized (top_k=3)")
+    print(f"Judge Models:      gpt-4o & gpt-4o-mini (Consensus)")
+    print("="*60 + "\n")
+
     _, v1_summary = await run_benchmark_with_results("Agent_V1_Base", top_k=1)
     
     # V2 retrieval sâu hơn với top_k lớn hơn
@@ -128,7 +147,7 @@ async def main():
         print("❌ Không thể chạy Benchmark. Kiểm tra lại data/golden_set.jsonl.")
         return
 
-    print("\n📊 --- KẾT QUẢ SO SÁNH (REGRESSION) ---")
+    print("\n--- COMPARISON RESULTS (REGRESSION) ---")
     gate = _release_gate(v1_summary, v2_summary)
     delta = gate["score_delta"]
     print(f"V1 Score: {v1_summary['metrics']['avg_score']}")
@@ -150,9 +169,9 @@ async def main():
         json.dump(v2_results, f, ensure_ascii=False, indent=2)
 
     if gate["approve"]:
-        print("✅ QUYẾT ĐỊNH: CHẤP NHẬN BẢN CẬP NHẬT (APPROVE)")
+        print("OK: APPROVE RELEASE")
     else:
-        print("❌ QUYẾT ĐỊNH: TỪ CHỐI (BLOCK RELEASE)")
+        print("FAILED: BLOCK RELEASE")
 
 if __name__ == "__main__":
     asyncio.run(main())
